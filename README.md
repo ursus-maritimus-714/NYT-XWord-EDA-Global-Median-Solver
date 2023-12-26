@@ -10,5 +10,8 @@ The NYT crossword has been published since 1942, and many consider its modern er
 
 **Figure 1** shows a principal components analysis (PCA) of >20 grid, clue and answer-pertinent features obtained from XWord info (all puzzles between January 1, 2018 and December 26, 2023 are included). This analysis demonstrates that while puzzles from a give day do indeed aggregate with each other in "puzzle property space", they exist (apart from the much larger Sunday puzzles) they exist along a continuum. The overlapping distributions in GMS times shown in the density plot in **Figure 2** demonstrates a similar phenomenon; that puzzle day is strongly correlated to solve difficulty, but puzzle days of adjacent difficulty have overlapping solve time distributions along with the overlapping puzzle properties seen in **Figure 1**.
 
-**Figure 1. Principal Components Analysis of Select Grid, Clue and Answer-Pertinent Puzzle Features (Labeled by Puzzle Day)**
+**Figure 1. Principal Components Analysis of Select Grid, Clue and Answer-Pertinent Puzzle Features**
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/a37cc9e5-00f5-4bf8-a2b1-f3c35ffa9f01)
+
+
 
