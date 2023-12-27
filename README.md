@@ -41,5 +41,14 @@ Eighty-one percent of puzzles were created by either solo constructors or constr
 
 **Figure 5. Heatmapping of GMS Performance Against Individual Constructor(s) (2018-2023)**
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/5945e2e1-2afd-45e9-b7c2-1c66b8a8c029)
-*
+
+### Correlations of Individual Grid, Clue and Answer Features to GMS Solve Performance
+
+As described in the Introduction, a number of potentially interesting features pertaining to puzzle grids, clues and answers were obtained from the XWord Info site for all puzzles across the 6-year sample. Features showing strong correlation to GMS solve performance become potentially strong candidates as predictive features for the subsequent predictive modeling exercise, either in current forms or modified/combined with other promising features. **Figure 6** shows correlation heatmapping separately for 15x15 puzzles (Mon-Sat) and 21x21 puzzles (Sun). The Pearson correlation coefficient (PCC) was measured to capture linear correlation strengths between a given feature and solve times (red indicates a strong positive correlation; green a strong negative correlation). See **Supplementary Figure 1** for a further breakdown by individual puzzle days for the 15x15 puzzles. **Figure 7** through **Figure N** are companion figures to this correlation heatmapping showing overall (black) and by puzzle day (colored) scatter plots of individual puzzles with trend line for correlation strength between the feature of interest and GMS solve time per puzzle. In addition, for each feature a density plot is included to give an indication of puzzle day-specific trends in the distribution of a given feature. As one might suspect, a number of features with strong correlations to solve time covary with puzzle day; hopefully predictive modeling will be able to determine which features are actually important drivers of puzzle difficulty.
+
+
+
+
+
+
 
