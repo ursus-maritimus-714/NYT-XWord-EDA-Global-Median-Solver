@@ -34,7 +34,7 @@ The GMS has improved on each puzzle day over the 6-year sample timeframe. This t
 
 **Figure 4. Day of Week-Specific Violin Plots With Swarm Plot Overlay of Global Median Solver Solve Times, Per Year (2018-2023)**
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/75227929-2389-42e7-868d-f421c50df6dc)
-*Violin plots show both the range (vertical extent) as well as distribution characteristics (width as it varies across the y-axis range) for each puzzle day per solve year. Black lines demarcate the quartiles. The swarm plot overlays show individual raw data points (puzzle solve times).* 
+*Violin plots show both the range (vertical extent) as well as distribution characteristics (width as it varies across the y-axis range) for each puzzle day per solve year. Black lines demarcate the quartiles. The swarm plot overlays show individual raw data points (puzzle solve times). Note the reduction in y-axis range from the first row to the second when comparing across the entire sampl period.* 
 
 
 
