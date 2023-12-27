@@ -11,14 +11,16 @@ The NYT crossword has been published since 1942, and many consider its modern er
 **Figure 1** shows a principal components analysis (PCA) of >20 grid, clue and answer-pertinent features obtained from XWord Info. This analysis demonstrates that while puzzles from a give day do indeed aggregate with each other in "puzzle property space", they exist (apart from the much larger Sunday puzzles) they exist along a continuum. The overlapping distributions in GMS times shown in the density plot in **Figure 2** demonstrates a similar phenomenon; that puzzle day is strongly correlated to solve difficulty, but puzzle days of adjacent difficulty have overlapping solve time distributions along with the overlapping puzzle properties seen in **Figure 1**.
 
 **Figure 1. Principal Components Analysis of Select Grid, Clue and Answer-Pertinent Puzzle Features**                                                                  
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/c5a16596-e2e0-4118-ba7c-601536ac64b1)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/cba4a2b1-881f-46b4-8b4d-683905b0a1e8)
+
 
 *The first 3 principal components accounted for ~48% of variance in the data set. All puzzles for the years 2018-2023 were included in this analysis.*  
 
 
 
 **Figure 2. Density Plots of Global Median Solver Solve Times by Puzzle Day**                   
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/299a110c-f49e-4c4a-adc8-a6cc569afdb7)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/23a2f1c4-b468-4d32-8815-31b62d8891f8)
+
 
 *Note that for other than the "easy" days (Mon and Tue), distributions of GMS solve times were quite broad. Wed and Sat puzzles in particular had a quasi-bimodal distribution of solve times, supporting the notion that there are "easy" and "hard" puzzle pools/constructors even for specific days. All puzzles for the years 2020-2023 were included in this analysis (a more restricted time range was employed here since, as will be seen in the first section of the results, the GMS has improved a great deal since the beginning of the sample (Jan. 1, 2018).*  
 
