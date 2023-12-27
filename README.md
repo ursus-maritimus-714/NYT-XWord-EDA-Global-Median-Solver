@@ -27,7 +27,10 @@ The NYT crossword has been published since 1942, and many consider its modern er
 ## Results
 ### Global Median Solver (GMS) Performance Over Time
 
-The GMS has improved on each puzzle day over the six year sample timeframe. This trend is demonstrated clearly by charting of the puzzle day-specific 10-puzzle moving average over the sample period (*Figure 1*). Though these trends are clear, it must be noted here that because I did not have access to the raw solver data, I had to make the assumption that the GMS (putatively, a different solver for most puzzles in the sample) solved puzzles in more or less the sequence that they were published. 
+The GMS has improved on each puzzle day over the 6-year sample timeframe. This trend is demonstrated clearly by charting of the puzzle day-specific 10-puzzle moving average over the sample period (**Figure 3**). It must be noted here, however, that because I did not have access to the raw solver data, I had to make the assumption that the GMS (putatively, a different solver for most puzzles in the sample) solved puzzles in more or less the sequence that they were published. 
+
+**Figure 3. Day-Specific 10-Puzzle Moving Average for the Global Median Solver (2018-2023)**
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/10bff8b8-384d-4658-9af7-99e8d556b166)
 
 
 
