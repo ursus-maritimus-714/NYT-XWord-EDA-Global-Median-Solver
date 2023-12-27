@@ -15,6 +15,7 @@ The NYT crossword has been published since 1942, and many consider its modern er
 
 *The first 3 principal components accounted for ~48% of variance in the data set. All puzzles for the years 2018-2023 were included in this analysis.*  
 
+
 **Figure 2. Density Plots of Global Median Solver Solve Times by Puzzle Day**                   
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/2d549868-4f26-4e79-9820-8b6cb4717064)
 
