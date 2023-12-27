@@ -16,7 +16,8 @@ The NYT crossword has been published since 1942, and many consider its modern er
 
 **Figure 2. Density Plots of Global Median Solver Solve Times by Puzzle Day**                   
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/2d549868-4f26-4e79-9820-8b6cb4717064)
-*Note that for other than the "easy" days (Mon and Tue), distributions of GMS solve times were quite broad. Sat puzzles had nearly a bimodal distribution, supporting the notion that there are "easy" and "hard" puzzle pools/constructors even for specific days.*  
+
+*Note that for other than the "easy" days (Mon and Tue), distributions of GMS solve times were quite broad. Wed and Sat puzzles in particular had a quasi-bimodal distribution of solve times, supporting the notion that there are "easy" and "hard" puzzle pools/constructors even for specific days. All puzzles for the years 2020-2023 were included in this analysis (a more restricted time range was employed here since, as will be seen in the first section of the results, the GMS has improved a great deal since the beginning of the sample (Jan. 1, 2018). *  
 
 
 
