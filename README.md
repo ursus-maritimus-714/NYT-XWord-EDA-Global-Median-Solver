@@ -11,16 +11,21 @@ The NYT crossword has been published since 1942, and many consider its modern er
 **Figure 1** shows a principal components analysis (PCA) of >20 grid, clue and answer-pertinent features obtained from XWord Info. This analysis demonstrates that while puzzles from a give day do indeed aggregate with each other in "puzzle property space", they exist (apart from the much larger Sunday puzzles) they exist along a continuum. The overlapping distributions in GMS times shown in the density plot in **Figure 2** demonstrates a similar phenomenon; that puzzle day is strongly correlated to solve difficulty, but puzzle days of adjacent difficulty have overlapping solve time distributions along with the overlapping puzzle properties seen in **Figure 1**.
 
 **Figure 1. Principal Components Analysis of Select Grid, Clue and Answer-Pertinent Puzzle Features**                                                                  
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/f6d01e6f-4ab7-4e01-b8f6-f8e73ed48cce)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/c5a16596-e2e0-4118-ba7c-601536ac64b1)
 
 *The first 3 principal components accounted for ~48% of variance in the data set. All puzzles for the years 2018-2023 were included in this analysis.*  
 
 
+
 **Figure 2. Density Plots of Global Median Solver Solve Times by Puzzle Day**                   
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/2d549868-4f26-4e79-9820-8b6cb4717064)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/299a110c-f49e-4c4a-adc8-a6cc569afdb7)
 
 *Note that for other than the "easy" days (Mon and Tue), distributions of GMS solve times were quite broad. Wed and Sat puzzles in particular had a quasi-bimodal distribution of solve times, supporting the notion that there are "easy" and "hard" puzzle pools/constructors even for specific days. All puzzles for the years 2020-2023 were included in this analysis (a more restricted time range was employed here since, as will be seen in the first section of the results, the GMS has improved a great deal since the beginning of the sample (Jan. 1, 2018).*  
 
+## Results
+### Global Median Solver (GMS) Performance Over Time
+
+The GMS has improved on each puzzle day over the six year sample timeframe. This trend is demonstrated clearly by charting of the puzzle day-specific 10-puzzle moving average over the sample period (*Figure 1*). Though these trends are clear, it must be noted here that because I did not have access to the raw solver data, I had to make the assumption that the GMS (putatively, a different solver for most puzzles in the sample) solved puzzles in more or less the sequence that they were published. 
 
 
 
