@@ -17,7 +17,6 @@ The NYT crossword has been published since 1942, and many consider its modern er
 *The first 3 principal components accounted for ~48% of variance in the data set. All puzzles for the years 2018-2023 were included in this analysis.*  
 
 
-
 **Figure 2. Density Plots of Global Median Solver Solve Times by Puzzle Day**                   
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/23a2f1c4-b468-4d32-8815-31b62d8891f8)
 
@@ -36,5 +35,7 @@ The GMS has improved on each puzzle day over the 6-year sample timeframe. This t
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/75227929-2389-42e7-868d-f421c50df6dc)
 *Violin plots show both the range (vertical extent) as well as distribution characteristics (width as it varies across the y-axis range) for each puzzle day per solve year. Black lines demarcate the quartiles. The swarm plot overlays show individual raw data points (puzzle solve times). Note the reduction in y-axis range from the first row to the second when comparing across the entire sample period.* 
 
-### Global Median Solver (GMS) Performance By Constru
+### Global Median Solver (GMS) Performance By Puzzle Constructor(s)
+
+Eighty-one percent of puzzles were created by either solo constructors or constructor teams contributing more than one puzzle over the sample period. This preponderance of repeat constructors affords the opportunity to evaluate which constructors the GMS struggles against and which they tend to do well against. Some constructors indeed specialize in puzzles for one or several days of the week. Measuring GMS performance per-puzzle relative to the day-specific 10-puzzle moving average (as % difference from the moving average), then averaging this measure for all puzzles in the sample by given constructor(s) yields a single value indicating "constructor difficulty" for GMS that is normalized both for puzzle difficulty and improvement in baseline GMS performance over time.      
 
