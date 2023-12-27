@@ -28,17 +28,18 @@ The NYT crossword has been published since 1942, and many consider its modern er
 
 The GMS has improved on each puzzle day over the 6-year sample timeframe. This trend is demonstrated clearly by charting of the puzzle day-specific 10-puzzle moving average over the sample period (**Figure 3**). It must be noted here, however, that because I did not have access to the raw solver data, I had to make the assumption that the GMS (putatively, a different solver for most puzzles in the sample) solved puzzles in more or less the sequence that they were published. The improvement trend can also be clearly seen in year-by-year (per puzzle day) violin plots with swarm plot overlays (**Figure 4**). 
 
-**Figure 3. Day of Week-Specific 10-Puzzle Moving Average of GMS Solve Times (2018-2023)**
+**Figure 3. Day-of-Week Specific 10-Puzzle Moving Average of GMS Solve Times (2018-2023)**
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/10bff8b8-384d-4658-9af7-99e8d556b166)
 
-**Figure 4. Day of Week-Specific Violin Plots With Swarm Plot Overlay of GMS Solve Times, Per Year (2018-2023)**
+**Figure 4. Day-of-Week Specific Violin Plots With Swarm Plot Overlay of GMS Solve Times, Per Year (2018-2023)**
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/75227929-2389-42e7-868d-f421c50df6dc)
 *Violin plots show both the range (vertical extent) as well as distribution characteristics (width as it varies across the y-axis range) for each puzzle day per solve year. Black lines demarcate the quartiles. The swarm plot overlays show individual raw data points (puzzle solve times). Note the reduction in y-axis range from the first row to the second when comparing across the entire sample period.* 
 
 ### Global Median Solver (GMS) Performance By Puzzle Constructor(s)
 
-Eighty-one percent of puzzles were created by either solo constructors or constructor teams contributing more than one puzzle over the sample period. This preponderance of repeat constructors affords the opportunity to evaluate which constructors the GMS struggles against and which they tend to do well against. Some constructors indeed specialize in puzzles for one or several days of the week. Measuring GMS performance per-puzzle relative to the day-specific 10-puzzle moving average (as % difference from the moving average), then averaging this measure for all puzzles in the sample by given constructor(s) yields a single value indicating "constructor difficulty" for GMS that is normalized both for puzzle difficulty and improvement in baseline solve performance over time. **Figure 5** shows heatmapping of GMS performance against the 115 construtor(s) contributing >=5 puzzles over the sample period (encompassing 55% of all puzzles).
+Eighty-one percent of puzzles were created by either solo constructors or constructor teams contributing more than one puzzle over the sample period. This preponderance of repeat constructors affords the opportunity to evaluate which constructors the GMS struggles against and which they tend to do well against. Some constructors indeed specialize in puzzles for one or several days of the week. Measuring GMS performance per-puzzle relative to the day-of-week specific 10-puzzle moving average (as % difference from the moving average), then averaging this measure for all puzzles in the sample by given constructor(s) yields a single value indicating "constructor difficulty" for GMS that is normalized both for puzzle difficulty and improvement in baseline solve performance over time. **Figure 5** shows heatmapping of GMS performance against the 115 construtor(s) contributing >=5 puzzles over the sample period (encompassing 55% of all puzzles).
 
 **Figure 5. Heatmapping of GMS Performance Against Individual Constructor(s) (2018-2023)**
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/5945e2e1-2afd-45e9-b7c2-1c66b8a8c029)
 
 
