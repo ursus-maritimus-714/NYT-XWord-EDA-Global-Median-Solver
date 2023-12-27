@@ -27,10 +27,14 @@ The NYT crossword has been published since 1942, and many consider its modern er
 ## Results
 ### Global Median Solver (GMS) Performance Over Time
 
-The GMS has improved on each puzzle day over the 6-year sample timeframe. This trend is demonstrated clearly by charting of the puzzle day-specific 10-puzzle moving average over the sample period (**Figure 3**). It must be noted here, however, that because I did not have access to the raw solver data, I had to make the assumption that the GMS (putatively, a different solver for most puzzles in the sample) solved puzzles in more or less the sequence that they were published. The improvement trend can also be clearly seen in 
+The GMS has improved on each puzzle day over the 6-year sample timeframe. This trend is demonstrated clearly by charting of the puzzle day-specific 10-puzzle moving average over the sample period (**Figure 3**). It must be noted here, however, that because I did not have access to the raw solver data, I had to make the assumption that the GMS (putatively, a different solver for most puzzles in the sample) solved puzzles in more or less the sequence that they were published. The improvement trend can also be clearly seen in year-by-year (per puzzle day) violin plots with swarm plot overlays (**Figure 4**). 
 
-**Figure 3. Day-Specific 10-Puzzle Moving Average for the Global Median Solver (2018-2023)**
+**Figure 3. Day-Specific 10-Puzzle Moving Average of Global Median Solver Solve Times (2018-2023)**
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/10bff8b8-384d-4658-9af7-99e8d556b166)
+
+**Figure 4. Day-Specific Violin Plots With Swarm Plot Overlay of Global Median Solver Solve Times Per Year (2018-2023)**
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/0e166911-a1a3-48dd-aa9a-1148b5054881)
+*Violin plots show both the range (vertical extent) as well as distribution characteristics (width as it varies across the y-axis range) for each puzzle day per solve year. Black lines demarcate the quartiles. The swarm plot overlays show individual raw data points (puzzle solve times).* 
 
 
 
