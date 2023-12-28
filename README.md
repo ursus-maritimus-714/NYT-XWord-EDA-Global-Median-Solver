@@ -90,4 +90,5 @@ The second-to-last column/row per matrix shows the correlation between GMS solve
 
 **Figure 12. Fill-in-the Blank**
 
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/c0cae7b8-9adf-4d78-8ddd-21964a52c0df)
 *For 15x15 puzzles, there was a moderate negative correlation (r= -0.30) between GMST and # Fill-in-the-Blank (FITB) answers. Taken together, the feature distrubtion plot and the scatterplots indicate that most of this correlation is related to the fact that the easiest puzzles (note the rightward peak shift for Mon even relative to Tue in the distribution plot) employ a heavy dose of FITB answers. It will be interesting to see how important this feature is in the modeling phase to prediction of early week solve times specifically.*
