@@ -11,7 +11,8 @@ The NYT crossword has been published since 1942, and many consider its modern er
 **Figure 1** shows a principal components analysis (PCA) of >20 grid, clue and answer-pertinent features obtained from XWord Info. This analysis demonstrates that while puzzles from a give day do indeed aggregate with each other in "puzzle property space", they exist (apart from the much larger Sunday puzzles) they exist along a continuum. The overlapping distributions in GMS times shown in the density plot in **Figure 2** demonstrates a similar phenomenon; that puzzle day is strongly correlated to solve difficulty, but puzzle days of adjacent difficulty have overlapping solve time distributions along with the overlapping puzzle properties seen in **Figure 1**. Overall, GMS times are likely to be at least somewhat faster than the median of the overall solver population. The main reasons for this are that solvers must actually complete an individual puzzle to be included in the calculation yielding GMS for that puzzle, and the pool of solvers for which data are available are a self-selected subset of all solvers who are motivated to track and improve their performance. 
 
 **Figure 1. Principal Components Analysis of Select Grid, Clue and Answer-Pertinent Puzzle Features**                                                                  
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/cba4a2b1-881f-46b4-8b4d-683905b0a1e8)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/20f8207f-d956-4196-8ed7-32d832bf77ce)
+
 
 
 *The first 3 principal components accounted for ~48% of variance in the data set. All puzzles for the years 2018-2023 were included in this analysis.*  
