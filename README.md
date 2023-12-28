@@ -85,3 +85,9 @@ The second-to-last column/row per matrix shows the correlation between GMS solve
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/eb9b0bb7-2ff5-4eb1-83da-738db2774c17)
 *For 15x15 puzzles, there was a weak positive correlation (r= 0.16) between GMST and # Cheater Squares. Cheater Squares, by definition, are black squares than can be removed without affecting the overall word count of the grid. While these make construction easier (hence the name) it's not entirely apparent what their net effect on puzzle difficulty would be. Most of the individual puzzle days appear to show a weak negative correlation, and that would make sense in terms of more cheater squares = more black squares. However, the individual day regression lines (the all 15x15 regression line is driven by a few out-of-range points) appear to be driven by the small number of puzzles per puzzle day with a large number of cheater squares. It's possible that there's a non-linear effect here, with smaller (but non-zero) numbers of cheater squares allowing for difficult puzzle construction trickery, but beyond a certain threshold the sheer number of black squares has a counterbalancing effect.*
+
+#### *Grid Features*
+
+**Figure 12. Fill-in-the Blank**
+
+*For 15x15 puzzles, there was a moderate negative correlation (r= -0.30) between GMST and # Fill-in-the-Blank (FITB) answers. Taken together, the feature distrubtion plot and the scatterplots indicate that most of this correlation is related to the fact that the easiest puzzles (note the rightward peak shift for Mon even relative to Tue in the distribution plot) employ a heavy dose of FITB answers. It will be interesting to see how important this feature is in the modeling phase to prediction of early week solve times specifically.*
