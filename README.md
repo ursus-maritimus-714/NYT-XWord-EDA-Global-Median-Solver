@@ -54,9 +54,11 @@ The second-to-last column/row per matrix shows the correlation between GMS solve
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/39073fac-d10f-43ce-be65-cdcdba828448)
 
+**Figure 7. Regression Scatterplots for Number of Answers vs GMS Solve Times by Puzzle Size and Puzzle Day (and Density Plot of Number of Answers Distribution by Puzzle Day)**
 
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/5dbfa8ca-365a-4024-b9e1-426995d56d17)
 
-
+*For 15x15 puzzles, there was a strong negative correlation (r= -0.56) between GMST and # Answers. More answers typically means shorter answers (see correlation matrices above), and shorter answers tend to be be more common/easier answers. The density plot for this feature also demonstrates that the toughest puzzle days (Fri and Sat) tend to have the fewest answers.*
 
 
 
