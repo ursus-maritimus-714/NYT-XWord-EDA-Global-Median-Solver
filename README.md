@@ -100,4 +100,5 @@ The second-to-last column/row per matrix shows the correlation between GMS solve
 
 **Figure 14. Scrabble Illegal Answers**
 
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/ae0cf271-d130-4ed8-92e2-145a80505f87)
 *For 15x15 puzzles, there was a moderate positive correlation (r= 0.21) between GMST and # of Scrabble Illegal answers. # of Scrabble Illegal answers is another proprietary measure of XWord Info, that gets a answer rarity more directly than Scrabble Aveage does (though not as directly as the next two measures). Interestingly this moderate positive correlation is seen both across all 15x15 puzzles and within each puzzle day. Also interesting is that, apart from a Monday relative leftward shift in the FDP, the distributions for the other 15x15 puzzle days are highly overlapping. It might be surmised that the days with more open squares and longer average answers would have more substantially more answers that are not standard English vocabulary words. This finding suggests that more non-standard vocabulary alone may not signify puzzle difficulty.*  
