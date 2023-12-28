@@ -92,3 +92,9 @@ The second-to-last column/row per matrix shows the correlation between GMS solve
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/c0cae7b8-9adf-4d78-8ddd-21964a52c0df)
 *For 15x15 puzzles, there was a moderate negative correlation (r= -0.30) between GMST and # Fill-in-the-Blank (FITB) answers. Taken together, the feature distribution plot and the scatterplots indicate that most of this correlation is related to the fact that the easiest puzzles (note the rightward peak shift for Mon even relative to Tue in the FDP) employ a heavy dose of FITB answers. It will be interesting to see how important this feature is in the modeling phase to prediction of early week solve times specifically.*
+
+**Figure 13. Scrabble Average**
+
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/4d104dab-b515-4a11-98f6-038c1ba6ed68)
+*For 15x15 puzzles, there was a weak negative correlation (r= -0.03) between GMST and Scrabble Average. Scrabble Average is another proprietary XWord Info measure, in which each letter in the answer grid is assigned its equivalent value in Scrabble. Since tile values in Scrabble increase with rarity of letter frequency in English texts, it would make sense that a higher Scrabble average would be associated with *answers* of greater rarity. If anything, the opposite is true in practice here and as can be seen in the next few figures there are direct measures of answer rarity that do have strong correlations to solve times. So this one is a candidate to either be left out of predictive modeling entirely or to potentially be combined with other answer rarity/difficulty measures to generate a useful predictive feature.*
+
