@@ -69,7 +69,7 @@ The second-to-last column/row per matrix shows the correlation between GMS solve
 **Figure 8. Open Squares**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/72956055-a1b1-4940-9475-6e8359c629ed)
-*For 15x15 puzzles, there was a strong positive correlation (r= 0.59) between GMST and # Open Squares. # Open Squares is a propriety measure of XWord Info that counts white squares that are not bordered by black squares. More of these squares is strongly positively correlated to Average Answer Length, so it makes sense that more Open Squares is positively correlated with solve times. Interestingly, the correlation of this feature with solve time can be seen with at least moderate strength across all puzzle days. The density plot shows that the most difficult puzzle days (Fri and Sat) have a rightward shift in # Open Squares relative to the easier 15x15 puzzle days.* 
+*For 15x15 puzzles, there was a strong positive correlation (r= 0.59) between GMST and # Open Squares. # Open Squares is a proprietary measure of XWord Info that counts white squares that are not bordered by black squares. More of these squares is strongly positively correlated to Average Answer Length, so it makes sense that more Open Squares is positively correlated with solve times. Interestingly, the correlation of this feature with solve time can be seen with at least moderate strength across all puzzle days. The density plot shows that the most difficult puzzle days (Fri and Sat) have a rightward shift in # Open Squares relative to the easier 15x15 puzzle days.* 
 
 
 
