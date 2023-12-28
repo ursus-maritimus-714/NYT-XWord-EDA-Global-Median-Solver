@@ -55,7 +55,7 @@ The second-to-last column/row per matrix shows the correlation between GMS solve
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/39073fac-d10f-43ce-be65-cdcdba828448)
 
 
-#### Regression Scatterplots for Features vs Global Median Solver (GMS) Solve Times (and Feature Distributions by Puzzle Day) 
+#### Regression Scatterplots per Feature vs GMS Solve Times, and Feature Distribution Plots (FDP) by Puzzle Day 
 
 
 #### *Grid Features*
@@ -64,22 +64,22 @@ The second-to-last column/row per matrix shows the correlation between GMS solve
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/5dbfa8ca-365a-4024-b9e1-426995d56d17)
 
-*For 15x15 puzzles, there was a strong negative correlation (r= -0.56) between GMST and # Answers. More answers typically means shorter answers (see correlation matrices above), and shorter answers tend to be be more common/easier answers. This trend is apparent within several of the more difficult puzzle days, especially Sat. The density plot for this feature also demonstrates that the toughest puzzle days (Fri and Sat) tend to have the fewest answers.*
+*For 15x15 puzzles, there was a strong negative correlation (r= -0.56) between GMST and # Answers. More answers typically means shorter answers (see correlation matrices above), and shorter answers tend to be be more common/easier answers. This trend is apparent within several of the more difficult puzzle days, especially Sat. The FDP for this feature also demonstrates that the toughest puzzle days (Fri and Sat) tend to have the fewest answers.*
 
 **Figure 8. Open Squares**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/72956055-a1b1-4940-9475-6e8359c629ed)
-*For 15x15 puzzles, there was a strong positive correlation (r= 0.59) between GMST and # Open Squares. # Open Squares is a proprietary measure of XWord Info that counts white squares that are not bordered by black squares. More of these squares is strongly positively correlated to Average Answer Length, so it makes sense that more Open Squares is positively correlated with solve times. Interestingly, the correlation of this feature with solve time can be seen with at least moderate strength across all puzzle days. The density plot shows that the most difficult puzzle days (Fri and Sat) have a rightward shift in # Open Squares relative to the easier 15x15 puzzle days.* 
+*For 15x15 puzzles, there was a strong positive correlation (r= 0.59) between GMST and # Open Squares. # Open Squares is a proprietary measure of XWord Info that counts white squares that are not bordered by black squares. More of these squares is strongly positively correlated to Average Answer Length, so it makes sense that more Open Squares is positively correlated with solve times. Interestingly, the correlation of this feature with solve time can be seen with at least moderate strength across all puzzle days. The FDP shows that the most difficult puzzle days (Fri and Sat) have a rightward shift in # Open Squares relative to the easier 15x15 puzzle days.* 
 
 **Figure 9. Black Squares**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/d9599597-cc34-4f31-acb5-6d0d39fa18ee)
-*For 15x15 puzzles, there was a moderately strong negative correlation (r= -0.39) between GMST and # Black Squares. No surpise here, since this relationship is essentially the opposite of that between GMST and Open Squares (more black squares = shorter answers = easier answers). As with Open Squares, the trend is very apparent within each of the later week puzzle days and Fri and Sat are prominently shifted away from the earlier week puzzle days in the feature distribution plot.*
+*For 15x15 puzzles, there was a moderately strong negative correlation (r= -0.39) between GMST and # Black Squares. No surpise here, since this relationship is essentially the opposite of that between GMST and Open Squares (more black squares = shorter answers = easier answers). As with Open Squares, the trend is very apparent within each of the later week puzzle days and Fri and Sat are prominently shifted away from the earlier week puzzle days in the FDP.*
 
 **Figure 10. Average Answer Length**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/79fad870-1e75-4fe1-9900-daf2a85ca1af)
-*For 15x15 puzzles, there was a strong positive correlation (r= 0.67) between GMST and Average Word Length. This finding is consistent with the previous grid feature relationships with GMST, as longer answers means more multiword, relatively-rare answers. The trend is very apparent within each of the puzzle days, and perhaps moreso than any other puzzle feature the sequence in peaks of puzzle day distributions in the density plot tracks with that in mean solve time by puzzle day. Perhaps this is an indication that this feature will be highly predictive of solve time in the modeling phase*
+*For 15x15 puzzles, there was a strong positive correlation (r= 0.67) between GMST and Average Word Length. This finding is consistent with the previous grid feature relationships with GMST, as longer answers means more multiword, relatively-rare answers. The trend is very apparent within each of the puzzle days, and perhaps moreso than any other puzzle feature the sequence in peaks of puzzle day distributions in the FDP tracks with that in mean solve time by puzzle day. Perhaps this is an indication that this feature will be highly predictive of solve time in the modeling phase*
 
 **Figure 11. Cheater Squares**
 
@@ -91,4 +91,4 @@ The second-to-last column/row per matrix shows the correlation between GMS solve
 **Figure 12. Fill-in-the Blank**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/c0cae7b8-9adf-4d78-8ddd-21964a52c0df)
-*For 15x15 puzzles, there was a moderate negative correlation (r= -0.30) between GMST and # Fill-in-the-Blank (FITB) answers. Taken together, the feature distrubtion plot and the scatterplots indicate that most of this correlation is related to the fact that the easiest puzzles (note the rightward peak shift for Mon even relative to Tue in the distribution plot) employ a heavy dose of FITB answers. It will be interesting to see how important this feature is in the modeling phase to prediction of early week solve times specifically.*
+*For 15x15 puzzles, there was a moderate negative correlation (r= -0.30) between GMST and # Fill-in-the-Blank (FITB) answers. Taken together, the feature distribution plot and the scatterplots indicate that most of this correlation is related to the fact that the easiest puzzles (note the rightward peak shift for Mon even relative to Tue in the FDP) employ a heavy dose of FITB answers. It will be interesting to see how important this feature is in the modeling phase to prediction of early week solve times specifically.*
