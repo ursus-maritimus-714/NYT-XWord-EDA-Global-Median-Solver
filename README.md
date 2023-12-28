@@ -86,7 +86,7 @@ The second-to-last column/row per matrix shows the correlation between GMS solve
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/eb9b0bb7-2ff5-4eb1-83da-738db2774c17)
 *For 15x15 puzzles, there was a weak positive correlation (r= 0.16) between GMST and # Cheater Squares. Cheater Squares, by definition, are black squares than can be removed without affecting the overall word count of the grid. While these make construction easier (hence the name) it's not entirely apparent what their net effect on puzzle difficulty would be. Most of the individual puzzle days appear to show a weak negative correlation, and that would make sense in terms of more cheater squares = more black squares. However, the individual day regression lines (the all 15x15 regression line is driven by a few out-of-range points) appear to be driven by the small number of puzzles per puzzle day with a large number of cheater squares. It's possible that there's a non-linear effect here, with smaller (but non-zero) numbers of cheater squares allowing for difficult puzzle construction trickery, but beyond a certain threshold the sheer number of black squares has a counterbalancing effect.*
 
-#### *Grid Features*
+#### *Answer Features*
 
 **Figure 12. Fill-in-the Blank**
 
@@ -102,3 +102,5 @@ The second-to-last column/row per matrix shows the correlation between GMS solve
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/ae0cf271-d130-4ed8-92e2-145a80505f87)
 *For 15x15 puzzles, there was a moderate positive correlation (r= 0.21) between GMST and # of Scrabble Illegal answers. # of Scrabble Illegal answers is another proprietary measure of XWord Info, that gets a answer rarity more directly than Scrabble Aveage does (though not as directly as the next two measures). Interestingly this moderate positive correlation is seen both across all 15x15 puzzles and within each puzzle day. Also interesting is that, apart from a Monday relative leftward shift in the FDP, the distributions for the other 15x15 puzzle days are highly overlapping. It might be surmised that the days with more open squares and longer average answers would have more substantially more answers that are not standard English vocabulary words. This finding suggests that more non-standard vocabulary alone may not signify puzzle difficulty.*  
+
+**Figure 15. 
