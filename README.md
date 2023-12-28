@@ -42,7 +42,7 @@ Eighty-one percent of puzzles were created by either solo constructors or constr
 **Figure 5. Heatmapping of GMS Performance Against Individual Constructor(s) (2018-2023)**
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/5945e2e1-2afd-45e9-b7c2-1c66b8a8c029)
 
-### Correlations of Puzzle-Specific Features, and Past Solver Performance, to GMS Solve Performance
+### Correlations of GMS Performance to Puzzle-Specific Features and Past Performance
 
 Numerous potentially interesting features pertaining to puzzle grids an answers were obtained from XWord Info across the 6-year sample. Features showing strong correlation to GMS solve performance become strong candidates as input features for predictive modeling, in current forms and/or when combined in novel ways with other existing features. **Figure 6** shows correlation heatmapping separately for 15x15 puzzles (Mon-Sat) and 21x21 puzzles (Sun). The Pearson correlation coefficient (PCC) captures linear correlation strength between a given feature and solve times (top row and leftmost column of correlation matrix; red indicates a strong positive correlation and green a strong negative correlation). See **Supplementary Figure 1** for breakdown by individual puzzle days for the 15x15 puzzles. As can also be seen in these correlation matrix figures, a number of grid and/or answer-specific features correlated strongly with each other. For example, 'Mean Answer Length' and 'Freshness Factor' showed a strong negative correlation. This relationship makes intuitive sense because 'Freshness Factor' is a measure of aggregate answer rarity for a given puzzle, and longer answers have a higher likelihood of being uncommon than shorter ones. 
 
@@ -54,11 +54,17 @@ The second-to-last column/row per matrix shows the correlation between GMS solve
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/39073fac-d10f-43ce-be65-cdcdba828448)
 
-**Figure 7. Regression Scatterplots for Number of Answers vs GMS Solve Times by Puzzle Size and Puzzle Day (and Density Plot of Number of Answers Distribution by Puzzle Day)**
+
+#### Regression Scatterplots for Features vs Global Median Solver (GMS) Solve Times (and Feature Distributions by Puzzle Day) 
+
+
+#### *Grid Features*
+
+**Figure 7. Number of Answers**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/5dbfa8ca-365a-4024-b9e1-426995d56d17)
 
-*For 15x15 puzzles, there was a strong negative correlation (r= -0.56) between GMST and # Answers. More answers typically means shorter answers (see correlation matrices above), and shorter answers tend to be be more common/easier answers. The density plot for this feature also demonstrates that the toughest puzzle days (Fri and Sat) tend to have the fewest answers.*
+*For 15x15 puzzles, there was a strong negative correlation (r= -0.56) between GMST and # Answers. More answers typically means shorter answers (see correlation matrices above), and shorter answers tend to be be more common/easier answers. This trend is apparent within several of the more difficult puzzle days, especially Sat. The density plot for this feature also demonstrates that the toughest puzzle days (Fri and Sat) tend to have the fewest answers.*
 
 
 
