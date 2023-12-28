@@ -51,6 +51,7 @@ The second-to-last column/row per matrix shows the correlation between GMS solve
 **Figure 7** through **Figure N** are companion figures to the correlation heatmapping, and show across all 15x15 puzzle days (black) and by-puzzle-day (colored) scatter plots of features of interest vs raw solve times at the level of individual puzzles (with trend lines indicating aggregate correlation strength). Per feature, a density plot is included to show puzzle day-specific trends in its distribution. A number of features with strong correlations to GMS solve time can be seen here to covary with puzzle day. Subsequent predictive modeling outputs will indicate the relative importance of each of these features to puzzle difficulty.
 
 **Figure 6. Correlation Heatmapping of GMS Individual Puzzle Performance vs Grid, Answer and Past-Performance Features**
+
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/39073fac-d10f-43ce-be65-cdcdba828448)
 
 
