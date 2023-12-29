@@ -76,7 +76,7 @@ The second-to-last column/row per matrix shows the correlation between GMST acro
 
 **Figure 9. Number of Black Squares**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/1555aecf-2327-40ea-909c-ccc4a24e3798)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/cc44b2d2-fac9-41d7-a522-2bdcaa98bc13)
 *For 15x15 puzzles, there was a moderately strong negative correlation (r= -0.39) between GMST and # Black Squares. No surpise here, since this relationship is essentially the opposite of that between GMST and Open Squares (more black squares = shorter answers = easier answers). As with Open Squares the trend was very apparent in the FDP within each of the later week puzzle days, and Fri and Sat were prominently shifted away from the earlier week puzzle days.*
 
 **Figure 10. Average Answer Length**
