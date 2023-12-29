@@ -29,7 +29,7 @@ One contextual notes about the GMS is worth mention upfront. Though Matt uses th
 ## Results
 ### Global Median Solver (GMS) Performance Over Time
 
-The GMS solve time (GMST) improved on each puzzle day over the 6-year sample timeframe. This trend is demonstrated clearly by charting of the puzzle day-specific 10-puzzle moving average over the sample period (**Figure 3**). It must be noted here, however, that because I did not have access to the raw solver data, I had to make the assumption that the GMS (putatively, a different solver for most puzzles in the sample) solved puzzles in more or less the sequence that they were published. The improvement trend can also be clearly seen in year-by-year (per puzzle day) violin plots with swarm plot overlays (**Figure 4**). 
+The GMS solve time (GMST) improved on each puzzle day over the 6-year sample timeframe, which is demonstrated clearly by puzzle day-specific plotting of the 10-puzzle moving average across this period (**Figure 3**). It must be noted here, however, that because I did not have access to the raw solver data, I had to make the assumption that the GMS (putatively, a different solver for most or all puzzles in the sample) solved puzzles in approximately the same sequence in which they were published. The improvement trend can also be clearly seen in year-by-year (per puzzle day) violin plots with swarm plot overlays (**Figure 4**). 
 
 **Figure 3. Day-of-Week Specific 10-Puzzle Moving Average of GMSTs (2018-2023)**
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/e9e634e9-5f61-4dfc-b443-85f5a4da39be)
