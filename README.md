@@ -10,7 +10,7 @@ The NYT crossword has been published since 1942, and many consider its modern er
 
 **Figure 1** shows dimensionality reduction via Principal Component Analysis (PCA) of 21 grid, clue and answer-pertinent features obtained from XWord Info. This analysis demonstrates that, while puzzles from a given day do indeed aggregate with each other in "puzzle property space", they exist along a continuum (Sunday is separated by PCA1, no doubt in some relation to the larger grid size). The overlapping distributions in GMSTs shown in the solve time density plot in **Figure 2** shows a similar phenomenon; namely that while solve difficulty increases as the week progresses, puzzle days of adjacent difficulty have substantially overlapping GMS solve time distributions. 
 
-One contextual notes about the GMS is worth mention upfront. Though Matt uses the word "Global" it is highly likely that the sample from which the GMST is pulled per puzzle skews faster than the true population sample. The main reasons for this are likely that the sample does not contain those who fail to complete a given puzzle (a % that likely increases throuh the week), and that the sample contains only solvers motivated enough by the prospect of improvement to track their progress. Bear this is mind, possibly as a way to be gentle on yourself, if comparing your own performance to that of the GMS. 
+One contextual notes about the GMS is worth mention upfront. Though Matt uses, and I adopt here, the word "Global" it is highly likely that the sample from which the GMST is pulled per puzzle skews faster than the true population sample. The main reasons for this are likely that the sample does not contain those who fail to complete a given puzzle (a % that likely increases throuh the week), and that the sample contains only solvers motivated enough by the prospect of improvement to track their progress. Bear this is mind, possibly as a way to be gentle on yourself, if comparing your own performance to that of the GMS. 
 
 **Figure 1. PCA of Select Grid, Clue and Answer-Pertinent Puzzle Features**                                                                  
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/e3dd8622-0d4e-445f-88d1-ecd5eb8347f0)
@@ -20,11 +20,13 @@ One contextual notes about the GMS is worth mention upfront. Though Matt uses th
 
 
 **Figure 2. Distribution of GMSTs by Puzzle Day**                   
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/41449f0d-4aee-475a-b126-6565d1c12724)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/874b0c3b-4c97-4fc5-b8ef-3d3c6ee314e4)
 
 
 
-*Note that for other than the "easy" days (Mon and Tue), distributions of GMSTs were quite broad. Wed and Sat puzzles in particular had a quasi-bimodal distribution of solve times, supporting the notion that there are "easy" and "hard" puzzle pools/constructors even for specific days. All puzzles for the years 2020-2023 were included in this analysis (a more restricted time range was employed here since, as will be seen in the first section of the results, the GMS has improved a great deal since the beginning of the sample (Jan. 1, 2018).*  
+
+
+*Note that distributions of GMSTs in the sample period broadened out as the week progressed. In addition, Sat puzzles had a nearly bimodal distribution of solve times, suggesting that there's a pool of "too hard" puzzles (taking the GMS as long as the median Sun puzzle to solve) that more than occasionally make it to publication. All puzzles for 2020-2023 were included in this analysis (to control somewhat for the steep improvement curve of the GMS in 2018-2019-see first section of results).*  
 
 ## Results
 ### Global Median Solver (GMS) Performance Over Time
