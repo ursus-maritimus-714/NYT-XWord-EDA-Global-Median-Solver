@@ -82,7 +82,7 @@ The second-to-last column/row per matrix shows the correlation between GMST acro
 **Figure 10. Average Answer Length**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/80cbf9b0-a8e1-447b-8f56-3e98360d8e30)
-*For 15x15 puzzles, there was a strong positive correlation (r= 0.67) between GMST and Average Word Length. This finding is consistent with other grid feature relationships with GMST, as longer answers means more multiword and relatively-rare answers (see correlation matrices above and Figs. 14-16). This correlation was very apparent within each of the puzzle days, and perhaps moreso than any other puzzle feature, the sequence in peaks of puzzle day distributions in the FDP tracked with that in mean GMST by puzzle day. Perhaps this is an indication that this feature will be highly predictive of solve time in the modeling phase??*
+*For 15x15 puzzles, there was a strong positive correlation (r= 0.67) between GMST and Average Answer Length. This finding was consistent with other grid feature relationships with GMST, as longer answers means more multiword and relatively-rare answers (see correlation matrices above and Figs. 14-16). This correlation was very apparent within each of the puzzle days, and perhaps moreso than any other puzzle feature, the sequence in peaks of puzzle day distributions in the FDP tracked with that in mean GMST by puzzle day. Perhaps this is an indication that this feature will be highly predictive of solve time in the modeling phase??*
 
 **Figure 11. Cheater Squares**
 
@@ -91,7 +91,7 @@ The second-to-last column/row per matrix shows the correlation between GMST acro
 
 #### *Answer Features*
 
-**Figure 12. Fill-in-the Blank**
+**Figure 12. Fill-in-the-Blank**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/585982a9-c047-4dc7-8c5a-dd306baa78e3)
 *For 15x15 puzzles, there was a moderate negative correlation (r= -0.30) between GMST and # Fill-in-the-Blank (FITB) answers. Taken together, the FDP and the scatterplots indicate that most of this correlation was related to the fact that the easiest puzzles (note the rightward FDP peak shift for Mon, even relative to Tue) employed a heavy dose of FITB answers. It will be interesting to see how important this feature is in the modeling phase to prediction of early week solve times, specifically.*
