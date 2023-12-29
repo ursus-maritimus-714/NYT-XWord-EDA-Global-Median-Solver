@@ -113,3 +113,10 @@ The second-to-last column/row per matrix shows the correlation between GMS solve
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/2e2cd198-8b8a-4cba-897d-ac3b8002a034)
 *For 15x15 puzzles, there was a strong positive correlation (r= 0.67) between GMST and Freshness Factor. Freshness Factor is yet another, and very possibly the most useful for prediction, proprietary XWord Info measure that assesses the aggregate relative novelty of all answers in a given crossword puzzle as compared to those in all other crossword puzzles in the NYT archive. The much stronger correlation to GMS solve times than # Unique Answers suggests that there's much to be gained by taking a graded, as opposed to all-or-none, approach in assessing answer rarity. As with Average Answer Length, it can be seen in the FDP that puzzle days peak in this measure in close concordance with the per-day sequence for solve times (interesting little second hump for Mon close to the Tue peak, however)* 
+
+#### *Past Performance Features*
+
+**Figure 17. GMS Adjusted Recent Performance**
+
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/f49a0c54-0582-4562-8f23-285dd9348403)
+*For 15x15 puzzles, there was a very strong positive correlation (r= 0.84) between GMST and GMS Adjusted Recent Performance (GMS-ARP). To obtain GMS-ARP for a given puzzle the 10 most recent *prior* puzzles from the same puzzle day were averaged after first being decay weighted (10 for the most recent prior puzzle, 9 for the one before that and so on down to a weight of 1 for the 10th prior puzzle). Put directly, when accounting for puzzle day, recent past performance is more strongly correlated to performance on the next puzzle than the specific characteristics of that puzzle. It's highly likely (but not certain) that this feature will also have higher predictive power than puzzle-specific features in the modeling stage.*
