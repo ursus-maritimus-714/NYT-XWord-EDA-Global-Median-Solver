@@ -67,7 +67,7 @@ The second-to-last column/row per matrix shows the correlation between GMST acro
 **Figure 7. Number of Answers**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/21f0bc4b-fb7f-4fc2-8b79-458db8b440eb)
-*For 15x15 puzzles, there was a strong negative correlation (r= -0.56) between GMST and # Answers. More answers typically meant shorter answers (see correlation matrices above), and shorter answers tended to be be more common/easier answers (see Average Answer Length and Freshness Factor analyses below). The correlation strength, and even its directionality, vary across puzzle days. However, the FDP for this feature shows that the toughest puzzle days (Fri and Sat) tended to have the fewest answers (and the Sat trend mirrors the overall 15x15 trend).*
+*For 15x15 puzzles, there was a strong negative correlation (r= -0.56) between GMST and # Answers. More answers typically meant shorter answers (see correlation matrices above), and shorter answers tended to be be more common/easier answers (see 'Average Answer Length' and 'Freshness Factor' analyses below). The correlation strength, and even its directionality, vary across puzzle days. However, the FDP for this feature shows that the toughest puzzle days (Fri and Sat) tended to have the fewest answers (and the Sat trend mirrors the overall 15x15 trend).*
 
 **Figure 8. Number of Open Squares**
 
