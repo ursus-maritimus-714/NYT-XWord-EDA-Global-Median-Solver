@@ -36,7 +36,7 @@ The GMS solve time (GMST) improved on each puzzle day over the 6-year sample tim
 
 
 **Figure 4. Day-of-Week Specific Violin Plots With Swarm Plot Overlay of GMSTs, Per Year (2018-2023)**
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/c958e19f-2828-4449-ac56-1f74b6ca8e43)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/55ca2adf-7cc4-4346-8827-de6966c9bb11)
 *Violin plots show both the range (vertical extent) as well as distribution characteristics (width as it varies across the y-axis range) for each puzzle day, per year. Black lines demarcate the quartiles. The swarm plot overlays show individual data points (puzzle raw solve times). Note the reduction in y-axis range maximum from the first row to the second when comparing solve times across the entire sample period.* 
 
 ### GMS Performance By Puzzle Constructor(s)
