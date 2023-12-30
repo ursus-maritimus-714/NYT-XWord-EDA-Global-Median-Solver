@@ -131,9 +131,10 @@ The second-to-last column/row per matrix shows the correlation between GMST acro
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/afe4f398-1ba1-4973-b1a1-456d98aa5091)
 *For 15x15 puzzles, there was a moderate positive correlation (r= 0.20) between GMS solve time and GMS Past Performance Against Constructor(s). This correlation (see text above Fig. 5 for description of the Constructor metric) was seen across all puzzle days in roughly the same strength. This result provides at least some optimism that past performance against given constructor(s) will have predictive power above and beyond the features associated with a given puzzle; ie; that knowledge of Constructor(s) will contain a je ne sais quoi that may be hard to capture via reductionism. Interestingly, the correlation was the weakest by a considerable amount on Mon (0.16), which may attest to the "generic" nature of that day's puzzle.*
 
+
 # Supplementary Figures
 
-**Supplementary Figure 1. Correlation Heatmapping of GMS Individual Puzzle Performance vs Grid, Answer and Past-Performance Features By Puzzle Day (15x15)**
+**Supplementary Figure 1. Correlation Heatmapping of GMS Individual Puzzle Performance vs Grid, Answer and Past-Performance Features By Puzzle Day (15x15 Puzzle Days)**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/3470636d-d701-412e-a803-b0cd4bb6ae9c)
 
