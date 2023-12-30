@@ -59,7 +59,7 @@ The second-to-last column/row per matrix shows the correlation between GMST acro
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/39073fac-d10f-43ce-be65-cdcdba828448)
 
 
-#### Regression Scatterplots for Individual Features vs GMSTs with Associated Feature Distribution Density Plots (FDPs)
+#### Regression Scatterplots for Individual Features vs GMSTs, with Associated Feature Distribution Density Plots (FDPs)
 
 
 #### *Grid Features*
