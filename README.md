@@ -67,7 +67,7 @@ The second-to-last column/row per matrix shows the correlation between GMST acro
 **Figure 7. Number of Answers**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/21f0bc4b-fb7f-4fc2-8b79-458db8b440eb)
-*For 15x15 puzzles, there was a strong negative correlation (r= -0.56) between GMST and # Answers. More answers typically meant shorter answers (see correlation matrices above), and shorter answers tended to be be more common/easier answers (see 'Average Answer Length' and 'Freshness Factor' analyses below). The correlation strength, and even its directionality, vary across puzzle days. However, the FDP for this feature shows that the toughest puzzle days (Fri and Sat) tended to have the fewest answers (and the Sat trend mirrors the overall 15x15 trend).*
+*For 15x15 puzzles, there was a strong negative correlation (r= -0.56) between GMST and # Answers. More answers typically meant shorter answers (see correlation matrices above), and shorter answers tended to be be more common/easier answers (see Average Answer Length and Freshness Factor analyses below). The correlation strength, and even its directionality, varied across puzzle days. However, the FDP for this feature shows that the toughest puzzle days (Fri and Sat) tended to have the fewest answers (and the Sat trend mirrored the overall 15x15 trend).*
 
 **Figure 8. Number of Open Squares**
 
@@ -77,7 +77,7 @@ The second-to-last column/row per matrix shows the correlation between GMST acro
 **Figure 9. Number of Black Squares**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/cc44b2d2-fac9-41d7-a522-2bdcaa98bc13)
-*For 15x15 puzzles, there was a moderately strong negative correlation (r= -0.39) between GMST and # Black Squares. No surpise here, since this relationship is essentially the opposite of that between GMST and Open Squares (more black squares = shorter answers = easier answers). As with Open Squares the trend was very apparent in the FDP within each of the later week puzzle days, and Fri and Sat were prominently shifted away from the earlier week puzzle days.*
+*For 15x15 puzzles, there was a moderately strong negative correlation (r= -0.39) between GMST and # Black Squares. No surpise here, since this relationship was essentially the opposite of that between GMST and Open Squares (more black squares = shorter answers = easier answers). As with Open Squares the trend was very apparent in the FDP within each of the later week puzzle days, and Fri and Sat were prominently shifted away from the earlier week puzzle days.*
 
 **Figure 10. Average Answer Length**
 
@@ -115,7 +115,7 @@ The second-to-last column/row per matrix shows the correlation between GMST acro
 **Figure 16. Freshness Factor**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/876063d8-dee3-4369-b5bb-693c68ecdc12)
-*For 15x15 puzzles, there was a strong positive correlation (r= 0.67) between GMST and Freshness Factor. Freshness Factor is yet another, and very possibly the most useful for prediction, proprietary XWord Info measure that assesses the aggregate relative novelty of all answers in a given crossword puzzle as compared to those in all other crossword puzzles in the NYT archive. The much stronger correlation to GMSTs as compared to that of # Unique Answers suggests that there's much to be gained by taking a graded, as opposed to all-or-none, approach in assessing answer rarity. As with Average Answer Length, it can be seen in the FDP that puzzle days peak in this measure in close concordance with the per-day sequence for solve times (interesting little second hump for Mon close to the Tue peak, however)* 
+*For 15x15 puzzles, there was a strong positive correlation (r= 0.67) between GMST and Freshness Factor. Freshness Factor is yet another, and very possibly the most useful for prediction, proprietary XWord Info measure that assesses the aggregate relative novelty of all answers in a given crossword puzzle as compared to those in all other crossword puzzles in the NYT archive. The much stronger correlation to GMSTs as compared to that of # Unique Answers suggests that there's much to be gained by taking a graded, as opposed to all-or-none, approach in assessing answer rarity. As with Average Answer Length, it can be seen in the FDP that puzzle days peaked in this measure in close concordance with the per-day sequence for solve times (interesting little second hump for Mon close to the Tue peak, however)* 
 
 #### *Past Performance Features*
 
@@ -124,7 +124,7 @@ The second-to-last column/row per matrix shows the correlation between GMST acro
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/158926a9-5829-4d27-a49e-18708598ffeb)
 *For 15x15 puzzles, there was a very strong positive correlation (r= 0.84) between GMST and GMS Adjusted Recent Performance (GMS-ARP). To obtain GMS-ARP for a given puzzle the 10 most recent *prior* puzzles from the same puzzle day were averaged after first being decay weighted (10 for the most recent prior puzzle, 9 for the one before that and so on down to a weight of 1 for the 10th prior puzzle). Recent past performance across all 15x15 puzzles by this measure was more strongly correlated to performance on the "next" puzzle than the specific characteristics of that puzzle.*
 
-*Very interestingly, correlation strengths for the early week 15x15 days (Mon=.54, Tue=.51, Wed=.45) were higher than those for the later week days (Thu=.36, Fri=.41, Sat=.38). This attests to the relative heterogeneity of later week puzzles, and the likely fact that the likelihood of a solver getting stuck in one particular spot for an extended peroof time goes way up. I have zero evidence for this, but I will further speculate as an experienced solver that Thu puzzles have the lowest correlation of all because they are the most heterogeneous of all puzzle days due to the varied gimmicks and tricks employed.*
+*Very interestingly, correlation strengths for the early week 15x15 days (Mon=.54, Tue=.51, Wed=.45) were higher than those for the later week days (Thu=.36, Fri=.41, Sat=.38). This attests to the relative heterogeneity of later week puzzles, and the likely fact that the likelihood of a solver getting stuck in one particular spot for an extended period of time goes way up. I have zero actual evidence for this, but I will further speculate as an experienced solver that Thu puzzles have the lowest correlation of all because they are the most heterogeneous of all puzzle days due to the varied gimmicks and tricks employed.*
 
 **Figure 18. Past Peformance Against Constructor(s)**
 
