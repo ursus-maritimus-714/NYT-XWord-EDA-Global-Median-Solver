@@ -84,14 +84,14 @@ The second-to-last column/row per matrix shows the correlation between GMST acro
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/80cbf9b0-a8e1-447b-8f56-3e98360d8e30)
 *For 15x15 puzzles, there was a strong positive correlation (r= 0.67) between GMST and Average Answer Length. This finding was consistent with other grid feature relationships with GMST, as longer answers means more multiword and relatively-rare answers (see correlation matrices above and Figs. 14-16). This correlation was very apparent within each of the puzzle days, and perhaps moreso than any other puzzle feature, the sequence in peaks of puzzle day distributions in the FDP tracked with that in mean GMST by puzzle day. Perhaps this is an indication that this feature will be highly predictive of solve time in the modeling phase??*
 
-**Figure 11. Cheater Squares**
+**Figure 11. Number of Cheater Squares**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/f0085fe5-f4fb-4a6f-98cd-62b894befe77)
 *For 15x15 puzzles, there was a weak positive correlation (r= 0.16) between GMST and # Cheater Squares. Cheater Squares, by definition, are black squares than can be removed without affecting the overall word count of the grid. These square make construction easier (hence the name), and it can be seen that large numbers of them (say, >10) almost always appear on the difficult puzzle days. Interestingly, within a given puzzle day, however, it's clear that puzzles with larger numbers of them tended to be easier for the GMS. So the seeming paradox between the overall 15x15 trend and the individual puzzle day trends is likely related to the competing effects of cheater squares allowing trickier constructions, but also reducing the number of answers and answer lengths overall. Incidentally, the reason they were only rarely seen in odd numbers is the only rarely-violated NYT requirement for grid symmetry.*
 
 #### *Answer Features*
 
-**Figure 12. Fill-in-the-Blank**
+**Figure 12. Number of Fill-in-the-Blank Answers**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/585982a9-c047-4dc7-8c5a-dd306baa78e3)
 *For 15x15 puzzles, there was a moderate negative correlation (r= -0.30) between GMST and # Fill-in-the-Blank (FITB) answers. Taken together, the FDP and the scatterplots indicate that most of this correlation was related to the fact that the easiest puzzles (note the rightward FDP peak shift for Mon, even relative to Tue) employed a heavy dose of FITB answers. It will be interesting to see how important this feature is in the modeling phase to prediction of early week solve times, specifically.*
@@ -101,12 +101,12 @@ The second-to-last column/row per matrix shows the correlation between GMST acro
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/f5fced88-58b1-4b10-8028-b5e3ef456dec)
 *For 15x15 puzzles, there was a weak negative correlation (r= -0.03) between GMST and Scrabble Average. Scrabble Average is another proprietary XWord Info measure, in which each letter in the answer grid is assigned its equivalent value in Scrabble. Since tile values in Scrabble increase with rarity of letter frequency in English texts, it would make sense that a higher Scrabble average would be associated with *answers* of greater rarity. If anything, the opposite was true in practice here and as can be seen in the next few figures there are direct measures of answer rarity that *do* have strong positive correlations to solve times. So this one is a candidate to either be left out of predictive modeling entirely or to be combined with other answer rarity/difficulty measures to generate a useful predictive feature.*
 
-**Figure 14. Scrabble Illegal Answers**
+**Figure 14. Number of Scrabble Illegal Answers**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/43739da0-4578-4004-8212-33d984719366)
 *For 15x15 puzzles, there was a moderate positive correlation (r= 0.21) between GMST and # Scrabble Illegal answers. # Scrabble Illegal answers is a proprietary measure of XWord Info that gets at answer rarity more directly than does Scrabble Average (though not as directly as the measures in Fig. 15 and Fig. 16). Interestingly this moderate positive correlation was seen both across all 15x15 puzzles and within each puzzle day. Also interesting is that, apart from a Mon relative leftward shift in the FDP, the distributions for the other 15x15 puzzle days were highly overlapping. I had assumed that the days with more open squares and longer average answers would also have substantially more answers that are not standard English vocabulary words. This finding suggests that more non-standard vocabulary *alone* may not signify or predict puzzle difficulty.*  
 
-**Figure 15. Unique Answers**
+**Figure 15. Number of Unique Answers**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/39bc5dbd-a68a-403e-a3b6-86c663c3c619)
 *For 15x15 puzzles, there was a moderately strong positive correlation (r= 0.39) between GMST and # Unique Answers. A Unique Answer is one that does not appear in any other NYT crossword puzzle in either Shortz or pre-Shortz eras (either before or after the puzzle release date). This is perhaps an overly stringent criterion to define answer rarity (see Fig. 16 for a graded approach to defining answer rarity). Nonetheless, the positive correlation was clearly apparent when considering all 15x15 puzzles together and also especially within the most challenging puzzle day (Sat). It is also clear in the FDP that # Unique Answers tended to increase as puzzle day difficulty increased.*
