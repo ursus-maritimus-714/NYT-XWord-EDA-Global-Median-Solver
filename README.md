@@ -51,10 +51,12 @@ GMS solve time (GMST) improved for each puzzle day over the 6-year sample timefr
 
 ### GMS Performance By Puzzle Constructor(s)
 
-Eighty-one percent of puzzles were created by either solo constructors or constructor teams contributing more than one puzzle over the sample period. This preponderance of repeat constructors afforded the opportunity to evaluate which constructors the GMS tended to struggle against and which they tended to do well against. Some constructors specialize in puzzles for one or several days of the week. Measuring GMS performance per-puzzle relative to the day-of-week specific 10-puzzle moving average (as % difference from the moving average; mean % diff from 10-p MA), then averaging this measure for all puzzles in the sample by given constructor(s), yields a single value indicating "constructor difficulty" for GMS that is normalized both for puzzle day and for GMS baseline solve performance improvement over time. **Figure 5** shows heatmapping of GMS performance against the 115 constructor(s) contributing >=5 puzzles over the sample period (encompassing 55% of all puzzles). Warmer colors (-%) indicate faster average solves against given constructor(s) than the mean for recent performance prior to a given solve, when also accounting for puzzle day.   
+Eighty-one percent of puzzles were created by either solo constructors or constructor teams contributing more than one puzzle over the sample period. This preponderance of repeat constructors afforded the opportunity to evaluate which constructors the GMS tended to struggle against and which they tended to do relatively well against. Some constructors specialize in puzzles for one or several days of the week. Measuring GMS performance per-puzzle relative to the day-of-week specific 10-puzzle moving average, then averaging this measure for all puzzles in the sample by given constructor(s), yields a single % value indicating "constructor difficulty" for the GMS that is normalized both for puzzle day and for GMS baseline solve performance improvement over time. **Figure 5** shows heatmapping of GMS performance against the 115 constructor(s) contributing >=5 puzzles over the sample period (55% of all puzzles). Warmer colors (-%) indicate that the GMS solves relatively fast against a given constructor when controlling for day-of-week difficulty and recent previous GMS performance; cooler colors (+%) indicate the opposite.   
 
 **Figure 5. Heatmapping of GMS Performance Against Individual Constructor(s)**
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/a9caf4ac-c73e-4332-9756-b304405933de)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/a169ef95-629b-4788-af76-248b8e0fcd3c)
+
+
 
 
 ### Correlations of GMS Performance to Puzzle-Specific Features and Past Performance
