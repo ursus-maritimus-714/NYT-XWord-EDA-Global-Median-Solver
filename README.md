@@ -61,7 +61,7 @@ Eighty-one percent of puzzles were created by either solo constructors or constr
 
 ### Correlations of GMS Performance to Puzzle-Specific Features and Past Performance
 
-Numerous potentially interesting features pertaining to puzzle grids, clues, and answers were obtained from XWord Info across the 6-year sample. Features showing strong correlation to GMS solve performance become strong candidates as input features for predictive modeling, in current forms and/or when combined in novel ways with other existing features. **Figure 6** shows correlation heatmapping separately for 15x15 puzzles (Mon-Sat) and 21x21 puzzles (Sun) for a subset of all measured features with distributions amenable to regression analysis. Numerous features not selected for this analysis might still be useful in predictive modeling but are either binary (e.g., puzzles with normal vs unusual symmetry) or pertain to a feature that is specific to only one or several puzzle days (e.g. Rebuses; see **Supplementary Figure 1**). The Pearson correlation coefficient (PCC) captures linear correlation strength between a given feature and solve times (top row and leftmost column of correlation matrix; red indicates a strong positive correlation and green a strong negative correlation). See **Supplementary Figure 2** for breakdown by individual puzzle days for the 15x15 puzzles. As can also be seen in these correlation matrix figures, a number of grid and/or answer-specific features correlated strongly with each other. For example, 'Mean Answer Length' and 'Freshness Factor' showed a strong negative correlation. This relationship makes intuitive sense because 'Freshness Factor' is a measure of aggregate answer rarity for a given puzzle, and longer answers have a higher likelihood of being uncommon than shorter ones. 
+Numerous potentially interesting features pertaining to puzzle grids, clues, and answers were obtained from XWord Info across the 6-year sample. Features showing strong correlation to GMS solve performance become strong candidates as input features for predictive modeling, in current forms and/or when combined in novel ways with other existing features. **Figure 6** shows correlation heatmapping separately for 15x15 puzzles (Mon-Sat) and 21x21 puzzles (Sun) for a subset of all measured features with distributions amenable to linear regression and correlation analysis. Numerous features not selected for this analysis might still be useful in predictive modeling but either have non-continuous distributions (e.g., 0 or 1 for puzzles with normal vs non-standard symmetry) or pertain to a feature that is largely specific to only one or several puzzle days (e.g. Rebuses, Circles, Shaded Squares; see **Supplementary Figures 1-3**). The Pearson correlation coefficient (PCC) captures linear correlation strength between a given feature and solve times (top row and leftmost column of correlation matrix; red indicates a strong positive correlation and green a strong negative correlation). See **Supplementary Figure 4** for breakdown by individual puzzle days for the 15x15 puzzles. As can also be seen in these correlation matrix figures, a number of grid and/or answer-specific features correlated strongly with each other. For example, 'Mean Answer Length' and 'Freshness Factor' showed a strong negative correlation. This relationship makes intuitive sense because 'Freshness Factor' is a measure of aggregate answer rarity for a given puzzle, and longer answers have a higher likelihood of being uncommon than shorter ones. 
 
 The second-to-last column/row per matrix shows the correlation between GMST across individual puzzles and a puzzle day-specific, time decay-weighted version of the 10-*prior* (to a given puzzle) puzzle moving average. For both 15x15 puzzles and 21x21 puzzles, this (positive) correlation was stronger than any other correlation to GMST. This finding generates a prediction that recent (relative to a puzzle date to be predicted) form per puzzle day will be more predictive of performance on a novel puzzle than is any grid or answer (or clue) feature. The last column/row per matrix shows the correlation between GMST and past performance against the constructor of that puzzle (see previous section for metric). While not as strongly positively correlated to GMST as day-specific past performance, this was still a fairly strong correlation for both 15x15 and 21x21 grid sizes, suggesting that constructor difficulty for the median solver tended to be "sticky" across puzzles.        
 
@@ -163,9 +163,22 @@ The second-to-last column/row per matrix shows the correlation between GMST acro
 
 # Supplementary Figures
 
-**Supplementary Figure 1. Scatterplots of Rebus Number vs Global Median Solver Solve Time (GMST) Per Invidiual Puzzle for Thursday and Sunday**
+**Supplementary Figure 1. Scatterplots of Rebus Number vs Global Median Solver Solve Time (GMST) By Puzzle Day**
 
-**Supplementary Figure 2. Correlation Heatmapping of GMS Individual Puzzle Performance vs Grid, Answer and Past-Performance Features By Puzzle Day (15x15 Puzzle Days)**
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/fa9a78cb-87df-4c34-86bd-5bace65ac243)
+*Only Sunday and Thursday had an appreciable '# Rebuses', which are squares that must be filled with more than one letter, number or symbol for a given puzzle to be solved. There was a modest positive correlation between '# Rebuses' for both of these puzzle days, though a caveat is that the very large number of 0 rebus puzzles makes these correlations hard to interpret (ie, these are not exactly continuous distributions). Correlation Strength by Puzzle Day (Pearson R): Sun: .30, Thu: .13.* 
+
+**Supplementary Figure 2. Scatterplots of Circle Number vs Global Median Solver Solve Time (GMST) By Puzzle Day**
+
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/b4bd8d57-a81a-4fb8-98fe-fff2649d9282)
+*Circles in squares are virtually non-existant in the tougher (Fri and Sat) puzzles. Their function is to reveal a puzzle theme, and in theory a solver can use this knowledge to "back in" to some full answers. Despite the apparent negative correlation for all 15x15 puzzles, the puzzle days with a reasonable '# Circles' mostly show weakly positive correlations. One could speculate here, but it's probably not worth the effort; but there's potential for a small enhancement to modeling on a day-specific basis.*
+
+**Supplementary Figure 3. Scatterplots of Shaded Square Number vs Global Median Solver Solve Time (GMST) By Puzzle Day**
+ 
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/c68966a2-d6f4-4a95-b975-1abf39a98e7a)
+*Shaded squares, like circles in squares, are virtually non-existant in the tougher (Fri and Sat) puzzles. Like with circles, their function is to reveal a puzzle theme and their presence may provide assistance to solvers on clues in which they are embedded. Though puzzles containing shaded squares are less common than those with circles, most puzzles days show weak negative correlations between this feature and GMST and it certainly does seem just on visual inspection that very few of these puzzles are in the tougher half of solve times per puzzle day. As with circles, it can't hurt to include his feature in first-pass modeling and there might be some puzzle day-specific accuracy improvements with its inclusion.* 
+
+**Supplementary Figure 4. Correlation Heatmapping of GMS Individual Puzzle Performance vs Grid, Answer and Past-Performance Features By Puzzle Day (15x15 Puzzle Days)**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/855dceb7-3287-4a95-b7d6-3224df6b3766)
 
@@ -173,6 +186,7 @@ The second-to-last column/row per matrix shows the correlation between GMST acro
 
 **Supplementary Table 1. Features Included in Puzzle Features Principal Component Analysis**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/00edd656-3c6c-4020-afb6-78c917cebb33)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/0ef75602-216c-4a0d-b84e-e32723f7f847)
+
 
 
