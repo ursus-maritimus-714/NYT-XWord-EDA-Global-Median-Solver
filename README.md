@@ -61,7 +61,7 @@ Eighty-one percent of puzzles were created by either solo constructors or constr
 
 ### Correlations of GMS Performance to Puzzle-Specific Features and Past Performance
 
-Numerous potentially interesting features pertaining to puzzle grids, clues, and answers were obtained from XWord Info across the 6-year sample. Features showing strong correlation to GMS solve performance become strong candidates as input features for predictive modeling, in current forms and/or when combined in novel ways with other existing features. **Figure 6** shows correlation heatmapping separately for 15x15 puzzles (Mon-Sat) and 21x21 puzzles (Sun). The Pearson correlation coefficient (PCC) captures linear correlation strength between a given feature and solve times (top row and leftmost column of correlation matrix; red indicates a strong positive correlation and green a strong negative correlation). See **Supplementary Figure 1** for breakdown by individual puzzle days for the 15x15 puzzles. As can also be seen in these correlation matrix figures, a number of grid and/or answer-specific features correlated strongly with each other. For example, 'Mean Answer Length' and 'Freshness Factor' showed a strong negative correlation. This relationship makes intuitive sense because 'Freshness Factor' is a measure of aggregate answer rarity for a given puzzle, and longer answers have a higher likelihood of being uncommon than shorter ones. 
+Numerous potentially interesting features pertaining to puzzle grids, clues, and answers were obtained from XWord Info across the 6-year sample. Features showing strong correlation to GMS solve performance become strong candidates as input features for predictive modeling, in current forms and/or when combined in novel ways with other existing features. **Figure 6** shows correlation heatmapping separately for 15x15 puzzles (Mon-Sat) and 21x21 puzzles (Sun) for a subset of all measured features with distributions amenable to regression analysis. Numerous features not selected for this analysis might still be useful in predictive modeling but are either binary (e.g., puzzles with normal vs unusual symmetry) or pertain to a feature that is specific to only one or several puzzle days (e.g. Rebuses; see **Supplementary Figure 1**). The Pearson correlation coefficient (PCC) captures linear correlation strength between a given feature and solve times (top row and leftmost column of correlation matrix; red indicates a strong positive correlation and green a strong negative correlation). See **Supplementary Figure 2** for breakdown by individual puzzle days for the 15x15 puzzles. As can also be seen in these correlation matrix figures, a number of grid and/or answer-specific features correlated strongly with each other. For example, 'Mean Answer Length' and 'Freshness Factor' showed a strong negative correlation. This relationship makes intuitive sense because 'Freshness Factor' is a measure of aggregate answer rarity for a given puzzle, and longer answers have a higher likelihood of being uncommon than shorter ones. 
 
 The second-to-last column/row per matrix shows the correlation between GMST across individual puzzles and a puzzle day-specific, time decay-weighted version of the 10-*prior* (to a given puzzle) puzzle moving average. For both 15x15 puzzles and 21x21 puzzles, this (positive) correlation was stronger than any other correlation to GMST. This finding generates a prediction that recent (relative to a puzzle date to be predicted) form per puzzle day will be more predictive of performance on a novel puzzle than is any grid or answer (or clue) feature. The last column/row per matrix shows the correlation between GMST and past performance against the constructor of that puzzle (see previous section for metric). While not as strongly positively correlated to GMST as day-specific past performance, this was still a fairly strong correlation for both 15x15 and 21x21 grid sizes, suggesting that constructor difficulty for the median solver tended to be "sticky" across puzzles.        
 
@@ -75,7 +75,7 @@ The second-to-last column/row per matrix shows the correlation between GMST acro
 
 
 
-#### Regression Scatterplots for Individual Features vs GMSTs, with Associated Feature Distribution Density Plots (FDPs)
+#### Scatterplots for Individual Features vs GMSTs, with Associated Feature Distribution Density Plots (FDPs)
 
 
 #### *Grid Features*
@@ -163,7 +163,9 @@ The second-to-last column/row per matrix shows the correlation between GMST acro
 
 # Supplementary Figures
 
-**Supplementary Figure 1. Correlation Heatmapping of GMS Individual Puzzle Performance vs Grid, Answer and Past-Performance Features By Puzzle Day (15x15 Puzzle Days)**
+**Supplementary Figure 1. Scatterplots of Rebus Number vs Global Median Solver Solve Time (GMST) Per Invidiual Puzzle for Thursday and Sunday**
+
+**Supplementary Figure 2. Correlation Heatmapping of GMS Individual Puzzle Performance vs Grid, Answer and Past-Performance Features By Puzzle Day (15x15 Puzzle Days)**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/855dceb7-3287-4a95-b7d6-3224df6b3766)
 
