@@ -147,21 +147,25 @@ The second-to-last column/row per matrix shows the correlation between GMST acro
 
 *Very interestingly, correlation strengths for the early week 15x15 days were higher than those for the later week days (see below in caption). This attests to the relative heterogeneity of later week puzzles, and the likely fact that the likelihood of a solver getting stuck in one particular spot for an extended period of time goes way up. I have zero actual evidence for this, but I will further speculate as an experienced solver that Thu puzzles have the lowest correlation of all because they are the most heterogeneous of all puzzle days due to the varied gimmicks and tricks employed. See Supp. Fig. 1 for a visually clear depiction of this by-puzzle day trend (top row of each matrix, second-from-left square gets less red across days)*
 
-*Correlation Strength by Puzzle Day (Pearson R)*:
-Sun: .62, Mon: .54, Tue: .51, Wed: .45, Thu: .37, Fri: .40, Sat: .39
+*Correlation Strength by Puzzle Day (Pearson R):*
+
+*Sun: .62, Mon: .54, Tue: .51, Wed: .45, Thu: .37, Fri: .40, Sat: .39*
 
 
 **Figure 19. Past Peformance Against Constructor(s)**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/afe4f398-1ba1-4973-b1a1-456d98aa5091)
-*For 15x15 puzzles, there was a moderate positive correlation (r= 0.20) between GMS solve time and GMS Past Performance Against Constructor(s). This correlation (see text above Fig. 5 for description of the Constructor metric) was seen across all puzzle days in roughly the same strength. This result provides at least some optimism that past performance against given constructor(s) will have predictive power above and beyond the features associated with a given puzzle; ie; that knowledge of Constructor(s) will contain a je ne sais quoi that may be hard to capture via reductionism. Interestingly, the correlation was the weakest by a considerable amount on Mon (0.16), which may attest to the "generic" nature of that day's puzzle.*
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/78e7f3f5-efae-4b79-b548-2a5ec684da86)
+*For 15x15 puzzles, there was a moderate positive correlation (r= 0.20) between GMS solve time and 'GMS Past Performance Against Constructor(s)'. This correlation (see text above Fig. 5 for description of the Constructor metric) was seen across all puzzle days in roughly the same strength. This result provides at least some optimism that this feature will have predictive power above and beyond the features associated with a given puzzle; ie, that knowledge of Constructor(s) will contain a je ne sais quoi that may be hard to capture via reductionism. Interestingly, the correlation was the weakest by a considerable amount on Mon (0.16), which may attest to the "generic" nature of that day's puzzle.*
 
 *Correlation Strength by Puzzle Day (Pearson R)*:
-Sun: .26, Mon: .16, Tue: .32, Wed: .31, Thu: .22, Fri: .28, Sat: .24
+
+*Sun: .26, Mon: .16, Tue: .32, Wed: .31, Thu: .22, Fri: .28, Sat: .24*
 
 # Supplementary Figures
 
 **Supplementary Figure 1. Correlation Heatmapping of GMS Individual Puzzle Performance vs Grid, Answer and Past-Performance Features By Puzzle Day (15x15 Puzzle Days)**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/3470636d-d701-412e-a803-b0cd4bb6ae9c)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/855dceb7-3287-4a95-b7d6-3224df6b3766)
+
+
 
