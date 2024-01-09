@@ -44,7 +44,7 @@ GMS solve time (GMST) improved for each puzzle day over the 6-year sample timefr
 
 
 
-*Violin plots show both the range (vertical extent) as well as distribution characteristics (width as it varies across the y-axis range) for each puzzle day, per year. Black lines demarcate the quartiles. The swarm plot overlays show individual data points (puzzle raw solve times). Note the reduction in y-axis range maximum from the first row to the second when comparing solve times across the entire sample period.* 
+*Violin plots show both the range (vertical extent) as well as distribution characteristics (varying width across the y-axis range) for each puzzle day, per year. Black lines demarcate the quartiles. The swarm plot overlays show individual data points (puzzle raw solve times). Note the reduction in y-axis range maximum from the first row to the second when comparing solve times across the entire sample period.* 
 
 *Median[IQR] GMST(m), per puzzle day, per select year (2018 [N=365], 2021 [N=365], 2023(4) [N=373]):* 
 
