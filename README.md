@@ -79,7 +79,8 @@ The rightmost column/bottom row per matrix shows the correlation between GMST fo
 
 **Figure 7. Correlation Heatmapping of GMS Individual Puzzle Performance vs Grid, Clue, Answer and Past Performance-Related Features**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/1af242c7-403c-4508-ace3-2bda04a225ee)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/575a38b7-8b99-4e43-9382-7d37fac223d8)
+
 
 
 
