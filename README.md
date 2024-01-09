@@ -63,8 +63,9 @@ Eighty-one percent of puzzles were created by either solo constructors or constr
 **Figure 5. Heatmapping of GMS Performance Against Individual Constructor(s)**
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/bc3c11e5-9f62-4d10-a46d-d4988d6f9ed4)
 
-**Figure 6. Scatterplots of GMS Puzzle-Day and Recent Form-Normalized Past Performance Against Individual Constructor(s) Versus GMS Next Individual Puzzle Performance Against the Same Constructor(s)**  
+**Figure 6. Scatterplots of GMS Past Performance Against Individual Constructor(s) Versus GMS Next Individual Puzzle Performance Against the Same Constructor(s)**  
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/5d490bfe-a456-41af-8c1c-adf713cc1fff)
+*The past performance measure on the x-axis is normalized to control for variable puzzle day inclusion in prior puzzles by given constructor(s). The individual solve time measure on the y-axis is normalized to control for recent puzzle day-specific GMS performance.* 
 *Pearson Correlation Coefficient (PCC): >=1 previous puzzles per constructor(s): .28, >=4 previous puzzles per constructor(s): .32*
 
 
