@@ -185,7 +185,8 @@ The rightmost column/bottom row per matrix shows the correlation between GMST fo
 
 **Supplementary Figure 4. Correlation Heatmapping of GMS Individual Puzzle Performance vs Grid, Answer and Past-Performance Features By Puzzle Day (15x15 Puzzle Days)**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/855dceb7-3287-4a95-b7d6-3224df6b3766)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/393a31e4-7f41-4968-a9dc-91b91d50e9ce)
+
 
 # Supplementary Tables
 
