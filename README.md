@@ -16,7 +16,7 @@ One additional contextual note about the GMS is worth mention upfront. Though Ma
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/05ee7318-cc18-4802-8b07-267063ca1332)
 
 
-*The first 3 principal components accounted for ~48% of total variance. All puzzles from Jan. 1 2018- Jan. 10 2024 were included in this analysis.*  
+*The first 3 principal components accounted for 47.6% of total variance. All puzzles from Jan. 1 2018- Jan. 10 2024 were included in this analysis.*  
 
 
 
