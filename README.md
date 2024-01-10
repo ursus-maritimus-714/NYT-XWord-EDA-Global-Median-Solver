@@ -64,10 +64,11 @@ Eighty-one percent of puzzles in the sample period were created by either solo c
 **Figure 6** looks at the correlation between past GMS mean performance against a given constructor(s) (x-axis) and performance on the next (by puzzle issue date) individual puzzle (y-axis) in the overall sample. Both measures are normalized such that both puzzle day and recent GMS solving form at the time of an individual solve are controlled for, thereby isolating the constructor(s) relationship to solve time. The left panel shows this relationship for all individual puzzles with constructor(s) contributing >=1 prior puzzle in the sample, while the right panel ups the threshold to >=5 puzzles (effectively filtering down to only a subset of "later" puzzles by constructor(s) included in Figure 5). There was a moderate positive correlation regardless of threshold (slightly higher for puzzles by constructor(s) with more prior puzzles, as might be expected just based on noisiness reduction with larger samples), which raises the potential for past constructor(s) features to contribute to improvement of predictive model accuracy.      
 
 **Figure 5. Heatmapping of GMS Performance Against Individual Constructor(s)**
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/bc3c11e5-9f62-4d10-a46d-d4988d6f9ed4)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/7a514416-e3f7-4adb-b2b0-2f2a721ab044)
+
 
 **Figure 6. Scatterplots of GMS Past Performance Against Individual Constructor(s) Versus GMS Next Individual Puzzle Performance Against the Same Constructor(s)**  
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/5d490bfe-a456-41af-8c1c-adf713cc1fff)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/1a67f70e-3263-46b7-aa4c-13530a14d23e)
 *The past performance measure on the x-axis is normalized to control for variable puzzle day mix for prior puzzles by given constructor(s). The individual solve time measure on the y-axis is normalized to control for recent puzzle day-specific GMS performance.* 
 *Pearson correlation coefficient (r): >=1 previous puzzles per constructor(s): .28, >=4 previous puzzles per constructor(s): .32*
 
@@ -97,17 +98,17 @@ The rightmost column/bottom row per matrix shows the correlation between GMST fo
 
 **Figure 8. Number of Answers**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/144fe31f-861c-4ee9-b264-0dd9098a3d36)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/ad9a12bc-3ab9-4b39-83d5-b7bb4953dc00)
 *For 15x15 puzzles, there was a strong negative correlation (r= -0.56) between GMST and '# Answers'. More answers typically meant shorter answers (see correlation matrices above), and shorter answers tended to be be more common/easier answers (see 'Average Answer Length' and 'Freshness Factor' analyses below). The correlation strength, and even the directionality thereof, varied across puzzle days. However, the FDP for this feature shows that the toughest puzzle days (Fri and Sat) tended to have the fewest answers (and the Sat trend mirrored the overall 15x15 trend).*
 
 **Figure 9. Number of Open Squares**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/db8f2b36-763a-4fe1-9e5a-d0dbfb65ad0d)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/b679ed67-5a3c-426b-a1c3-92ea6251a519)
 *For 15x15 puzzles, there was a strong positive correlation (r= 0.59) between GMST and '# Open Squares'. '# Open Squares' is a proprietary measure from XWord Info that counts all white squares that are *not* bordered by black squares. '# Open Squares' was strongly positively correlated to 'Average Answer Length' (see matrices above), so it makes sense that more open squares was also positively correlated with solve times. Interestingly, the correlation of this feature with solve time can be seen with at least moderate strength across all puzzle days. The FDP shows that the most difficult puzzle days (Fri and Sat) had a rightward shift in '# Open Squares' relative to the easier 15x15 puzzle days.* 
 
 **Figure 10. Number of Black Squares**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/425937dc-56e0-44bd-b51f-77bc412353ae)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/7ad742da-ca26-480a-9530-a20a4917abc6)
 *For 15x15 puzzles, there was a moderately strong negative correlation (r= -0.39) between GMST and '# Black Squares'. No surpise here, since this relationship was essentially the opposite of that between GMST and '# Open Squares' (more black squares = shorter answers = easier answers). As with '# Open Squares', the trend was very apparent in the FDP within each of the later week puzzle days, and Friday and Saturday were prominently shifted away from the earlier week puzzle days.*
 
 **Figure 11. Average Answer Length**
