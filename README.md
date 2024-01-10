@@ -158,7 +158,7 @@ The rightmost column/bottom row per matrix shows the correlation between GMST fo
 
 **Figure 19. GMS Adjusted Recent Performance**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/e0cad417-c020-4115-9fac-c788630b2959)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/16dfd517-c054-4276-bd04-28675f8b6591)
 *For 15x15 puzzles, there was a very strong positive correlation (r= 0.84) between GMST and GMS Adjusted Recent Performance (GMS-ARP). To obtain 'GMS-ARP' for a given puzzle the 10 most recent *prior* puzzles from the same puzzle day were averaged after first being decay weighted (10 for the most recent prior puzzle, 9 for the one before that and so on down to a weight of 1 for the 10th prior puzzle). Recent past performance across all 15x15 puzzles by this measure was more strongly correlated to performance on the "next" puzzle than the specific characteristics of that puzzle.*
 
 *Very interestingly, correlation strengths for the early week 15x15 days were higher than those for the later week days (see below in caption). This attests to the relative heterogeneity of later week puzzles, and the likely fact that the likelihood of a solver getting stuck in one particular spot for an extended period of time goes way up. I have zero actual evidence for this, but I will further speculate as an experienced solver that Thu puzzles have the lowest correlation of all because they are the most heterogeneous of all puzzle days due to the varied gimmicks and tricks employed. See Supp. Fig. 1 for a visually clear depiction of this by-puzzle day trend (top row of each matrix, rightmost square gets less red across days)*
@@ -174,17 +174,17 @@ The rightmost column/bottom row per matrix shows the correlation between GMST fo
 
 **Supplementary Figure 1. Scatterplots of Number of Rebus Squares vs Global Median Solver Solve Time (GMST) By Puzzle Day**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/beddc2a4-040a-4c45-badb-906882372002)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/fe2ab6da-54bc-4112-bd9b-d3ba06efe6d1)
 *Only Sunday and Thursday had an appreciable '# Rebus Squares', which are squares that must be filled with more than one letter, number or symbol for a given puzzle to be solved. There was a modest positive correlation between '# Rebus Squares' for both of these puzzle days, though a caveat is that the very large number of 0 rebus puzzles makes these correlations hard to interpret (ie, these are not exactly continuous distributions). Correlation Strength by Puzzle Day: Sun: .30, Thu: .13.* 
 
 **Supplementary Figure 2. Scatterplots of Number of Circled Squares vs Global Median Solver Solve Time (GMST) By Puzzle Day**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/44800416-109b-4787-aab3-55ee39affaef)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/4c918f60-8aa0-4d4f-93ef-6d1375b68eeb)
 *Circled squares were virtually non-existant in the tougher (Fri and Sat) puzzles. Their function is to reveal a puzzle theme, and in theory a solver can use this knowledge to "back in" to some full answers. Despite the apparent negative correlation for all 15x15 puzzles, the puzzle days with considerable '# Circles' mostly showed weakly positive correlations. One could speculate here, but it's probably not worth the effort; but there's potential for a small enhancement to modeling on a day-specific basis.*
 
 **Supplementary Figure 3. Scatterplots of Number of Shaded Squares vs Global Median Solver Solve Time (GMST) By Puzzle Day**
  
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/6922ed20-90b8-4e61-9513-575304c066b4)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/96701f7e-e0c4-4fd1-86a7-5dce563cb5b2)
 *Shaded squares, like circled squares, were virtually non-existant in the tougher (Fri and Sat) puzzles. Like with circled squares, their function is to reveal a puzzle theme and their presence may provide assistance to solvers on clues in which they are embedded. Though puzzles containing shaded squares were less common than those with circles, most puzzles days showed weak negative correlations between this feature and GMST and it certainly does seem just on visual inspection that very few of these puzzles were in the tougher half of solve times per puzzle day. As with circles, it can't hurt to include his feature in first-pass modeling and there might be some puzzle day-specific accuracy improvements with its inclusion.* 
 
 **Supplementary Figure 4. Correlation Heatmapping of GMS Individual Puzzle Performance vs Grid, Answer and Past-Performance Features By Puzzle Day (15x15 Puzzle Days)**
