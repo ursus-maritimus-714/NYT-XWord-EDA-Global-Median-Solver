@@ -13,18 +13,19 @@ The NYT crossword has been published since 1942, and many consider its modern er
 One additional contextual note about the GMS is worth mention upfront. Though Matt from XWStats uses the word "Global", and I adopt it as well, it is highly likely that the sample from which the GMST is pulled per-puzzle skews faster than the true population sample. The probable main reasons for this are that the sample does not contain solvers who fail to complete a given puzzle (a % that likely increases through the week's puzzle days), and that the sample contains only solvers motivated enough by the prospect of improvement to track their own progress. Bear this is mind, possibly as a way to be gentle on yourself, if comparing your own performance to that of the GMS. 
 
 **Figure 1. PCA of Select Grid, Clue and Answer-Pertinent Puzzle Features**                                                                  
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/662da75c-0bdb-4e78-8ef2-cb676e36c843)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/05ee7318-cc18-4802-8b07-267063ca1332)
 
 
-*The first 3 principal components accounted for ~48% of total variance. All puzzles from Jan. 1 2018- Jan. 8 2024 were included in this analysis.*  
+*The first 3 principal components accounted for ~48% of total variance. All puzzles from Jan. 1 2018- Jan. 10 2024 were included in this analysis.*  
 
 
 
 **Figure 2. Distribution of GMSTs by Puzzle Day**                   
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/fa331e01-d5ef-4482-8798-3d7f108722d8)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/befc6aae-942c-481a-8b5e-1bbcc5731f17)
 
 
-*All puzzles from Jan. 1 2018- Jan. 6 2024 were included in this analysis.* 
+
+*All puzzles from Jan. 1 2018- Jan. 10 2024 were included in this analysis.* 
 
 
  
