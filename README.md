@@ -20,8 +20,9 @@ One additional contextual note about the GMS is worth mention upfront. Though Ma
 
 
 
-**Figure 2. Distribution of GMSTs by Puzzle Day**                   
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/befc6aae-942c-481a-8b5e-1bbcc5731f17)
+**Figure 2. Distributions of GMSTs by Puzzle Day**                   
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/427e8611-eddc-418c-b11f-8914327b6ef4)
+
 
 
 
