@@ -35,7 +35,7 @@ One additional contextual note about the GMS is worth mention upfront. Though Ma
 
 GMS solve time (GMST) improved for each puzzle day over the 6+-year sample timeframe, which is seen clearly in plotting of day-of-week specific 10-puzzle moving averages across this period (**Figure 3**). The improvement trend can also be clearly seen in year-by-year (per puzzle day-of-week) violin plots with swarm plot overlays (**Figure 4**). Both of these figures additionally reveal that improvement in GMS performance over the sample period was non-uniform, with dramatic improvement early on for some puzzle days followed by continued graded improvement for all puzzle days up to the current end of the sample period (early January 2024). Note that, without access to the raw individual solver data, plotting and interpretation of GMS data required assumption that the GMS (many different individual solvers, most likely) solved puzzles in approximately the same sequence in which they were published. Another important consideration in interpretation of the GMST improvement trend over time is that the relative contribution of stronger solvers joining the pool versus individual solver improvement for "early adopters" over time cannot be parsed without the underlying raw solver data. 
 
-**Figure 3. Day-of-Week Specific 10-Puzzle Moving Average of GMSTs**
+**Figure 3. 10-Puzzle Solve Time Moving Averages by Day of Week**
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/d1734076-6be6-4efc-9df1-f34818f75ed1)
 
 
@@ -43,7 +43,7 @@ GMS solve time (GMST) improved for each puzzle day over the 6+-year sample timef
 
 
 
-**Figure 4. Day-of-Week Specific Violin Plots With Swarm Plot Overlay of GMSTs, Per Year**
+**Figure 4. Violin Plots of Solve Times With Swarm Plot Overlay (1-Year Interval)**
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/e15e552b-0e34-428b-b2cc-2590fd623e0e)
 
 
@@ -66,7 +66,7 @@ Eighty-one percent of puzzles in the sample period were created by either solo c
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/7a514416-e3f7-4adb-b2b0-2f2a721ab044)
 
 
-**Figure 6. Scatterplots of GMS Past Performance Against Individual Constructor(s) Versus GMS Next Individual Puzzle Performance Against the Same Constructor(s)**  
+**Figure 6. Scatterplots of GMS Past Performance Against Individual Constructor(s) Versus GMS 'Next' Individual Puzzle Performance Against the Same Constructor(s)**  
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/1a67f70e-3263-46b7-aa4c-13530a14d23e)
 *<h5>The past performance measure on the x-axis is normalized to control for variable puzzle day mix for prior puzzles by given constructor(s). The individual solve time measure on the y-axis is normalized to control for recent puzzle day-specific GMS performance. <br>Pearson correlation coefficient (r): >=1 previous puzzles per constructor(s): .28, >=4 previous puzzles per constructor(s): .32*
 
