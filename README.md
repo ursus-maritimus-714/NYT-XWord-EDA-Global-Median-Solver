@@ -13,19 +13,20 @@ The NYT crossword has been published since 1942, and many consider its modern er
 One additional contextual note about the GMS is worth mention upfront. Though Matt from XWStats uses the word "Global", and I adopt it as well, it is highly likely that the sample from which the GMST is pulled per-puzzle skews faster than the true population sample. The probable main reasons for this are that the sample does not contain solvers who fail to complete a given puzzle (a % that likely increases through the week's puzzle days), and that the sample contains only solvers motivated enough by the prospect of improvement to track their own progress. Bear this is mind, possibly as a way to be gentle on yourself, if comparing your own performance to that of the GMS. 
 
 **Figure 1. PCA of Select Grid, Clue and Answer-Pertinent Puzzle Features**                                                                  
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/05ee7318-cc18-4802-8b07-267063ca1332)
-*<h5>The first 3 principal components accounted for 47.6% of total variance. All puzzles from Jan. 1 2018- Jan. 10 2024 were included in this analysis.*  
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/7a642514-869a-4aa5-b1cb-c18cc4831cf6)
+*<h5>The first 3 principal components accounted for 47.6% of total variance. All puzzles from Jan. 1 2018- Jan. 12 2024 were included in this analysis.*  
 
 
 
 
 **<h4>Figure 2. Distributions of GMSTs by Puzzle Day**                   
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/427e8611-eddc-418c-b11f-8914327b6ef4)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/b133abb5-e054-4345-8b72-3ccacd9269ab)
 
 
 
 
-*<h5>All puzzles from Jan. 1 2018- Jan. 10 2024 were included in this analysis.* 
+
+*<h5>All puzzles from Jan. 1 2018- Jan. 12 2024 were included in this analysis.* 
 
 
  
@@ -33,7 +34,7 @@ One additional contextual note about the GMS is worth mention upfront. Though Ma
 ## Results
 ### Global Median Solver (GMS) Performance Over Time
 
-GMS solve time (GMST) improved for each puzzle day over the 6+-year sample timeframe, which is seen clearly in plotting of day-of-week specific 10-puzzle moving averages across this period (**Figure 3**). The improvement trend can also be clearly seen in year-by-year (per puzzle day-of-week) violin plots with swarm plot overlays (**Figure 4**). Both of these figures additionally reveal that improvement in GMS performance over the sample period was non-uniform, with dramatic improvement early on for some puzzle days followed by continued graded improvement for all puzzle days up to the current end of the sample period (early January 2024). Note that, without access to the raw individual solver data, plotting and interpretation of GMS data required assumption that the GMS (many different individual solvers, most likely) solved puzzles in approximately the same sequence in which they were published. Another important consideration in interpretation of the GMST improvement trend over time is that the relative contribution of stronger solvers joining the pool versus individual solver improvement for "early adopters" over time cannot be parsed without the underlying raw solver data. 
+GMS solve time (GMST) improved for each puzzle day over the 6+-year sample timeframe, which is seen clearly in plotting of day-of-week specific 10-puzzle moving averages across this period (**Figure 3**). The improvement trend can also be clearly seen in year-by-year (per puzzle day-of-week) violin plots with swarm plot overlays (**Figure 4**). Both of these figures additionally reveal that improvement in GMS performance over the sample period was non-uniform, with dramatic improvement early on for some puzzle days followed by continued graded improvement for all puzzle days up to the current end of the sample period (Jan. 10, 2024). Note that, without access to the raw individual solver data, plotting and interpretation of GMS data required assumption that the GMS (many different individual solvers, most likely) solved puzzles in approximately the same sequence in which they were published. Another important consideration in interpretation of the GMST improvement trend over time is that the relative contribution of stronger solvers joining the pool versus individual solver improvement for "early adopters" over time cannot be parsed without the underlying raw solver data. 
 
 **Figure 3. 10-Puzzle Solve Time Moving Averages by Day of Week**
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/d1734076-6be6-4efc-9df1-f34818f75ed1)
