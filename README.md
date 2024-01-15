@@ -159,7 +159,7 @@ Though most features had at least a moderate correlation strength with GMSTs acr
 
 
 
-# Supplementary Figures
+## Supplementary Figures
 
 **Supplementary Figure 1. Scatterplots of Number of Rebus Squares vs Global Median Solver Solve Time (GMST) by Puzzle Day**
 
