@@ -43,12 +43,6 @@ GMS solve time (GMST) improved for each puzzle day over the 6+-year sample timef
 
 **Figure 4. Violin Plots of Solve Times With Swarm Plot Overlay (1-Year Intervals)**
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/94f75980-20fc-4436-8513-9df952661928)
-
-
-
-
-
-
 *<h5>Violin plots show both the range (vertical extent) and distribution characteristics (width as it varies across the y-axis range) for each puzzle day, per year. Black lines demarcate quartiles. Swarm plot overlays show individual puzzle raw solve times. Note the reduction in y-axis range maximum from the first row to the second when comparing solve times across the entire sample period.* 
 
 *<h5>Median[IQR] GMST(m), per puzzle day, per select year (2018 [N=365], 2021 [N=365], 2023-2024 [N=377]):*<br>
@@ -58,9 +52,9 @@ GMS solve time (GMST) improved for each puzzle day over the 6+-year sample timef
 
 ### GMS Performance By Puzzle Constructor(s)
 
-The high proportion of puzzles by repeat individual constructors or specific constructor teams solved by the GMS (81%) afforded the opportunity to evaluate which constructors they tended to struggle against and which they tended to do relatively well against. A "mean constructor difficulty" measure (mean % difference from 10-puzzle moving average), normalized both for puzzle day and GMS baseline solve performance, was computed. **Figure 5** shows heatmapping of GMS performance against the n=115 constructor(s) contributing >=5 puzzles over the sample period. While only 16% of constructor(s) contributed this many puzzles, this group contributed 55% of all puzzles in the 6+ year sample! Warmer colors (-%) indicate that the solver solves relatively fast against a given constructor when controlling for day-of-week difficulty and recent solver form; cooler colors (+%) indicate the opposite. 
+The high proportion of puzzles by repeat individual constructors or specific constructor teams solved by the GMS (81%) afforded the opportunity to evaluate which constructors the GMS tended, in a relative sense, to struggle or do well against. A "mean constructor difficulty" measure (mean % difference from 10-puzzle moving average), normalized both for puzzle day and GMS baseline solve performance, was computed. **Figure 5** shows heatmapping of GMS performance against the n=115 constructor(s) contributing >=5 puzzles over the sample period. While only 16% of constructor(s) contributed this many puzzles, this group contributed 55% of all puzzles in the 6+ year sample! Warmer colors (-%) indicate that the solver solves relatively fast against a given constructor when controlling for day-of-week difficulty and recent solver form; cooler colors (+%) indicate the opposite. 
 
-Along with mean normalized performance against given constructor(s) shown in **Fig. 5**, a correlational analysis in the direction of assessing the potential predictive value of past performance against constructor(s) on future performance was performed. **Figure 6** shows the correlation between past performance against a given constructor(s) (x-axis) and performance on the next individual puzzle by that constructor(s) (y-axis). This analysis was restricted to either the n=1467 puzzles with issue dates *after* >1 previous in-sample puzzle by the same constructor(s) (left panel), or to the n=751 puzzles issued *after* >=4 previous puzzles by the same constructor(s) (right panel). The higher threshold version is thereby constrained to only "later" puzzles by the constructor(s) subset included in **Fig. 5**. There was a moderate positive correlation regardless of threshold (slightly higher for puzzles by constructor(s) with more prior puzzles, as might be expected just based on noisiness reduction with larger samples), which raises the potential for past constructor(s) features to contribute to improvement of predictive model accuracy.      
+Along with mean normalized performance against given constructor(s) shown in **Fig. 5**, a correlational analysis in the direction of assessing the potential predictive value of past performance against constructor(s) on future performance was conducted. **Figure 6** shows the correlation between past performance against a given constructor(s) (x-axis) and performance on the next individual puzzle by that constructor(s) (y-axis). This analysis was restricted to either the n=1467 puzzles with issue dates *after* >1 previous in-sample puzzle by the same constructor(s) (left panel), or to the n=751 puzzles issued *after* >=4 previous puzzles by the same constructor(s) (right panel). The higher threshold version was thereby constrained to only "later" puzzles by the constructor(s) subset included in **Fig. 5**. There was a moderate positive correlation regardless of threshold (slightly higher for puzzles by constructor(s) with more prior puzzles, as might be expected just based on noisiness reduction with larger samples), which raises the potential for past constructor(s) features to contribute to improvement of predictive model accuracy.      
 
 **Figure 5. Heatmapping of GMS Performance Against Individual Constructor(s)**
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/c82a5f5f-935f-474f-97e3-e721123e3316)
@@ -70,7 +64,7 @@ Along with mean normalized performance against given constructor(s) shown in **F
 
 **Figure 6. Scatterplots of GMS Past Performance Against Individual Constructor(s) Versus GMS 'Next' Individual Puzzle Performance Against the Same Constructor(s)**  
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/bd230197-cb29-41b2-9d26-9ecc485544e7)
-*<h5>The past performance measure on the x-axis is normalized to control for variable puzzle day mix for prior puzzles by given constructor(s). The individual solve time measure on the y-axis is normalized to control for recent puzzle day-specific GMS performance. <br>Pearson correlation coefficient (r): >=1 previous puzzles per constructor(s): .28, >=4 previous puzzles per constructor(s): .32*
+*<h5>The past performance measure on the x-axis was normalized to control for variable puzzle day mix for prior puzzles by given constructor(s). The individual solve time measure on the y-axis was normalized to control for 'recent' puzzle day-specific GMS performance. <br>Pearson correlation coefficient (r): >=1 previous puzzles per constructor(s): .28, >=4 previous puzzles per constructor(s): .32*
 
 
 ### Correlations of GMS Performance on Individual Puzzles to Puzzle-Specific Features and Past Performance
