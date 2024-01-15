@@ -29,7 +29,7 @@ One additional contextual note about the GMS is worth mention upfront. Though Ma
 ## Results
 ### Global Median Solver (GMS) Performance Over Time
 
-GMS solve time (GMST) improved for each puzzle day over the 6+-year sample timeframe, which is seen clearly in plotting of day-of-week specific 10-puzzle moving averages across this period (**Figure 3**). The improvement trend can also be clearly seen in year-by-year (per puzzle day-of-week) violin plots with swarm plot overlays (**Figure 4**). Both of these figures additionally reveal that improvement in GMS performance over the sample period was non-uniform, with dramatic improvement early on for some puzzle days followed by continued graded improvement for all puzzle days up to the current end of the sample period (Jan. 13, 2024). Note that, without access to the raw individual solver data, plotting and interpretation of GMS data required assumption that the GMS (many different individual solvers, most likely) solved puzzles in approximately the same sequence in which they were published. Another important consideration in interpretation of the GMST improvement trend over time is that the relative contribution of stronger solvers joining the pool versus individual solver improvement for "early adopters" over time cannot be parsed without the underlying raw solver data. 
+GMS solve time (GMST) improved for each puzzle day over the 6+-year sample timeframe, which is seen clearly in plotting of day-of-week specific 10-puzzle moving averages across this period (**Figure 3**). The improvement trend can also be clearly seen in year-by-year (per puzzle day-of-week) violin plots with swarm plot overlays (**Figure 4**). Both of these figures additionally reveal that improvement in GMS performance over the sample period was non-uniform, with dramatic improvement early on for some puzzle days followed by continued graded improvement for all puzzle days up to the current end of the sample period (Jan. 13, 2024). Note that, without access to the raw individual solver data, plotting and interpretation of GMS data required the assumption that the GMS (many different individual solvers, most likely) solved puzzles in approximately the same sequence in which they were published. Another important consideration in interpretation of the GMST improvement trend over time is that the relative contribution of stronger solvers joining the pool versus individual solver improvement for "early adopters" over time cannot be parsed without the underlying raw solver data. 
 
 **Figure 3. 10-Puzzle Solve Time Moving Averages by Day of Week**
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/5d32b516-8844-4f09-92fb-946e4d32b276)
@@ -41,7 +41,7 @@ GMS solve time (GMST) improved for each puzzle day over the 6+-year sample timef
 
 
 
-**Figure 4. Violin Plots of Solve Times With Swarm Plot Overlay (1-Year Interval)**
+**Figure 4. Violin Plots of Solve Times With Swarm Plot Overlay (1-Year Intervals)**
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/94f75980-20fc-4436-8513-9df952661928)
 
 
@@ -49,12 +49,12 @@ GMS solve time (GMST) improved for each puzzle day over the 6+-year sample timef
 
 
 
-*<h5>Violin plots show both the range (vertical extent) as well as distribution characteristics (varying width across the y-axis range) for each puzzle day, per year. Black lines demarcate the quartiles. The swarm plot overlays show individual data points (puzzle raw solve times). Note the reduction in y-axis range maximum from the first row to the second when comparing solve times across the entire sample period.* 
+*<h5>Violin plots show both the range (vertical extent) and distribution characteristics (width as it varies across the y-axis range) for each puzzle day, per year. Black lines demarcate quartiles. Swarm plot overlays show individual puzzle raw solve times. Note the reduction in y-axis range maximum from the first row to the second when comparing solve times across the entire sample period.* 
 
 *<h5>Median[IQR] GMST(m), per puzzle day, per select year (2018 [N=365], 2021 [N=365], 2023-2024 [N=377]):*<br>
 *2018: Sun: 55.8[46.2-63.5], Mon: 9.4[8.3-10.4], Tue: 12.7[10.4-17.0], Wed: 17.8[14.0-20.8], Thu: 25.8[20.2-30.9], Fri: 26.0[21.3-30.7], Sat: 34.2[29.2-38.3]*<br>
 *2021: Sun: 36.0[31.5-38.8], Mon: 6.8[6.1-7.7], Tue: 9.5[7.6-10.6], Wed: 11.6[10.3-13.3], Thu: 19.0[16.9-22.7], Fri: 19.8[17.5-23.2], Sat: 25.2[21.7-29.3]*<br>
-*2023-24: Sun: 32.0[28.0-34.7], Mon: 5.8[5.6-6.1], Tue: 7.7[7.3-8.5], Wed: 11.1[9.9-13.7], Thu: 18.5[15.2-21.3], Fri: 18.2[16.5-19.5], Sat: 23.9[20.3-28.3]*  
+*2023/24: Sun: 32.0[28.0-34.7], Mon: 5.8[5.6-6.1], Tue: 7.7[7.3-8.5], Wed: 11.1[9.9-13.7], Thu: 18.5[15.2-21.3], Fri: 18.2[16.5-19.5], Sat: 23.9[20.3-28.3]*  
 
 ### GMS Performance By Puzzle Constructor(s)
 
