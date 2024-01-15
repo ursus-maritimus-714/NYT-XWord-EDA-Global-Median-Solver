@@ -183,7 +183,7 @@ Though most features had at least a moderate correlation strength with GMSTs acr
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/393a31e4-7f41-4968-a9dc-91b91d50e9ce)
 
 
-# Supplementary Tables
+## Supplementary Tables
 
 **<h4>Supplementary Table 1. Features Included in Puzzle Features Principal Component Analysis**
 
