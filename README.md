@@ -89,7 +89,7 @@ Though most features had at least a moderate correlation strength with GMSTs acr
 **Figure 8. Number of Answers**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/b3f0b390-92db-4605-aaec-d84d022d475c)
-*<h5>For 15x15 puzzles, there was a moderate-to-strong negative correlation (r= -.56) between GMST and '# Answers'. More answers typically meant shorter answers (see correlation matrices above), and shorter answers tended to be be more common/easier answers (see 'Average Answer Length' and 'Freshness Factor' analyses below). The correlation strength, and even the directionality thereof, varied across puzzle days. However, the FDP for this feature shows that the toughest puzzle days (Fri and Sat) tended to have the fewest answers (and the Sat trend mirrored the overall 15x15 trend).*
+*<h5>For 15x15 puzzles, there was a moderate-to-strong negative correlation (r= -.56) between GMST and '# Answers'. More answers typically meant shorter answers (see correlation matrices above), and shorter answers tended to be more common/easier answers (see 'Average Answer Length' and 'Freshness Factor' analyses below). The correlation strength, and even the directionality thereof, varied across puzzle days. However, the FDP for this feature shows that the toughest puzzle days (Fri and Sat) tended to have the fewest answers (and the Sat trend mirrored the overall 15x15 trend).*
 
 **<h4>Figure 9. Number of Open Squares**
 
@@ -104,7 +104,7 @@ Though most features had at least a moderate correlation strength with GMSTs acr
 **<h4>Figure 11. Average Answer Length**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/b2cb90af-3845-426a-b13e-f23e97517a0e)
-*<h5>For 15x15 puzzles, there was a strong positive correlation (r= .67) between GMST and 'Average Answer Length'. This finding was consistent with other grid feature relationships with GMST, as longer answers means more multiword and relatively-rare answers (see correlation matrices above and Figs. 14-17). This correlation was very apparent within each of the puzzle days, and perhaps moreso than any other puzzle feature, the sequence in peaks of puzzle day distributions in the FDP tracked with that in mean GMST by puzzle day. Perhaps this is an indication that this feature will be highly predictive of solve time in the modeling phase??*
+*<h5>For 15x15 puzzles, there was a strong positive correlation (r= .67) between GMST and 'Average Answer Length'. This finding was consistent with other grid feature relationships with GMST, as longer answers means more multiword and relatively-rare answers (see correlation matrices above and Figs. 14-17). This correlation was very apparent within each of the puzzle days, and perhaps more so than any other puzzle feature, the sequence in peaks of puzzle day distributions in the FDP tracked with that in mean GMST by puzzle day. Perhaps this is an indication that this feature will be highly predictive of solve time in the modeling phase??*
 
 **<h4>Figure 12. Number of Cheater Squares**
 
