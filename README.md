@@ -22,7 +22,7 @@ One additional contextual note about the GMS is worth mention upfront. Though Ma
 
 **<h4>Figure 2. Distributions of GMSTs by Puzzle Day**                   
 
-
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/5d4851bb-7e86-4719-a0dc-909f8bf41b25)
 *<h5>All puzzles from Jan. 1 2018- Jan. 23 2024 were included in this analysis (N=2,214).* 
 
 
@@ -33,29 +33,24 @@ One additional contextual note about the GMS is worth mention upfront. Though Ma
 
 The GMS solved N = 2,214 puzzles in the full sample period (365 per year, except 2020: 366 and partial year 2024: 23) . The total solve time for GMS was 31.9 days (2018: 6.8; 2019: 5.8; 2020: 5.2 days; 2021: 4.8; 2022: 4.7; 2023/24: 4.6). Note that GMS performance is tracked in the present analyses by puzzle *issue* date, as I did not have access to GMS puzzle completion dates. It's reasonably safe to assume, however, that the GMS (a different individual solver for most puzzles, presumably) solved in approximately the sequence of puzzle issue. Individual solver (IS1 and IS2) performance (see links in Introduction), in contrast, was tracked by puzzle *completion* date since I *was* able to obtain completion timestamps for those solvers' completed puzzles with Matt's assistance.
 
-GMSTs improved over the complete set of puzzles (N=2,214) issued between January 1, 2018 and January 23, 2024 (**Figure 1**), with fairly dramatic improvement seen early on for some puzzle days and graded improvement continuing for each puzzle day until the end of the sample period (top panel). These improvement dynamics can also been seen in the aggregate raw solve time per year data reported above. The 2-year interval density plots of raw solve time distributions (bottom panels) show that performance on individual puzzle days became more consistent over time (higher peaks with narrower distributions). Because I did not have access to the raw solver data from which the GMSTs were drawn, however, it was not possible to disentangle improvement for individual "early adopters" of Matt's tracking software versus stronger solvers joining the solver pool over time.  
-
+GMSTs improved over the complete set of puzzles (N=2,214) issued between January 1, 2018 and January 23, 2024 (**Figure 3**), with fairly dramatic improvement seen early on for some puzzle days and graded improvement continuing for each puzzle day until the end of the sample period (top panel). These improvement dynamics can also been seen in the aggregate raw solve time per year data reported above. The 2-year interval density plots of raw solve time distributions (bottom panels) show that performance on individual puzzle days became more consistent over time (higher peaks with narrower distributions). Because I did not have access to the raw solver data from which the GMSTs were drawn, however, it was not possible to disentangle improvement for individual "early adopters" of Matt's tracking software versus stronger solvers joining the solver pool over time.  
 
 **Figure 3. Solve Time Overview by Puzzle Day: 10-Puzzle Moving Averages and Distributions of Raw Values**
 
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/9661122e-8124-4538-a2fb-637bf22514fe)
 *<h5>GMS Final (as of Jan. 23, 2024) 10-puzzle moving average of solve time (m), per puzzle day:*<br>
-*Sun: 28.7, Mon: 5.7, Tue: 7.8, Wed: 12.0, Thu: 15.6, Fri: 17.8, Sat: 21.0*<br>
+*Sun: 28.8, Mon: 5.7, Tue: 7.7, Wed: 12.0, Thu: 15.6, Fri: 17.8, Sat: 21.1*<br>
+
+###
+**Figure 4** shows the GMS solve time performance trajectory in violin plots with swarm plot overlays, broken out by 2 year (2+ for 2023/24) solve date intervals. Violin plots show both the range (vertical extent) and distribution characteristics (width as it varies across the y-axis range) for each puzzle day, per solve interval. Black lines on the violin plot demarcate solve time quartiles per puzzle day. Swarm plot overlays per puzzle day show individual puzzle raw solve times.   
 
 
-
-
-
-
-
-
-**Figure 4. Violin Plots of Solve Times With Swarm Plot Overlay (1-Year Intervals)**
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/94f75980-20fc-4436-8513-9df952661928)
-*<h5>Violin plots show both the range (vertical extent) and distribution characteristics (width as it varies across the y-axis range) for each puzzle day, per year. Black lines demarcate quartiles. Swarm plot overlays show individual puzzle raw solve times. Note the reduction in y-axis range maximum from the first row to the second when comparing solve times across the entire sample period.* 
-
-*<h5>Median[IQR] GMST(m), per puzzle day, per select year (2018 [N=365], 2021 [N=365], 2023-2024 [N=377]):*<br>
-*2018: Sun: 55.8[46.2-63.5], Mon: 9.4[8.3-10.4], Tue: 12.7[10.4-17.0], Wed: 17.8[14.0-20.8], Thu: 25.8[20.2-30.9], Fri: 26.0[21.3-30.7], Sat: 34.2[29.2-38.3]*<br>
-*2021: Sun: 36.0[31.5-38.8], Mon: 6.8[6.1-7.7], Tue: 9.5[7.6-10.6], Wed: 11.6[10.3-13.3], Thu: 19.0[16.9-22.7], Fri: 19.8[17.5-23.2], Sat: 25.2[21.7-29.3]*<br>
-*2023/24: Sun: 32.0[28.0-34.7], Mon: 5.8[5.6-6.1], Tue: 7.7[7.3-8.5], Wed: 11.1[9.9-13.7], Thu: 18.5[15.2-21.3], Fri: 18.2[16.5-19.5], Sat: 23.9[20.3-28.3]*  
+**Figure 4. Solve Time Overview by Puzzle Day: Violin Plots With Swarm Plot Overlay**
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/40217fdd-3b2d-4316-802a-701d1e70896d)
+*<h5>Median[IQR] solve time (m), per puzzle day, per solve interval:*<*<br>
+*2018/2019: Sun: 50.0[42.3-60.0], Mon: 8.6[7.6-9.8], Tue: 12.1[9.5-14.3], Wed: 16.5[13.1-20.1], Thu: 24.6[20.2-29.0], Fri: 24.7[21.6-29.5], Sat: 31.6[25.1-36.2]*<br>
+*2020/2021: Sun: 37.1[32.2-41.5], Mon: 7.1[6.4-7.9], Tue: 9.5[8.2-10.9], Wed: 12.7[10.8-15.2], Thu: 20.3[17.6-24.1], Fri: 20.7[18.6-23.9], Sat: 26.9[22.8-31.2]*<br>
+*2022-2024: Sun: 33.2[28.6-37.7], Mon: 6.0[5.6-6.4], Tue: 8.3[7.5-9.6], Wed: 11.8[10.0-13.9], Thu: 18.5[16.02-21.1], Fri: 18.9[17.0-21.5], Sat: 24.1[20.4-29.0]*  
 
 ### GMS Performance By Puzzle Constructor(s)
 
