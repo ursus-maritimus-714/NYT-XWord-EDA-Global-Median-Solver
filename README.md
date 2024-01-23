@@ -31,10 +31,16 @@ One additional contextual note about the GMS is worth mention upfront. Though Ma
 ## Results
 ### Global Median Solver (GMS) Performance Over Time
 
-GMS solve time (GMST) improved for each puzzle day over the 6+-year sample timeframe, which is seen clearly in plotting of day-of-week specific 10-puzzle moving averages across this period (**Figure 3**). The improvement trend can also be clearly seen in year-by-year (per puzzle day-of-week) violin plots with swarm plot overlays (**Figure 4**). Both of these figures additionally reveal that improvement in GMS performance over the sample period was non-uniform, with dramatic improvement early on for some puzzle days followed by continued graded improvement for all puzzle days up to the current end of the sample period (Jan. 13, 2024). Note that, without access to the raw individual solver data, plotting and interpretation of GMS data required the assumption that the GMS (many different individual solvers, most likely) solved puzzles in approximately the same sequence in which they were published. Another important consideration in interpretation of the GMST improvement trend over time is that the relative contribution of stronger solvers joining the pool versus individual solver improvement for "early adopters" over time cannot be parsed without the underlying raw solver data. 
+The GMS solved N = 2,214 puzzles in the full sample period (365 per year, except 2020: 366 and partial year 2024: 23) . The total solve time for GMS was 31.9 days (2018: 6.8; 2019: 5.8; 2020: 5.2 days; 2021: 4.8; 2022: 4.7; 2023/24: 4.6). Note that GMS performance is tracked in the present analyses by puzzle *issue* date, as I did not have access to GMS puzzle completion dates. It's reasonably safe to assume, however, that the GMS (a different individual solver for most puzzles, presumably) solved in approximately the sequence of puzzle issue. Individual solver (IS1 and IS2) performance (see links in Introduction), in contrast, was tracked by puzzle *completion* date since I *was* able to obtain completion timestamps for those solvers' completed puzzles with Matt's assistance.
 
-**Figure 3. 10-Puzzle Solve Time Moving Averages by Day of Week**
+GMSTs improved over the complete set of puzzles (N=2,214) issued between January 1, 2018 and January 23, 2024 (**Figure 1**), with fairly dramatic improvement seen early on for some puzzle days and graded improvement continuing for each puzzle day until the end of the sample period (top panel). These improvement dynamics can also been seen in the raw solve time per year data reported above. The 2-year interval density plots of raw solve time distributions (bottom panels) show that performance on individual puzzle days became more consistent over time (higher peaks with narrower distributions). Because I did not have access to the raw solver data from which the GMSTs were drawn, however, it was not possible to disentangle improvement for individual "early adopters" of Matt's tracking software versus stronger solvers joining the solver pool over time.  
+
+
+**Figure 3. Solve Time Overview by Puzzle Day: 10-Puzzle Moving Averages and Distributions of Raw Values**
+
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/5d32b516-8844-4f09-92fb-946e4d32b276)
+*<h5>GMS Final (as of Jan. 23, 2024) 10-puzzle moving average of solve time (m), per puzzle day:*<br>
+*Sun: 28.7, Mon: 5.7, Tue: 7.8, Wed: 12.0, Thu: 15.6, Fri: 17.8, Sat: 21.0*<br>
 
 
 
