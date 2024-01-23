@@ -22,7 +22,7 @@ One additional contextual note about the GMS is worth mention upfront. Though Ma
 
 **<h4>Figure 2. Distributions of GMSTs by Puzzle Day**                   
 
-![Uploading image.png…]()
+
 *<h5>All puzzles from Jan. 1 2018- Jan. 23 2024 were included in this analysis (N=2,214).* 
 
 
