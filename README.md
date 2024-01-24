@@ -155,8 +155,11 @@ Though most features had at least a moderate correlation strength with GMS solve
 
 **<h4>Figure 15. Number of Scrabble Illegal Answers**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/1b05331b-58fd-4f53-82c1-5c480774d78c)
-*<h5>For 15x15 puzzles, there was a weak positive correlation (r= .21) between GMST and '# Scrabble Illegal' answers. '# Scrabble Illegal' answers is a proprietary measure of XWord Info that gets at answer rarity more directly than does 'Scrabble Average' (though not as directly as the measures in Figs. 16 and 17). Interestingly this moderate positive correlation was seen both across all 15x15 puzzles and within each puzzle day. Also interesting is that, apart from a Monday relative leftward shift in the FDP, the distributions for the other 15x15 puzzle days were highly overlapping. I had assumed that the days with more open squares and longer average answers would also have substantially more answers that are not standard English vocabulary words. This finding suggests that more non-standard vocabulary *alone* may not signify or predict puzzle difficulty.*  
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/56922603-b2fa-4cd3-8664-2b13b41eee3c)
+*<h5>GMSTs and '# Scrabble Illegal' had a weak positive correlation on 15x15 puzzles (r= .18).<br>
+
+*'# Scrabble Illegal' answers is a proprietary measure of XWord Info that gets at answer rarity more directly than does 'Scrabble Average' (though not as directly as the measures in **Figs. 16 and 17**). Interestingly, the distributions for 15x15 puzzle days in the FDP were highly overlapping, other than a leftward shift for Monday and Tuesday that appears to account for the (modest) overall 15x15 puzzles positive correlation. The very low '# Scrabble Illegal' (<20) seen nearly exclusively on those early week puzzle days was associated with very fast solves. Early week puzzles aside, however, I had previously assumed that the puzzle days with higher '# Open Squares' and 'Average Answer Length' (ie, later week days) would also have had proportionally more answers that were not standard English vocabulary words. A discernable trend for correlation strength within the more difficult puzzle days across the range of '# Scrabble Illegal' values was also lacking, with the exception of Saturday at the very high end of the feature value distribution. Taken together, these findings suggest that more non-standard vocabulary *alone* may not strongly signify or predict puzzle difficulty.*  
+
 
 **<h4>Figure 16. Number of Unique Answers**
 
