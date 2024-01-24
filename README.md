@@ -156,15 +156,21 @@ Though most features had at least a moderate correlation strength with GMS solve
 **<h4>Figure 15. Number of Scrabble Illegal Answers**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/56922603-b2fa-4cd3-8664-2b13b41eee3c)
-*<h5>GMSTs and '# Scrabble Illegal' had a weak positive correlation on 15x15 puzzles (r= .18).<br>
+*<h5>GMSTs and '# Scrabble Illegal' had a weak positive correlation on 15x15 puzzles (r= .18).<br>*
 
 *'# Scrabble Illegal' answers is a proprietary measure of XWord Info that gets at answer rarity more directly than does 'Scrabble Average' (though not as directly as the measures in **Figs. 16 and 17**). Interestingly, the distributions for 15x15 puzzle days in the FDP were highly overlapping, other than a leftward shift for Monday and Tuesday that appears to account for the (modest) overall 15x15 puzzles positive correlation. The very low '# Scrabble Illegal' (<20) seen nearly exclusively on those early week puzzle days was associated with very fast solves. Early week puzzles aside, however, I had previously assumed that the puzzle days with higher '# Open Squares' and 'Average Answer Length' (ie, later week days) would also have had proportionally more answers that were not standard English vocabulary words. A discernable trend for correlation strength within the more difficult puzzle days across the range of '# Scrabble Illegal' values was also lacking, with the exception of Saturday at the very high end of the feature value distribution. Taken together, these findings suggest that more non-standard vocabulary *alone* may not strongly signify or predict puzzle difficulty.*  
 
 
 **<h4>Figure 16. Number of Unique Answers**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/b44a691b-5655-4401-b00d-97d2cc4ba985)
-*<h5>For 15x15 puzzles, there was a moderate positive correlation (r= .39) between GMST and '# Unique Answers'. A unique answer is defined here as one that does not appear in any other NYT crossword puzzle in either the Shortz or pre-Shortz eras (either before or after the puzzle release date). This is perhaps an overly stringent criterion to define answer rarity (see Fig. 17 for a graded approach to defining answer rarity). Nonetheless, the positive correlation was clearly apparent when considering all 15x15 puzzles together and also especially within the most challenging puzzle day (Sat). It is also clear in the FDP that '# Unique Answers' tended to increase as puzzle day difficulty increased.*
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/08eb1fc6-9163-43bb-82d4-8659b0083ed7)
+*<h5>GMSTs and '# Unique Answers' had a moderate positive correlation on 15x15 puzzles (r= .41).<br>*
+
+*<h5>A unique answer is defined here as one that does not appear in any other NYT crossword puzzle in either the Shortz or pre-Shortz eras (either before or after the puzzle release date). This is perhaps an overly stringent criterion to define answer rarity (see **Fig. 17** for a graded approach to defining answer rarity). Nonetheless the positive correlation was clearly apparent when considering all 15x15 puzzles together, consistent with the most difficult puzzle days (Fri and Sat) pulling most of the weight given their prominent rightward shifts in the FDP, and also within most of the individual puzzle days. As with several other features previously evaluated, this correlation was strongest (albeit still modestly) within individual puzzle days for Saturday. Given that Saturday also had the widest feature value range of the 15x15 puzzle days, this provides some optimism for the predictive value of '# Unique Answers'.*
+
+
+
+
 
 
 **<h4>Figure 17. Freshness Factor**
