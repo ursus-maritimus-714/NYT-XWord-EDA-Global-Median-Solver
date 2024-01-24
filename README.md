@@ -28,8 +28,6 @@ One additional contextual note about the GMS is worth mention upfront. Though Ma
 *<h5>All puzzles from Jan. 1, 2018- Jan. 24, 2024 were included in this analysis (N=2,215).* 
 
 
- 
-
 ## Results
 ### Global Median Solver (GMS) Performance Over Time
 
@@ -107,13 +105,19 @@ Though most features had at least a moderate correlation strength with GMS solve
 
 **<h4>Figure 9. Number of Open Squares**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/a5b8f21a-e212-490e-8de4-0095326c290d)
-*<h5>For 15x15 puzzles, there was a strong positive correlation (r= .60) between GMST and '# Open Squares'. '# Open Squares' is a proprietary measure from XWord Info that counts all white squares that are *not* bordered by black squares. '# Open Squares' was strongly positively correlated to 'Average Answer Length' (see matrices above), so it makes sense that more open squares was also positively correlated with solve times. Interestingly, the correlation of this feature with solve time can be seen with at least moderate strength across all puzzle days. The FDP shows that the most difficult puzzle days (Fri and Sat) had a rightward shift in '# Open Squares' relative to the easier 15x15 puzzle days.* 
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/b39e3d52-92a3-4558-8529-453053b9a166)
+*<h5>GMS solve times and '# Open Squares' had a borderline strong positive correlation on 15x15 puzzles (r= .59).<br>
+
+*'# Open Squares' is a proprietary measure from XWord Info that counts all white squares that are *not* bordered by black squares. '# Open Squares' was strongly positively correlated to 'Average Answer Length' (see matrices above), so it makes sense that a greater '# Open Squares' was also positively correlated with solve times. The FDP shows that the most difficult puzzle days (Fri and Sat) had a rightward shift in '# Open Squares' relative to the easier 15x15 puzzle days. A large amount of the overall 15x15 correlation for the GMS appears to be accounted for by these more difficult puzzles with large numbers (>~80) of open squares. The positive correlation for Saturday, approximating the strength of the overall 15x15 positive correlation, is an indication that this feature will likely have some independent preditive value in the modeling phase (see text above Fig. 7 for the logic employed here).* 
+
 
 **<h4>Figure 10. Number of Black Squares**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/f9b5f8fc-db34-49e9-b0e2-fbf6e7eec361)
-*<h5>For 15x15 puzzles, there was a moderate negative correlation (r= -.39) between GMST and '# Black Squares'. No surpise here, since this relationship was essentially the opposite of that between GMST and '# Open Squares' (more black squares = shorter answers = easier answers). As with '# Open Squares', the correlation was most apparent in the by-day scatterplots for the later week puzzle days, and Friday and Saturday were prominently shifted away from the earlier week puzzle days in the FDP.*
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/b0766f9b-dbd0-4687-9cd5-61d167c16814)
+*<h5>GMS solve times and '# Black Squares' had borderline moderate negative correlation on 15x15 puzzles (r= -.39).<br>
+
+*This relationship was essentially the opposite (albeit a weaker form) of that between solve times and '# Open Squares' (more black squares = shorter answers = easier answers). Both Friday and Saturday were strongly left-shifted in the FDP, which suggests that most of the overall 15x15 puzzle negative correlation was due to the most difficult days tending to have relatively few black squares. For the GMS, correlations across puzzle days varied in strength but each day showed at least some degree of negative correlation. As with '# Open Squares', the day with the widest range of values (Sat) had a negative correlation nearly as strong as the overall 15x15 correlation. This is an indication that this feature will likely have some independent preditive value in the modeling phase (see text above Fig. 7).*
+
 
 **<h4>Figure 11. Average Answer Length**
 
