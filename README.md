@@ -46,7 +46,8 @@ GMSTs improved over the complete set of puzzles (N=2,214) issued between January
 
 
 **Figure 4. Solve Time Overview by Puzzle Day: Violin Plots With Swarm Plot Overlay**
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/40217fdd-3b2d-4316-802a-701d1e70896d)
+
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/5b2709c4-f0f2-4f9e-93cd-cb8a2edebd07)
 *<h5>Median[IQR] solve time (m), per puzzle day, per solve interval:*<*<br>
 *2018/2019: Sun: 50.0[42.3-60.0], Mon: 8.6[7.6-9.8], Tue: 12.1[9.5-14.3], Wed: 16.5[13.1-20.1], Thu: 24.6[20.2-29.0], Fri: 24.7[21.6-29.5], Sat: 31.6[25.1-36.2]*<br>
 *2020/2021: Sun: 37.1[32.2-41.5], Mon: 7.1[6.4-7.9], Tue: 9.5[8.2-10.9], Wed: 12.7[10.8-15.2], Thu: 20.3[17.6-24.1], Fri: 20.7[18.6-23.9], Sat: 26.9[22.8-31.2]*<br>
