@@ -180,7 +180,7 @@ Though most features had at least a moderate correlation strength with GMS solve
 **<h4>Figure 18. Number of Wordplay Clues**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/db9e2346-8cc7-4b27-a9e9-c096d9a50fd6)
-*<h5>GMS solve times and '# Wordplay Clues' had a moderate positive correlation on 15x15 puzzles (r= .45).<br>
+*<h5>GMS solve times and '# Wordplay Clues' had a moderate positive correlation on 15x15 puzzles (r= .45).<br>*
 
 *<h5>'# Wordplay' clues is an admittedly somewhat subjective measure that I have manually evaluated and calculated clue-by-clue across (nearly) the entire puzzle sample completed by the GMS. The FDP for this feature has some interesting properties, including the clear result that later week (Thu, Fri, Sat) puzzles indeed have a larger allocation of 'trickier' clues than early week puzzles. There's also a prominent strong leftward shift for Monday puzzles, though with a strong second peak aligned with the Tuesday peak. Taken together, these early and late week distribution offsets seem to account for the overall positive correlation across 15x15 puzzles. The rare early week puzzles with a relatively large '# Wordplay' clues clearly had slower GMSTs, which makes intuitive sense in the context of how straightforward those puzzles generally are. Past Tuesday, however, there were only very week within-puzzle day correlations for this feature. This suggests that there may be an overall difficulty threshold that largely dictates the impact that wordplay will have on solve speed.* 
   
