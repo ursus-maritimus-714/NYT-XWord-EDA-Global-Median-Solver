@@ -98,7 +98,7 @@ Though most features had at least a moderate correlation strength with GMS solve
 **Figure 8. Number of Answers**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/89fcda39-7415-49cc-930e-2f8dbdd68a9e)
-*<h5>Global Median Solver (GMS) solve times and '# Answers' had a moderately strong negative correlation on 15x15 puzzles (r= -.58).<br>*
+*<h5>Global Median Solver solve times (GMSTs) and '# Answers' had a moderately strong negative correlation on 15x15 puzzles (r= -.58).<br>*
 
 *More answers typically meant shorter answers (see correlation matrices above), and shorter answers tended to be more common/easier answers (see 'Average Answer Length' and 'Freshness Factor' analyses below). Aligned with this relationship, the FDP for this feature shows that the toughest puzzle days (Fri and Sat) tended to have the fewest answers. Additionally, Saturday itself showed a moderate negative correlation across a fairly broad range of '# Answers' values. The relatively strong reverse sign (positive) correlations seen for Monday and Wednesday suggest that, below a particular per-clue/answer difficulty threshold, merely having to read more clues to solve the puzzle may penalize the solver more they are rewarded for avoiding longer answers.*
 
@@ -106,7 +106,7 @@ Though most features had at least a moderate correlation strength with GMS solve
 **<h4>Figure 9. Number of Open Squares**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/b39e3d52-92a3-4558-8529-453053b9a166)
-*<h5>GMS solve times and '# Open Squares' had a borderline strong positive correlation on 15x15 puzzles (r= .59).<br>
+*<h5>GMSTs and '# Open Squares' had a borderline strong positive correlation on 15x15 puzzles (r= .59).<br>*
 
 *'# Open Squares' is a proprietary measure from XWord Info that counts all white squares that are *not* bordered by black squares. '# Open Squares' was strongly positively correlated to 'Average Answer Length' (see matrices above), so it makes sense that a greater '# Open Squares' was also positively correlated with solve times. The FDP shows that the most difficult puzzle days (Fri and Sat) had a rightward shift in '# Open Squares' relative to the easier 15x15 puzzle days. A large amount of the overall 15x15 correlation for the GMS appears to be accounted for by these more difficult puzzles with large numbers (>~80) of open squares. The positive correlation for Saturday, approximating the strength of the overall 15x15 positive correlation, is an indication that this feature will likely have some independent preditive value in the modeling phase (see text above Fig. 7 for the logic employed here).* 
 
@@ -114,20 +114,26 @@ Though most features had at least a moderate correlation strength with GMS solve
 **<h4>Figure 10. Number of Black Squares**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/b0766f9b-dbd0-4687-9cd5-61d167c16814)
-*<h5>GMS solve times and '# Black Squares' had borderline moderate negative correlation on 15x15 puzzles (r= -.39).<br>
+*<h5>GMSTs and '# Black Squares' had borderline moderate negative correlation on 15x15 puzzles (r= -.39).<br>*
 
 *This relationship was essentially the opposite (albeit a weaker form) of that between solve times and '# Open Squares' (more black squares = shorter answers = easier answers). Both Friday and Saturday were strongly left-shifted in the FDP, which suggests that most of the overall 15x15 puzzle negative correlation was due to the most difficult days tending to have relatively few black squares. For the GMS, correlations across puzzle days varied in strength but each day showed at least some degree of negative correlation. As with '# Open Squares', the day with the widest range of values (Sat) had a negative correlation nearly as strong as the overall 15x15 correlation. This is an indication that this feature will likely have some independent preditive value in the modeling phase (see text above Fig. 7).*
 
 
 **<h4>Figure 11. Average Answer Length**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/b2cb90af-3845-426a-b13e-f23e97517a0e)
-*<h5>For 15x15 puzzles, there was a strong positive correlation (r= .67) between GMST and 'Average Answer Length'. This finding was consistent with other grid feature relationships with GMST, as longer answers means more multiword and relatively-rare answers (see correlation matrices above and Figs. 14-17). This correlation was very apparent within each of the puzzle days, and perhaps more so than any other puzzle feature, the sequence in peaks of puzzle day distributions in the FDP tracked with that in mean GMST by puzzle day. Perhaps this is an indication that this feature will be highly predictive of solve time in the modeling phase??*
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/bd307c6a-3103-4505-bca4-8b25fa601b03)
+*<h5>GMSTs and 'Average Answer Length' had a strong positive correlation on 15x15 puzzles (r= .70).<br>*
+
+*This finding was consistent with other grid feature relationships to GMSTs, which makes sense since longer answers meant more multiword and relatively-rare answers (see correlation matrices above and **Figs. 15-17**). This positive correlation was present for all of the individual puzzle days and, as was typical for grid features for the GMS, it was strongest for Saturday. Monday stood out here for having the weakest positive correlation (bordering on a weak sign reversal, in fact) of all puzzle days. Given that this feature and '# Answers' are themselves highly negatively correlated (see **Fig. 8**), it makes sense that an easy puzzle day would again serve as the exception that proves the rule. Longer answers that are still easy may increase solver speed in the aggregate by reducing the amount of clues consumed needed for a solve, without a counterbalancing 'difficulty penalty' that might occur with longer answers on later puzzle days.* 
+
 
 **<h4>Figure 12. Number of Cheater Squares**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/60c17f9a-bfd9-4c99-bca5-3aadfad0eb59)
-*<h5>For 15x15 puzzles, there was a weak positive correlation (r= .16) between GMST and '# Cheater Squares'. Cheater Squares, by definition, are black squares than can be removed without affecting the overall word count of the grid. These square make construction easier (hence their name), and it can be seen that large numbers of them (say, >10) almost always appear on the difficult puzzle days. Interestingly, within a given puzzle day, however, it's clear that puzzles with larger numbers of them tended to be easier for the GMS. So the seeming paradox between the overall 15x15 trend and the individual puzzle day trends is likely related to the competing effects of cheater squares allowing trickier constructions, but also reducing the number of answers and answer lengths overall. Incidentally, the reason they were only rarely seen in odd numbers is the only rarely-violated NYT requirement for grid symmetry.*
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/4896acff-ba9a-4e47-89d2-30dd68e5e2dc)
+*<h5>GMSTs and '# Cheater Squares' had a weak positive correlation on 15x15 puzzles (r= .21).<br>*
+
+*Cheater Squares are black squares than can be removed without affecting the overall word count of the grid. These squares make construction easier (hence their name). It can be seen in the FDP that large numbers of them (say, >10) almost always appeared on the difficult puzzle days (Fri and Sat), which accounts for the (modest) positive correlation across all 15x15 puzzles. There were, however, some degree of reverse sign (negative) correlations seen within each individual puzzle day. This raises the possibility of "diminishing returns" on '# Cheater Squares'; they may help make constructions "trickier" up to a point, but beyond that point they have a net effect of speeding solvers up simply by lowering the number of fill squares (a la high '# Black Squares'). Incidentally, the reason cheater squares were only rarely seen in odd numbers is the NYT general requirement for grid symmetry.*
+
 
 #### *Answer and Clue Content Features*
 
