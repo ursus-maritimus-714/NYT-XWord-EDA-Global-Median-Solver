@@ -139,13 +139,19 @@ Though most features had at least a moderate correlation strength with GMS solve
 
 **<h4>Figure 13. Number of Fill-in-the-Blank Answers**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/2d727f7d-5f25-4157-9f6e-f9281d70e286)
-*<h5>For 15x15 puzzles, there was a weak-to-moderate negative correlation (r= -.30) between GMST and '# Fill-in-the-Blank' (FITB) answers. Taken together, the FDP and the scatterplots indicate that most of this correlation was related to the fact that the easiest puzzles (note the rightward FDP peak shift for Mon, even relative to Tue) employed a heavy dose of FITB answers. It will be interesting to see how important this feature is in the modeling phase to prediction of early week solve times, specifically.*
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/41e2148f-8c1f-45b8-9adc-d2dab0d0e844)
+*<h5>GMSTs and '# Fill-in-the-Blank Answers' had a weak-to-moderate negative correlation on 15x15 puzzles (r= -.26).<br>*
+
+*Taken together, the FDP and scatterplots indicate that most of the strength of this correlation was due to the easiest puzzles (note the rightward FDP peak shift for Mon, even relative to Tue) employing a heavy dose of FITB answers. It's also noteworthy that the most difficult puzzle day (Sat) clearly made less use of FITB answers than the other puzzle days, and more '# FITB' on those days was associated with (slightly) speedier solves for GMS. These properties provide some optimism that this feature will have some predictive value, though the within day correlation strengths were certainly not remarkable.*
+
 
 **<h4>Figure 14. Scrabble Average**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/fc874495-300a-4180-8310-1e99f70fdaf0)
-*<h5>For 15x15 puzzles, there was a weak-to-nonexistant negative correlation (r= -.03) between GMST and 'Scrabble Average'. 'Scrabble Average' is another proprietary XWord Info measure, in which each letter in the answer grid is assigned its equivalent value in Scrabble. Since tile values in Scrabble increase with rarity of letter frequency in English texts, it would make sense that a higher value for this feature would be associated with *answers* of greater rarity. If anything, the opposite was true in practice here and as can be seen in the next few figures there are direct measures of answer rarity that *do* have strong positive correlations to solve times. So this one is a candidate to either be left out of predictive modeling entirely or to be combined with other answer rarity/difficulty measures to generate a useful predictive feature.*
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/74449e3e-6389-4430-93fa-921b1224bad8)
+*<h5>GMSTs and 'Scrabble Average' had a very weak negative correlation on 15x15 puzzles (r= -.05).<br>*
+
+*'Scrabble Average' is another proprietary XWord Info measure, in which each letter in the answer grid is assigned its equivalent value in Scrabble. Since tile values in Scrabble increase with rarity of letter frequency in English texts, it would make sense that a higher value for this feature would be associated with *answers* of greater rarity. If anything, the opposite was true in practice here. Furthermore, as can be seen in the next series of figures, there are direct measures of answer rarity that *do* have strong positive correlations to solve times. So this one is a candidate to either be left out of predictive modeling entirely or to be combined with other answer rarity/difficulty measures to generate a useful predictive feature.*
+
 
 **<h4>Figure 15. Number of Scrabble Illegal Answers**
 
