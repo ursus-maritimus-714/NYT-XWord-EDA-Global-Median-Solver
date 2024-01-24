@@ -1,5 +1,7 @@
 # Exploratory Data Analysis of Global Median Solver Performance on the New York Times Crossword Puzzle
+\newcommand{\squeezeup}{\vspace{-2.5mm}}
 ## Introduction
+
 ### Project Overview and Data Sources
 This summary reports on exploratory data analysis (EDA) of the Global Median Solver's (GMS) performance over 6+ years (Jan. 2018 - Jan. 2024) of the [New York Times (NYT) crossword puzzle](https://www.nytimes.com/crosswords). Included are visual and statistical descriptions of trends in GMS solve times across this period, and the relationship between GMS performance and a number of variables. These variables included properties of the puzzle grids (e.g., number of answers, number of black squares), clues and answers (e.g., frequency of wordplay in clues, aggregate rarity of answers in a puzzle), constructor identity, and puzzle day-specific recent past performance prior to a given solve. This EDA led to identification of a set of features that hold promise as useful inputs to a predictive model of GMS future performance. 
 
@@ -16,14 +18,15 @@ One additional contextual note about the GMS is worth mention upfront. Though Ma
 
 **Figure 1. PCA of Select Puzzle Grid, Clue and Answer Features**                                                                  
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/d96fdd8b-0d4a-47a5-9e63-6693d2705c79)
-*<h5>The first 3 principal components accounted for 47.6% of total variance. All puzzles from Jan. 1 2018- Jan. 23 2024 were included in this analysis (N=2,214).*  
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/219463f8-9bcc-4231-9cf5-0d09314b5a38)
+\squeezeup
+*<h5>The first 3 principal components accounted for 47.6% of total variance. All puzzles from Jan. 1, 2018- Jan. 24, 2024 were included in this analysis (N=2,215).*  
 
 
 **<h4>Figure 2. Distributions of GMSTs by Puzzle Day**                   
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/5d4851bb-7e86-4719-a0dc-909f8bf41b25)
-*<h5>All puzzles from Jan. 1 2018- Jan. 23 2024 were included in this analysis (N=2,214).* 
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/b5845b13-ba8d-4038-a452-ace1edba65a1)
+*<h5>All puzzles from Jan. 1, 2018- Jan. 24, 2024 were included in this analysis (N=2,215).* 
 
 
  
@@ -31,15 +34,15 @@ One additional contextual note about the GMS is worth mention upfront. Though Ma
 ## Results
 ### Global Median Solver (GMS) Performance Over Time
 
-The GMS solved N = 2,214 puzzles in the full sample period (365 per year, except 2020: 366 and partial year 2024: 23) . The total solve time for GMS was 31.9 days (2018: 6.8; 2019: 5.8; 2020: 5.2 days; 2021: 4.8; 2022: 4.7; 2023/24: 4.6). Note that GMS performance is tracked in the present analyses by puzzle *issue* date, as I did not have access to GMS puzzle completion dates. It's reasonably safe to assume, however, that the GMS (a different individual solver for most puzzles, presumably) solved in approximately the sequence of puzzle issue. Individual solver (IS1 and IS2) performance (see links in Introduction), in contrast, was tracked by puzzle *completion* date since I *was* able to obtain completion timestamps for those solvers' completed puzzles with Matt's assistance.
+The GMS solved N = 2,215 puzzles in the full sample period (365 per year, except 2020: 366 and partial year 2024: 24). The total solve time for GMS was 31.9 days (2018: 6.8; 2019: 5.8; 2020: 5.2 days; 2021: 4.8; 2022: 4.7; 2023/24: 4.6). Note that GMS performance is tracked in the present analyses by puzzle *issue* date, as I did not have access to GMS puzzle completion dates. It's reasonably safe to assume, however, that the GMS (a different individual solver for most puzzles, presumably) solved in approximately the sequence of puzzle issue. Individual solver (IS1 and IS2) performance (see links in Introduction), in contrast, was tracked by puzzle *completion* date since I *was* able to obtain completion timestamps for those solvers' completed puzzles with Matt's assistance.
 
-GMSTs improved over the complete set of puzzles (N=2,214) issued between January 1, 2018 and January 23, 2024 (**Figure 3**), with fairly dramatic improvement seen early on for some puzzle days and graded improvement continuing for each puzzle day until the end of the sample period (top panel). These improvement dynamics can also been seen in the aggregate raw solve time per year data reported above. The 2-year interval density plots of raw solve time distributions (bottom panels) show that performance on individual puzzle days became more consistent over time (higher peaks with narrower distributions). Because I did not have access to the raw solver data from which the GMSTs were drawn, however, it was not possible to disentangle improvement for individual "early adopters" of Matt's tracking software versus stronger solvers joining the solver pool over time.  
+GMSTs improved over the complete set of puzzles (N=2,215) issued between January 1, 2018 and January 24, 2024 (**Figure 3**), with fairly dramatic improvement seen early on for some puzzle days and graded improvement continuing for each puzzle day until the end of the sample period (top panel). These improvement dynamics can also been seen in the aggregate raw solve time per year data reported above. The 2-year interval density plots of raw solve time distributions (bottom panels) show that performance on individual puzzle days became more consistent over time (higher peaks with narrower distributions). Because I did not have access to the raw solver data from which the GMSTs were drawn, however, it was not possible to disentangle improvement for individual "early adopters" of Matt's tracking software versus stronger solvers joining the solver pool over time.  
 
 **Figure 3. Solve Time Overview by Puzzle Day: 10-Puzzle Moving Averages and Distributions of Raw Values**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/9661122e-8124-4538-a2fb-637bf22514fe)
-*<h5>GMS Final (as of Jan. 23, 2024) 10-puzzle moving average of solve time (m), per puzzle day:*<br>
-*Sun: 28.8, Mon: 5.7, Tue: 7.7, Wed: 12.0, Thu: 15.6, Fri: 17.8, Sat: 21.1*<br>
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/859ab075-c070-4f48-a96c-b33cb3af51c9)
+*<h5>GMS Final (as of Jan. 24, 2024) 10-puzzle moving average of solve time (m), per puzzle day:*<br>
+*Sun: 28.8, Mon: 5.7, Tue: 7.7, Wed: 11.3, Thu: 15.6, Fri: 17.8, Sat: 21.1*<br>
 
 ###
 **Figure 4** shows the GMS solve time performance trajectory in violin plots with swarm plot overlays, broken out by 2 year (2+ for 2023/24) solve date intervals. Violin plots show both the range (vertical extent) and distribution characteristics (width as it varies across the y-axis range) for each puzzle day, per solve interval. Black lines on the violin plot demarcate solve time quartiles per puzzle day. Swarm plot overlays per puzzle day show individual puzzle raw solve times.   
