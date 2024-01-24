@@ -1,5 +1,5 @@
 # Exploratory Data Analysis of Global Median Solver Performance on the New York Times Crossword Puzzle
-\newcommand{\squeezeup}{\vspace{-2.5mm}}
+
 ## Introduction
 
 ### Project Overview and Data Sources
@@ -19,8 +19,7 @@ One additional contextual note about the GMS is worth mention upfront. Though Ma
 **Figure 1. PCA of Select Puzzle Grid, Clue and Answer Features**                                                                  
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/219463f8-9bcc-4231-9cf5-0d09314b5a38)
-\squeezeup
-*<h5>The first 3 principal components accounted for 47.6% of total variance. All puzzles from Jan. 1, 2018- Jan. 24, 2024 were included in this analysis (N=2,215).*  
+*<h5>The first 3 principal components accounted for 47.6% of total variance. All puzzles from Jan. 1, 2018- Jan. 24, 2024 were included in this analysis (N=2,215).*
 
 
 **<h4>Figure 2. Distributions of GMSTs by Puzzle Day**                   
@@ -50,21 +49,21 @@ GMSTs improved over the complete set of puzzles (N=2,215) issued between January
 
 **Figure 4. Solve Time Overview by Puzzle Day: Violin Plots With Swarm Plot Overlay**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/5b2709c4-f0f2-4f9e-93cd-cb8a2edebd07)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/ea97753d-fc63-4232-93ce-dcc92f4ede29)
 *<h5>Median[IQR] solve time (m), per puzzle day, per solve interval:*<*<br>
 *2018/2019: Sun: 50.0[42.3-60.0], Mon: 8.6[7.6-9.8], Tue: 12.1[9.5-14.3], Wed: 16.5[13.1-20.1], Thu: 24.6[20.2-29.0], Fri: 24.7[21.6-29.5], Sat: 31.6[25.1-36.2]*<br>
 *2020/2021: Sun: 37.1[32.2-41.5], Mon: 7.1[6.4-7.9], Tue: 9.5[8.2-10.9], Wed: 12.7[10.8-15.2], Thu: 20.3[17.6-24.1], Fri: 20.7[18.6-23.9], Sat: 26.9[22.8-31.2]*<br>
-*2022-2024: Sun: 33.2[28.6-37.7], Mon: 6.0[5.6-6.4], Tue: 8.3[7.5-9.6], Wed: 11.8[10.0-13.9], Thu: 18.5[16.02-21.1], Fri: 18.9[17.0-21.5], Sat: 24.1[20.4-29.0]*  
+*2022-2024: Sun: 33.2[28.6-37.7], Mon: 6.0[5.6-6.4], Tue: 8.3[7.5-9.6], Wed: 11.8[10.0-13.9], Thu: 18.5[16.0-21.1], Fri: 18.9[17.0-21.5], Sat: 24.1[20.4-29.0]*  
+
 
 ### GMS Performance By Puzzle Constructor(s)
 
-A high proportion of puzzles solved by the GMS (%) were authored by either repeat individual constructors or specific constructor teams (both referred to as "constructor" from here forward). This afforded the opportunity to evaluate which constructors the GMS tended, in a relative sense, to struggle or do well against. To allow comparison of the difficulty of constructors in a way controlling both for solver form at the time of a solve and heterogeneity of puzzle day mix per constructor .  Per constructor, the mean of % difference from recent performance baseline (RPB) across all puzzles in the sample that they authored was computed. To compute RPB, each raw solve time was taken as a % difference from a decay-time weighted average of the *previous* 10 puzzles solved on the same puzzle day ('Recent Performance Baseline'; RPB).   **Figure 7** shows heatmapping of IS2 performance, using this normalized measure, against the n=63 constructors contributing >=4 puzzles over the sample period. While only 13% of constructors contributed this many puzzles, this group contributed 41% of all puzzles solved. **Fig. 7** also shows this metric for the GMS on the same set of puzzles for the sake of qualitative comparison. Warmer colors (-%) indicate that the solver solved relatively fast against a given constructor; cooler colors (+%) indicate the opposite. "Hot" or "cold" constructors for IS2 tended to also be relatively fast or slow, respectively, for GMS as well. However, there was clearly a substantial degree of discordance in terms of specific order and some constructors stood out as being either "hot" for IS2 but "cold" for the GMS (e.g., Adrian Johnson, Drew Schmenner) or vice versa (e.g., Rafael Musa, Will Nediger). 
+A high proportion of puzzles solved by the GMS (%) were authored by either repeat individual constructors or specific constructor teams (both referred to as "constructor" from here forward). This afforded the opportunity to evaluate which constructors the GMS tended, in a relative sense, to struggle or do well against. Per constructor, the mean of % difference from 'recent performance baseline' (RPB) across all puzzles in the sample that they authored was computed. To compute RPB itself, each raw solve time was taken as a % difference from a decay-time weighted average of the *previous* 10 puzzles solved on the same puzzle day. Thus, taking the mean of this metric per constructor isolated "constructor difficulty" for the GMS via adjustment for both GMS "recent form" and variability in the mix of puzzle days for puzzles authored by each constructor.  
+
+**Figure 5** shows heatmapping of GMS performance, using this normalized measure (RPB), against the n=115 constructors contributing >=5 puzzles over the sample period. While only 16% of constructors contributed this many puzzles in the sample period, this group contributed 55% of all puzzles solved by the GMS during this period. Warmer colors (-%) indicate that the GMS solved relatively fast against a given constructor; cooler colors (+%) indicate the opposite. At this puzzle number threshold, the mean difference from RPB for GMS performance against different constructors ranged from -29.3% ("easiest" constructor; Howard Barkin) to -31.1% ("hardest" constructor; Jules Markey).   
       
-
 **Figure 5. Heatmapping of GMS Performance Against Individual Constructor(s)**
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/c82a5f5f-935f-474f-97e3-e721123e3316)
-
-
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/65f530be-3716-4e54-addd-5ea5b9a25ec9)
 
 
 **Figure 6. Scatterplots of GMS Past Performance Against Individual Constructor(s) Versus GMS 'Next' Individual Puzzle Performance Against the Same Constructor(s)**  
