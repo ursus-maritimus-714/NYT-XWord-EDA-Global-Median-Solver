@@ -197,25 +197,18 @@ Though most features had at least a moderate correlation strength with GMS solve
 *Finally, it does bear mention once again in the context of "past" performance that I had to assume that the GMS largely solved puzzles in the sequence of their issue. The more out of sequence solving that occured for the GMS, the less accurate the assumptions that went into calculation of RPB were. I will also reiterate here that this assumption was NOT necessary for the individual solvers for whom I link analyses in the Introduction, as I did have access to their completion timestamps per solve.*
 
 
-
-
-
-
-
-
 ## Supplementary Figures
 
 **<h4>Supplementary Figure 1. Correlation Heatmapping of GMS Individual Puzzle Performance vs Grid, Answer and Past Performance Features by Puzzle Day (15x15 Puzzle Days)**
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/8890427c-19e9-4972-8570-7cb999aa634e)
 
 
-**Supplementary Figure 2. Scatterplots of Number of Rebus Squares vs Global Median Solver Solve Time (GMST) by Puzzle Day**
+**Supplementary Figure 2. Number of Rebus Squares vs IS2 Solve Time by Puzzle Day**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/019762eb-bba6-415d-874a-0a4fa721d62d)
-*<h5>Only Sunday and Thursday had an appreciable '# Rebus Squares', which are squares that must be filled with more than one letter, number or symbol for a given puzzle to be solved. There was weak-to-moderate positive correlation between '# Rebus Squares' for these puzzle days, though a caveat here is that the very large number of 0 rebus puzzles makes these correlations hard to interpret (ie, these are not exactly continuous distributions).*<br>
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/1b064ce6-02de-4047-88d8-2861f30c63ae)
 
-*Correlation Strength by Puzzle Day: Sun: .30, Thu: .13.* 
-
+*<h5>Only Sunday and Thursday had an appreciable '# Rebus Squares' for the set of GMS solves. Rebus squares are those that must be filled with more than one letter, number or symbol for a given puzzle to be solved. There were weak-to-moderate positive correlations for both Sunday (r=.23) and Thursday (r=.20). The directionality of the correlations do make intuitive sense, as both their existence and the "rules" for any given rebus can often take a little while to figure out. Additionally, they increase solve time by some degree simply by requiring additional fill and menu toggling relative to a non-rebus puzzle. One caveat here is that the very large number of 0 rebus puzzles, even on Sunday and Thursday, make the strength of these correlations hard to interpret (ie, these are not exactly continuous distributions).*<br>
+ 
 **<h4>Supplementary Figure 3. Scatterplots of Number of Circled Squares vs Global Median Solver Solve Time (GMST) by Puzzle Day**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/b55aa818-a2a8-41d9-a044-1888a6f36e23)
