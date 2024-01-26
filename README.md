@@ -136,11 +136,10 @@ Though most features had at least a moderate strength correlation with GMS solve
 
 **<h4>Figure 13. Number of Fill-in-the-Blank Answers**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/3f7c607c-101f-4d45-94bc-9578f25f90eb)
-*<h5>GMSTs and '# Fill-in-the-Blank Answers' had a weak-to-moderate negative correlation for 15x15 puzzles (r= -.29).<br>*
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/244f72f8-08d2-48ae-9325-3df8ac26c358)
+*<h5>GMSTs and '# Fill-in-the-Blank Answers' had a weak-to-moderate negative correlation for 15x15 puzzles (r= -.31).<br>*
 
-*Taken together, the FDP and scatterplots indicate that most of the strength of this correlation was due to the easiest puzzles (note the rightward FDP peak shift for Mon, even relative to Tue) employing a heavy dose of FITB answers. It's also noteworthy that the most difficult puzzle day (Sat) clearly made less use of FITB answers than the other puzzle days, and more '# FITB' on those days was associated with (slightly) speedier solves for GMS. These properties provide some optimism that this feature will have some predictive value, though the within day correlation strengths were certainly not remarkable.*
-
+*Most of the strength of this weak-to-moderate correlation for 15x15 puzzles is related to moderate leftward shift in the FDP for Monday. Along with the easiest puzzle day employing the largest dose of '#Fill-in-the-Blank', the hardest puzzle day (Saturday) was also slightly left-shifted relative to the other 15x15 puzzle days. There was a moderate negative correlation within Saturday as well, with the rare puzzles employing >~5 fill-in-the blank clues associating with distinctly faster solve times. This indicates that above a certain level of difficulty, fill-in-the blanks likely provide a speed-up mechanism. The lack of correlations within the other puzzles days, however, indicates that the difficulty threshold for this feature to matter is quite high.* 
 
 **<h4>Figure 14. Scrabble Average**
 
