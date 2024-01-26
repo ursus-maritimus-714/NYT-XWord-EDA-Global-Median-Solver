@@ -15,8 +15,8 @@ The NYT crossword has been published since 1942, and many consider its "modern e
 **Figure 1** shows dimensionality reduction via Principal Component Analysis (PCA) of 23 grid, clue and answer-related features obtained from XWord Info (see **Supplemental Table 1** for a full list of included features). This analysis demonstrates that, while puzzles from a given puzzle day do indeed aggregate with each other in n-dimensional "puzzle property space", the puzzle days themselves nonetheless exist along a continuum. Sunday is well-separated from the other puzzle days in this analysis by PCA1, which undoubtedly incorporates one or more grid size-contingent features.   
 
 **Figure 1. PCA of Select Puzzle Grid, Clue and Answer Features**                                                                  
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/1f14c5b9-bb6e-4061-af26-ab764637df2e)
-*<h5>The first 3 principal components accounted for 47.6% of total variance. All puzzles from Jan. 1, 2018- Jan. 25, 2024 were included in this analysis (N=2,215).*
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/2a64ecf0-29cf-4096-bcd4-32b15671269a)
+*<h5>The first 3 principal components accounted for 47.6% of total variance. All puzzles from Jan. 1, 2018- Jan. 26, 2024 were included in this analysis (N=2,217).*
 ###
 The overlapping distributions in GMSTs in the solve time density plot in **Figure 2** show a parallel performance phenomenon to the continuum of puzzle properties seen in **Fig. 1**; namely that while solve difficulty increased as the week progressed, puzzle days of adjacent difficulty had substantially overlapping GMST distributions. Other than for the "easy" days (Monday and Tuesday), distributions of GMSTs were quite broad. Wednesday and Saturday also had somewhat multimodal solve time distributions, supporting the notion that there are "easy" and "hard" puzzle pools/constructors at the level of specific puzzle days. The broadness of each puzzle day-specific GMST distribution over the entire sample timeframe depicted here (2018-2024) was also increased by the fairly dramatic improvement in GMS performance over those 6+ year. This temporal dynamics of this improvement will be highly evident in the next section's figures.     
 
@@ -24,22 +24,22 @@ One additional contextual note about the GMS is worth mention upfront. Though Ma
 
 **<h4>Figure 2. Distributions of GMSTs by Puzzle Day**                   
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/b3bb177d-d2b0-49ac-b2c9-8f8d567614fd)
-*<h5>All puzzles from Jan. 1, 2018- Jan. 25, 2024 were included in this analysis (N=2,216).* 
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/03ad1087-1fe9-4f6d-8721-e513ed606e64)
+*<h5>All puzzles from Jan. 1, 2018- Jan. 26, 2024 were included in this analysis (N=2,217).* 
 
 
 ## Results
 ### Global Median Solver (GMS) Performance Over Time
 
-The GMS solved N = 2,216 puzzles in the full sample period (365 per year, except 2020: 366 and partial year 2024: 25). The total solve time for the GMS was 31.9 days (2018: 6.8; 2019: 5.8; 2020: 5.2; 2021: 4.8; 2022: 4.7; 2023/24: 4.6). Note that GMS performance was tracked by puzzle *issue* date, as I did not have access to GMS puzzle completion dates. It's reasonably safe to assume, however, that the GMS (a different individual solver for most puzzles, presumably) solved in approximately the sequence of puzzle issue. Individual solver (IS1 and IS2) performance (see links in Introduction), in contrast, was tracked by puzzle *completion* date since I *was* able to obtain completion timestamps for those solvers' completed puzzles with Matt's assistance.
+The GMS solved N = 2,217 puzzles in the full sample period (365 per year, except 2020: 366 and partial year 2024: 26). The total solve time for the GMS was 31.9 days (2018: 6.8; 2019: 5.8; 2020: 5.2; 2021: 4.8; 2022: 4.7; 2023/24: 4.6). Note that GMS performance was tracked by puzzle *issue* date, as I did not have access to GMS puzzle completion dates. It's reasonably safe to assume, however, that the GMS (a different individual solver for most puzzles, presumably) solved in approximately the sequence of puzzle issue. Individual solver (IS1 and IS2) performance (see links in Introduction), in contrast, was tracked by puzzle *completion* date since I *was* able to obtain completion timestamps for those solvers' completed puzzles with Matt's assistance.
 
-GMSTs improved over the complete set of puzzles (N=2,216) issued between January 1, 2018 and January 25, 2024 (**Figure 3**), with fairly dramatic improvement seen early on for some puzzle days and graded improvement continuing for each puzzle day until the end of the sample period (top panel). These improvement dynamics can also been seen in the aggregate raw solve time per year data reported above. The 2-year interval density plots of raw solve time distributions (bottom panels) show that performance on individual puzzle days became more consistent over time (higher peaks with narrower distributions). Because I did not have access to the raw solver data from which the GMSTs were drawn, however, it was not possible to disentangle improvement for individual "early adopters" of Matt's tracking software versus stronger solvers joining the solver pool over time.  
+GMSTs improved over the complete set of puzzles (N=2,217) issued between January 1, 2018 and January 26, 2024 (**Figure 3**), with fairly dramatic improvement seen early on for some puzzle days and graded improvement continuing for each puzzle day until the end of the sample period (top panel). These improvement dynamics can also been seen in the aggregate raw solve time per year data reported above. The 2-year interval density plots of raw solve time distributions (bottom panels) show that performance on individual puzzle days became more consistent over time (higher peaks with narrower distributions). Because I did not have access to the raw solver data from which the GMSTs were drawn, however, it was not possible to disentangle improvement for individual "early adopters" of Matt's tracking software versus stronger solvers joining the solver pool over time.  
 
 **Figure 3. Solve Time Overview by Puzzle Day: 10-Puzzle Moving Averages and Distributions of Raw Values**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/f8c507f6-718b-46b6-a77c-df11bced8a68)
-*<h5>GMS Final (as of Jan. 25, 2024) 10-puzzle moving average of solve time (m), per puzzle day:*<br>
-*Sun: 28.8, Mon: 5.7, Tue: 7.7, Wed: 11.4, Thu: 15.1, Fri: 17.8, Sat: 21.1*<br>
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/89d7c5c3-aeaa-4e1e-8ba1-c1d22783ff4d)
+*<h5>GMS Final (as of Jan. 26, 2024) 10-puzzle moving average of solve time (m), per puzzle day:*<br>
+*Sun: 28.8, Mon: 5.7, Tue: 7.7, Wed: 11.4, Thu: 15.2, Fri: 17.3, Sat: 21.1*<br>
 
 ###
 **Figure 4** shows the GMS solve time performance trajectory in violin plots with swarm plot overlays, broken out by 2 year (2+ for 2023/24) solve date intervals. Violin plots show both the range (vertical extent) and distribution characteristics (width as it varies across the y-axis range) for each puzzle day, per solve interval. Black lines on the violin plots demarcate solve time quartiles per puzzle day. Swarm plot overlays per puzzle day show individual puzzle raw solve times.   
@@ -47,28 +47,28 @@ GMSTs improved over the complete set of puzzles (N=2,216) issued between January
 
 **Figure 4. Solve Time Overview by Puzzle Day: Violin Plots With Swarm Plot Overlay**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/7827f7eb-9638-4d70-af54-b5f9f322e2b1)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/32696188-c3e3-455b-bde0-5a2f52f869d4)
 *<h5>Median[IQR] solve time (m), per puzzle day, per solve interval:*<*<br>
 *2018/2019: Sun: 50.0[42.3-60.0], Mon: 8.6[7.6-9.8], Tue: 12.1[9.5-14.3], Wed: 16.5[13.1-20.1], Thu: 24.6[20.2-29.0], Fri: 24.7[21.6-29.5], Sat: 31.6[25.1-36.2]*<br>
 *2020/2021: Sun: 37.1[32.2-41.5], Mon: 7.1[6.4-7.9], Tue: 9.5[8.2-10.9], Wed: 12.7[10.8-15.2], Thu: 20.3[17.6-24.1], Fri: 20.7[18.6-23.9], Sat: 26.9[22.8-31.2]*<br>
-*2022-2024: Sun: 33.2[28.6-37.7], Mon: 6.0[5.6-6.4], Tue: 8.3[7.5-9.6], Wed: 11.8[10.0-13.9], Thu: 18.4[16.1-21.1], Fri: 18.9[17.0-21.5], Sat: 24.1[20.4-29.0]*  
+*2022-2024: Sun: 33.2[28.6-37.7], Mon: 6.0[5.6-6.4], Tue: 8.3[7.5-9.6], Wed: 11.8[10.0-13.9], Thu: 18.4[16.1-21.1], Fri: 18.8[16.9-21.4], Sat: 24.1[20.4-29.0]*  
 
 
 ### GMS Performance By Puzzle Constructor(s)
 
-A high proportion of puzzles solved by the GMS (82%) were authored by either repeat individual constructors or specific constructor teams (both referred to as "constructor" from here forward). This afforded the opportunity to evaluate which constructors the GMS tended, in a relative sense, to struggle or do well against. Per constructor, the mean of % difference from 'recent performance baseline' (RPB) across all puzzles in the sample that they authored was computed. To compute RPB itself, each raw solve time was taken as a % difference from a decay-time weighted average of the *previous* 10 puzzles solved on the same puzzle day. Thus, taking the mean of this metric per constructor isolated "constructor difficulty" for the GMS via adjustment for both GMS "recent form" and variability in the mix of puzzle days for puzzles authored by each constructor.  
+A high proportion of puzzles solved by the GMS (81.7%) were authored by either repeat individual constructors or specific constructor teams (both referred to as "constructor" from here forward). This afforded the opportunity to evaluate which constructors the GMS tended, in a relative sense, to struggle or do well against. Per constructor, the mean of % difference from 'recent performance baseline' (RPB) across all puzzles in the sample that they authored was computed. To compute RPB itself, each raw solve time was taken as a % difference from a decay-time weighted average of the *previous* 20 puzzles solved on the same puzzle day. Thus, taking the mean of this metric per constructor isolated "constructor difficulty" for the GMS via adjustment for both GMS "recent form" and variability in the mix of puzzle days for puzzles authored by each constructor.  
 
-**Figure 5** shows heatmapping of GMS performance, using this normalized measure (RPB), against the n=115 constructors contributing >=5 puzzles over the sample period. While only 16% of constructors contributed this many puzzles in the sample period, this group contributed 55% of all puzzles solved by the GMS during this period. Warmer colors (-%) indicate that the GMS solved relatively fast against a given constructor; cooler colors (+%) indicate the opposite. At this puzzle number threshold, the mean difference from RPB for GMS solve time against different constructors ranged from -29.3% ("easiest constructor" Howard Barkin) to 31.1% ("hardest constructor" Jules Markey).   
+**Figure 5** shows heatmapping of GMS performance, using this normalized measure (RPB), against the n=115 constructors contributing >=5 puzzles over the sample period. While only 15.5% of constructors contributed this many puzzles in the sample period, this group contributed 54.8% of all puzzles solved by the GMS during this period. Warmer colors (-%) indicate that the GMS solved relatively fast against a given constructor; cooler colors (+%) indicate the opposite. At this puzzle number threshold, the mean difference from RPB for GMS solve time against different constructors ranged from -29.7% ("easiest constructor" Yacob Yonas) to 29.2% ("hardest constructor" Jules Markey).   
       
 **Figure 5. Heatmapping of GMS Performance Against Individual Constructors**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/8a0de6da-b802-45a8-8e8a-529ed21d386c)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/bc304a83-a8f3-4072-835b-6bf81b468331)
 
 The next correlational analysis was aimed at assessing the potential predictive value of the GMS' baseline-adjusted past performance against specific constructors on GMS future performance against the same constructor. **Figure 6** shows this correlation between GMS baseline-adjusted performance (as mean % difference from RPB) against a given constructor (x-axis) and performance on the next solved individual puzzle by that constructor (y-axis). The scatterplot in the left panel includes all n=1470 puzzles in the overall sample that were issued (and solved) *after* >=1 previous puzzles by the same constructor. The scatterplot on the right has a higher threshold for inclusion; the n=749 puzzles in the overall sample that were issued (and solved) *after* >=4 previous puzzles by the same constructor. Thus, at this higher threshold only puzzles by constructors included in **Fig. 5** are included, and only their "later" puzzles in the overall sample. There was a moderate positive correlation for "past" and "next" performance at the lower threshold, and a slightly stronger one at the higher threshold. The moderate correlation strengths and improvement with a larger "past" sample do provide some optimism that including constructor identity and past performance against constructor in a predictive model of GMS solve performance will be beneficial.    
 
 **Figure 6. Scatterplots of GMS Past Performance Against Individual Constructor(s) Versus GMS 'Next' Individual Puzzle Performance Against the Same Constructor(s)**  
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/14f717d4-793e-47fd-a6dc-742496f26b80)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/a841afc6-4f48-4747-b60e-7a4e5800dd11)
 <h5>Pearson correlation coefficient (r): >=1 previous puzzle: .27, >=4 previous puzzles: .31
 
 
