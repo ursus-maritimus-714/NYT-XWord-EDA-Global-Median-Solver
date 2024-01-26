@@ -81,10 +81,10 @@ As can also be seen in the **Fig. 7** correlation matrices, a number of grid, cl
   
 **Figure 7. Correlation Heatmapping of GMS Raw Solve Times vs Grid, Clue, Answer and Past Performance Features**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/2a67a3b4-1601-4391-a182-7d6e41973a0e)
-*<h5>Correlation heatmaps derived from N=1,274 15x15 (left panel) and N=212 21x21 (right panel) puzzles solved by GMS from 2020-2024.*
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/43ba3f0b-7972-4e02-ba90-c6af29aca9f3)
+*<h5>Correlation heatmaps derived from N=1,588 15x15 (left panel) and N=264 21x21 (right panel) puzzles solved by GMS from 2019-2024 (see note below).*
 
-*Note on Inclusion Time Range: As is clear in **Fig. 7**, RPB had the strongest correlation to individual solve times of any feature evaluated by a considerable degree. As such, there was a concern that shifts in baseline solve speed could overwhelm or mask correlations with puzzle-specific features. But normalizing raw solve times (e.g., with RPB) cancels out cross-puzzle day trends that I was interested in identifying prior to the modeling stage. As such, I arrived at a compromise in which I removed all solves from the first solve interval (2018/2019; n=730), which reduced baseline volatility in the solve pool to a considerable degree and allowed me to keep raw solve times as the y-axis variable across these analyses.*
+*Note on Inclusion Time Range: As is clear in **Fig. 7**, RPB had the strongest correlation to individual solve times of any feature evaluated by a considerable degree. As such, there was a concern that shifts in baseline solve speed could overwhelm or mask correlations with puzzle-specific features. But normalizing raw solve times (e.g., with RPB) cancels out cross-puzzle day trends that I was interested in identifying prior to the modeling stage. As such, I arrived at a compromise in which I removed all solves from the first year in the sample (n=365), which reduced baseline volatility in the solve pool to a considerable degree and allowed me to keep raw solve times as the y-axis variable across these analyses.*
 
 ###
 **Figure 8** through **Figure 19** are companion figures to the correlation heatmapping shown in **Fig. 7**. These figures show, across all 15x15 puzzle days (black) and by puzzle day (colors), scatterplots of select features of interest vs GMS raw solve times at the level of individual puzzles. A feature distribution density plot (FDP) shows puzzle day-specific trends in the distribution of each plotted feature. 
@@ -97,20 +97,18 @@ Though most features had at least a moderate strength correlation with GMS solve
 
 **Figure 8. Number of Answers**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/ef466886-d34a-44c8-9a91-24578755b7a6)
-*<h5>Global Median Solver solve times (GMSTs) and '# Answers' had a moderately strong negative correlation for 15x15 puzzles (r= -.58).<br>*
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/7aa9c0dc-c40f-4aec-aaec-9ffa333f52d8)
+*<h5>Global Median Solver solve times (GMSTs) and '# Answers' had a moderately strong negative correlation for 15x15 puzzles (r= -.57).<br>*
 
-*More answers typically meant shorter answers (see correlation matrices above), and shorter answers tended to be more common/easier answers (see 'Average Answer Length' and 'Freshness Factor' analyses below). Aligned with this relationship, the FDP for this feature shows that the toughest puzzle days (Fri and Sat) tended to have the fewest answers. Additionally, moderately strong reverse sign (positive) correlations were seen for several early week puzzle days (Mon and Wed). This finding suggests that, below a particular per-clue/answer difficulty threshold mostly only attained in later week (Thu-Sat) puzzles, the time penalty incurred by having to read relatively more clues is greater than the time savings from encountering relatively fewer longer answers. Additional support for the tradeoff comes from the moderate negative correlation seen for Saturday; ie, when long answers are tough answers this outweighs having to deal with relatively fewer clues to solve a given puzzle.*
-
+*Most of the strength of the all 15x15 puzzles correlation (black) is from the strong leftward shift in the FDP for the two most difficult puzzle days (Fri and Sat). '# Answers' is strongly negatively correlated with 'Average Answer Length' (see Fig. 7) and measures of answer rarity (e.g., 'Freshness Factor'). Thus, when puzzles were difficult (Fri and Sat), this fewer answers/more long answers combination meant more answers that were rarely encountered/unique. Within Saturday a correlation of the same directionality as the overall 15x15 puzzles correlation is seen, emphasizing this relationship. Moreover correlations of the reverse sign (positive) are seen for the early week puzzle days, prominently for the easiest puzzle day (Monday). This finding suggests that, below a particular per-clue/answer difficulty threshold mostly only attained in later week (Thu-Sat) puzzles, the time penalty incurred by having to read relatively more clues is greater than the time savings from encountering relatively fewer longer answers.        
 
 **<h4>Figure 9. Number of Open Squares**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/c7ac6936-4d75-4397-8034-229192808364)
-*<h5>GMSTs and '# Open Squares' had a borderline strong positive correlation for 15x15 puzzles (r= .59).<br>*
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/ee27daf2-7618-48d6-9ea7-2fdb61e13143)
+*<h5>GMSTs and '# Open Squares' had a borderline strong positive correlation for 15x15 puzzles (r= .58).<br>*
 
-*'# Open Squares' is a proprietary measure from XWord Info that counts all white squares that are *not* bordered by black squares. '# Open Squares' was strongly positively correlated to 'Average Answer Length' (see matrices above), so it makes sense that a greater '# Open Squares' was also positively correlated with solve times. The FDP shows that the most difficult puzzle days (Fri and Sat) had a rightward shift in '# Open Squares' relative to the easier 15x15 puzzle days. A large amount of the overall 15x15 puzzles positive correlation appears to be accounted for by puzzles, nearly exclusively on those two most difficult days, with >~80 '# Open Squares'. The positive correlation for Saturday, approximating the strength of the overall 15x15 positive correlation, is an indication that this feature will likely have some independent predictive value in the modeling phase (see prefacing text for this section).* 
-
-
+*'# Open Squares' is a proprietary measure from XWord Info that counts all white squares that are *not* bordered by black squares. Most of the strength of the all 15x15 puzzles correlation (black) is from the strong rightward shift in the FDP for the two most difficult puzzle days (Fri and Sat), with nearly all 15x15 puzzles with >~80 open squares falling on those days. '# Open Squares' was strongly negatively correlated with '# Answers' and strongly positively correlated with '#Average Answer Length' (see Fig. 7). For difficult puzzle days (Fri and Sat), these relationships translated to longer answers that were also more difficult. Unlike for '# Answers', however, some degree of positive correlation was seen for all puzzles days. This indicates that there may not be a difficulty threshold for this feature; the more '# Open Squares', the more time a puzzle tended to take to solve regardless of overall difficulty.   
+ 
 **<h4>Figure 10. Number of Black Squares**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/e882aea7-2649-45fe-be8d-5ebe360bdffb)
