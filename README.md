@@ -48,7 +48,7 @@ GMSTs improved over the full sample period (**Figure 3**), with fairly dramatic 
 **Figure 4. Solve Time Overview by Puzzle Day: Violin Plots With Swarm Plot Overlay**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/6e866ea5-9778-4819-ba5b-3ad739440ef4)
-*<h5>Median[IQR] solve time (m), per puzzle day, per solve interval:*<*<br>
+*<h5>Median[IQR] solve time (m), per puzzle day, per solve interval:*<br>
 *2018/2019: Sun: 50.0[42.3-60.0], Mon: 8.6[7.6-9.8], Tue: 12.1[9.5-14.3], Wed: 16.5[13.1-20.1], Thu: 24.6[20.2-29.0], Fri: 24.7[21.6-29.5], Sat: 31.6[25.1-36.2]*<br>
 *2020/2021: Sun: 37.1[32.2-41.5], Mon: 7.1[6.4-7.9], Tue: 9.5[8.2-10.9], Wed: 12.7[10.8-15.2], Thu: 20.3[17.6-24.1], Fri: 20.7[18.6-23.9], Sat: 26.9[22.8-31.2]*<br>
 *2022-2024: Sun: 33.2[28.6-37.7], Mon: 6.0[5.6-6.4], Tue: 8.3[7.5-9.6], Wed: 11.8[10.0-13.9], Thu: 18.4[16.1-21.1], Fri: 18.8[16.9-21.4], Sat: 24.0[20.4-28.9]*  
@@ -121,9 +121,9 @@ Though most features had at least a moderate strength correlation with GMS solve
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/026d5d2b-1f1c-4525-b948-b599609cce32)
 *<h5>GMSTs and 'Average Answer Length' had a strong positive correlation for 15x15 puzzles (r= .69).<br>*
 
-*The strong all 15x15 puzzles correlation for GMS is related to the large rightward shift in the FDP for the two most difficult puzzle days (Fri and Sat). Saturday also showed a strong positive correlation across a wide range of feature values, with higher 'Average Answer Length' being associated with slower solves. As discussed in the context of Figs. 8 and 9, 'Average Answer Length' was strongly negatively correlated with '# Answers' and strongly positvely correlated with measures of answer rarity (e.g. 'Freshness Factor; see Fig. 17). So it makes intuitive sense that as 'Average Answer Length' increased, particularly on difficult puzzle days, the answers themelves became more difficult and slowed down solve times even as they decreased in absolute number. 
+*The strong all 15x15 puzzles correlation for GMS is related to the large rightward shift in the FDP for the two most difficult puzzle days (Fri and Sat). Saturday also showed a strong positive correlation across a wide range of feature values, with higher 'Average Answer Length' being associated with slower solves. As discussed in the context of Figs. 8 and 9, 'Average Answer Length' was strongly negatively correlated with '# Answers' and strongly positvely correlated with measures of answer rarity (e.g. 'Freshness Factor; see Fig. 17). So it makes intuitive sense that as 'Average Answer Length' increased, particularly on difficult puzzle days, the answers themelves became more difficult and slowed down solve times even as they decreased in absolute number.* 
 
-Another interesting observation regarding this feature is that, unlike for the other grid features discussed thus far, Thursday was well-differentiated to the right of the earlier week puzzle days in the FDP. This feature had a strong correlation with solve time, especially for Saturday, but to some degree across all puzzle days. Given that and the need to explain why solve times for Thursday were well right-shifted from the earlier week puzzle days (see Fig. 3), this feature becomes an attractive candidate for explanatory power of solve times across puzzle days in the predictive modeling phase.*  
+*Another interesting observation regarding this feature is that, unlike for the other grid features discussed thus far, Thursday was well-differentiated to the right of the earlier week puzzle days in the FDP. This feature had a strong correlation with solve time, especially for Saturday, but to some degree across all puzzle days. Given that and the need to explain why solve times for Thursday were well right-shifted from the earlier week puzzle days (see Fig. 3), this feature becomes an attractive candidate for explanatory power of solve times across puzzle days in the predictive modeling phase.*  
 
 
 **<h4>Figure 12. Number of Cheater Squares**
@@ -198,25 +198,25 @@ Another interesting observation regarding this feature is that, unlike for the o
 
 ## Supplementary Figures
 
-**<h4>Supplementary Figure 1. Correlation Heatmapping of GMS Individual Puzzle Performance vs Grid, Answer and Past Performance Features by Puzzle Day (15x15 Puzzle Days)**
+**<h4>Figure S1. Correlation Heatmapping of GMS Individual Puzzle Performance vs Grid, Answer and Past Performance Features by Puzzle Day (15x15 Puzzle Days)**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/614eeef8-e1bb-4b1e-84a7-e504c208cdb0)
 
 
 
-**Supplementary Figure 2. Number of Rebus Squares vs GMS Solve Time by Puzzle Day**
+**Figure S2. Number of Rebus Squares vs GMS Solve Time by Puzzle Day**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/953008aa-62d2-4575-90eb-6ce3d6f9f0c5)
 *<h5>Only Sunday and Thursday had an appreciable '# Rebus Squares' for the set of GMS solves. Rebus squares are those that must be filled with more than one letter, number or symbol for a given puzzle to be solved. There were weak-to-moderate positive correlations for both Sunday (r=.12) and Thursday (r=.15). The directionality of the correlations does make intuitive sense, as both their existence and the "rules" for any given rebus can often take a little while to figure out. Additionally, they increase solve time by some degree simply by requiring additional fill and menu toggling relative to a non-rebus puzzle. One caveat here is that the very large number of 0 rebus puzzles, even on Sunday and Thursday, make the strength of these correlations hard to interpret (ie, these are not exactly continuous distributions).*<br>
  
 
-**<h4>Supplementary Figure 3. Number of Circled Squares vs GMS Solve Time by Puzzle Day**
+**<h4>Figure S3. Number of Circled Squares vs GMS Solve Time by Puzzle Day**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/3fdfde5a-0417-4d35-bf5a-9ccc91bdd2cf)
 *<h5>Circled squares were virtually non-existent on the tougher (Fri and Sat) puzzle days. The modest negative correlation seen across all 15x15 puzzle days (-.11) is attributable to the fact that most 15x15 puzzles with circles appeared early in the week. The smattering of puzzles with circles on Sunday almost all fell in the middle of the solve time range regardless of '# Circles', indicating that this feature didn't likely have a major impact on solve times.*
 
 
-**<h4>Supplementary Figure 4. Number of Shaded Squares vs GMS Solve Time by Puzzle Day**
+**<h4>Figure S4. Number of Shaded Squares vs GMS Solve Time by Puzzle Day**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/76df6209-f483-44a5-af55-ae42e8d0f409)
 *<h5>Shaded squares, like circled squares, were virtually non-existent in the tougher (Fri and Sat) puzzles. Also like with circled squares, their function is to reveal a puzzle theme and their presence may provide assistance to solvers on clues in which they are embedded. Most puzzles with shaded squares were within the bottom third of GMS 15x15 puzzle solve times, most likely due to shaded squares almost exclusively showing up only in early week puzzles. Also as with '# Circles', the smattering of Sunday puzzles almost mostly fell in the middle of the solve time range regardless of "# Shaded Squares", indicating that this feature also isn't likely having a major impact on solve times.* 
@@ -224,7 +224,7 @@ Another interesting observation regarding this feature is that, unlike for the o
 
 ## Supplementary Tables
 
-**<h4>Supplementary Table 1. Features Included in Puzzle Features Principal Component Analysis**
+**<h4>Table S1. Features Included in Puzzle Features Principal Component Analysis**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/0ef75602-216c-4a0d-b84e-e32723f7f847)
 
