@@ -37,9 +37,9 @@ GMSTs improved over the full sample period (**Figure 3**), with fairly dramatic 
 
 **Figure 3. Solve Time Overview by Puzzle Day: 10-Puzzle Moving Averages and Distributions of Raw Values**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/98400f01-eade-4b93-8521-66200fcf1695)
-*<h5>GMS Final (as of Jan. 26, 2024) 10-puzzle moving average of solve time (m), per puzzle day:*<br>
-*Sun: 28.8, Mon: 5.7, Tue: 7.7, Wed: 11.4, Thu: 15.2, Fri: 17.3, Sat: 21.1*<br>
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/4ab29e1e-2e1c-4f93-8f36-65d3fb8d5751)
+*<h5>GMS Final (as of Jan. 27, 2024) 10-puzzle moving average of solve time (m), per puzzle day:*<br>
+*Sun: 28.8, Mon: 5.7, Tue: 7.7, Wed: 11.4, Thu: 15.2, Fri: 17.3, Sat: 21.2*<br>
 
 ###
 **Figure 4** shows the GMS solve time performance trajectory in violin plots with swarm plot overlays, broken out by 2 year (2+ for 2023/24) solve date intervals. Violin plots show both the range (vertical extent) and distribution characteristics (width as it varies across the y-axis range) for each puzzle day, per solve interval. Black lines on the violin plots demarcate solve time quartiles per puzzle day. Swarm plot overlays per puzzle day show individual puzzle raw solve times. One observation to hold in mind for discussion on the relationship between past and future solve performance in the final section of this summary is that Thursday and Saturday solve times were inherently more dispersed than those for other 15x15 puzzle days (as evidenced by relatively narrow violin geometries).   
