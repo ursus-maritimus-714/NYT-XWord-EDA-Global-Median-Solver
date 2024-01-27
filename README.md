@@ -158,18 +158,20 @@ Though most features had at least a moderate strength correlation with GMS solve
 
 **<h4>Figure 16. Number of Unique Answers**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/320cb9f0-1448-4cbb-97eb-0d602de00919)
-*<h5>GMSTs and '# Unique Answers' had a moderate positive correlation on 15x15 puzzles (r= .41).<br>*
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/afbdd789-54ee-40a9-80ec-bb0ddb85c583)
+*<h5>GMSTs and '# Unique Answers' had a moderate positive correlation for 15x15 puzzles (r= .40).<br>*
 
 *<h5>A unique answer is defined here as one that does not appear in any other NYT crossword puzzle in either the Shortz or pre-Shortz eras (either before or after the puzzle release date). This is perhaps an overly stringent criterion to define answer rarity (see **Fig. 17** for a graded approach to defining answer rarity). Nonetheless the positive correlation was clearly apparent when considering all 15x15 puzzles together, consistent with the most difficult puzzle days (Fri and Sat) pulling most of the weight given their prominent rightward shifts in the FDP, and also within most of the individual puzzle days. As with several other features previously evaluated, this correlation was strongest (albeit still modestly) within individual puzzle days for Saturday. Given that Saturday also had the widest feature value range of the 15x15 puzzle days, this provides some optimism for the predictive value of '# Unique Answers'.*
 
 
 **<h4>Figure 17. Freshness Factor**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/9b1189cf-db63-4ffe-bc2b-5588d61a77c1)
-*<h5>GMSTs and 'Freshness Factor' had a strong positive correlation on 15x15 puzzles (r= .70).<br>*
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/c416b62a-d527-4cb0-aa6e-f01ceaca45f4)
+*<h5>GMSTs and 'Freshness Factor' had a strong positive correlation for 15x15 puzzles (r= .70).<br>*
 
-*<h5>'Freshness Factor' is yet another proprietary XWord Info measure that assesses the aggregate relative novelty of all answers in a given crossword puzzle as compared to those in all other crossword puzzles in the NYT archive. The much stronger correlation to GMSTs as compared to that for '# Unique Answers' suggests that there's much to be gained by taking a graded, as opposed to all-or-none, approach in assessing answer rarity.  More so than any other grid, clue or puzzle feature, 15x15 puzzle days peaked in this measure (seen in the FDP) in close concordance with the peaks in the per day sequence for solve times (see **Figs. 1 and 2**). The positive correlation was also seen to a consistent degree within each of the individual puzzle days, with Saturday once again having the strongest across the widest range of feature values among the 15x15 puzzle days. This finding generates a prediction that, apart from recent puzzle day-specific solver performance prior to a given solve (see **Figure 19**), 'Freshness Factor' will be the most useful feature evaluated in this analysis for predictive modeling of solve performance.*
+*<h5>'Freshness Factor' is yet another proprietary XWord Info measure that assesses the aggregate relative novelty of all answers in a given crossword puzzle as compared to those in all other crossword puzzles in the NYT archive. The much stronger correlation to GMSTs as compared to that for '# Unique Answers' suggests that there's much to be gained by taking a graded, as opposed to all-or-none, approach in assessing answer rarity. Overall, this feature had the strongest correlation with GMS solve times of any grid, clue or answer feature evaluated (but see Fig. 19 for a past performance feature with a stronger corrletion to solve time). 
+
+Additonally, it is very noteworthy, with an eye toward predictive modeling, that the 15x15 puzzle days peaked in this measure (seen in the FDP) in close concordance with the by day peaks in solve times (see **Figs. 1 and 2**). The only other puzzle feature coming closest to this degree and concordance of peak separation was 'Average Answer Length', though this feature showed a Monday-Tuesday separation more in line with the solve time peaks separation for those two easy puzzle days. The positive correlation for this feature was also seen to a consistent degree within each of the individual puzzle days. This was particularly striking for Saturday because, as was typical for features analyzed, that puzzle day had both (one of) the strongest within-day correlations and also the widest range of feature values of any individual puzzle day. All of the observations discussed here lead me to believe that 'Freshness Factor' will be the most useful puzzle feature evaluated presently in terms of predictive modeling of solve performance.*
 
 
 **<h4>Figure 18. Number of Wordplay Clues**
