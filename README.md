@@ -198,23 +198,22 @@ Additonally, it is very noteworthy, with an eye toward predictive modeling, that
 
 **<h4>Supplementary Figure 1. Correlation Heatmapping of GMS Individual Puzzle Performance vs Grid, Answer and Past Performance Features by Puzzle Day (15x15 Puzzle Days)**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/8890427c-19e9-4972-8570-7cb999aa634e)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/614eeef8-e1bb-4b1e-84a7-e504c208cdb0)
 
 
 **Supplementary Figure 2. Number of Rebus Squares vs GMS Solve Time by Puzzle Day**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/1b064ce6-02de-4047-88d8-2861f30c63ae)
-
-*<h5>Only Sunday and Thursday had an appreciable '# Rebus Squares' for the set of GMS solves. Rebus squares are those that must be filled with more than one letter, number or symbol for a given puzzle to be solved. There were weak-to-moderate positive correlations for both Sunday (r=.23) and Thursday (r=.20). The directionality of the correlations does make intuitive sense, as both their existence and the "rules" for any given rebus can often take a little while to figure out. Additionally, they increase solve time by some degree simply by requiring additional fill and menu toggling relative to a non-rebus puzzle. One caveat here is that the very large number of 0 rebus puzzles, even on Sunday and Thursday, make the strength of these correlations hard to interpret (ie, these are not exactly continuous distributions).*<br>
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/953008aa-62d2-4575-90eb-6ce3d6f9f0c5)
+*<h5>Only Sunday and Thursday had an appreciable '# Rebus Squares' for the set of GMS solves. Rebus squares are those that must be filled with more than one letter, number or symbol for a given puzzle to be solved. There were weak-to-moderate positive correlations for both Sunday (r=.12) and Thursday (r=.15). The directionality of the correlations does make intuitive sense, as both their existence and the "rules" for any given rebus can often take a little while to figure out. Additionally, they increase solve time by some degree simply by requiring additional fill and menu toggling relative to a non-rebus puzzle. One caveat here is that the very large number of 0 rebus puzzles, even on Sunday and Thursday, make the strength of these correlations hard to interpret (ie, these are not exactly continuous distributions).*<br>
  
 **<h4>Supplementary Figure 3. Number of Circled Squares vs GMS Solve Time by Puzzle Day**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/a12a9253-5407-4a1b-9438-59ec3231c07a)
-*<h5>Circled squares were virtually non-existent on the tougher (Fri and Sat) puzzle days. The modest negative correlation seen across all 15x15 puzzle days (-.13) is attributable to the fact that most 15x15 puzzles with circles appeared early in the week. The smattering of puzzles with circles on Sunday almost all fell in the middle of the solve time range regardless of '# Circles', indicating that this feature didn't likely have a major impact on solve times.*
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/3fdfde5a-0417-4d35-bf5a-9ccc91bdd2cf)
+*<h5>Circled squares were virtually non-existent on the tougher (Fri and Sat) puzzle days. The modest negative correlation seen across all 15x15 puzzle days (-.11) is attributable to the fact that most 15x15 puzzles with circles appeared early in the week. The smattering of puzzles with circles on Sunday almost all fell in the middle of the solve time range regardless of '# Circles', indicating that this feature didn't likely have a major impact on solve times.*
 
 **<h4>Supplementary Figure 4. Number of Shaded Squares vs GMS Solve Time by Puzzle Day**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/0be7c072-e115-48ea-8f3b-af76a1022974)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/76df6209-f483-44a5-af55-ae42e8d0f409)
 *<h5>Shaded squares, like circled squares, were virtually non-existent in the tougher (Fri and Sat) puzzles. Also like with circled squares, their function is to reveal a puzzle theme and their presence may provide assistance to solvers on clues in which they are embedded. Most puzzles with shaded squares were within the bottom third of GMS 15x15 puzzle solve times, most likely due to shaded squares almost exclusively showing up only in early week puzzles. Also as with '# Circles', the smattering of Sunday puzzles almost mostly fell in the middle of the solve time range regardless of "# Shaded Squares", indicating that this feature also isn't likely having a major impact on solve times.* 
  
 ## Supplementary Tables
