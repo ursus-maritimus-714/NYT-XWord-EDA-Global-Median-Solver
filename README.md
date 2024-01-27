@@ -16,28 +16,28 @@ The NYT crossword has been published since 1942, and many consider the "modern e
 
 **Figure 1. PCA of Select Puzzle Grid, Clue and Answer Features**                                                                  
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/2a64ecf0-29cf-4096-bcd4-32b15671269a)
-*<h5>The first 3 principal components accounted for 47.6% of total variance. All puzzles from Jan. 1, 2018- Jan. 26, 2024 were included in this analysis (N=2,217).*
+*<h5>The first 3 principal components accounted for 47.6% of total variance. All puzzles from Jan. 1, 2018- Jan. 27, 2024 were included in this analysis (N=2,218).*
 ###
 The overlapping distributions in GMSTs in the solve time density plot in **Figure 2** show a parallel performance phenomenon to the continuum of puzzle properties seen in **Fig. 1**; namely that while solve difficulty increased as the week progressed, puzzle days of adjacent difficulty had substantially overlapping GMST distributions. Other than for the "easy" days (Monday and Tuesday), distributions of GMSTs were quite broad. Wednesday and Saturday also had somewhat multimodal solve time distributions, supporting the notion that there are "easy" and "hard" puzzle pools/constructors at the level of specific puzzle days. The broadness of each puzzle day-specific GMST distribution over the entire sample timeframe depicted here (2018-2024) was also increased by the fairly dramatic improvement in GMS performance over those 6+ years. The temporal dynamics of this improvement will be highly evident in the next section's figures.     
 
 One additional contextual note about the GMS is worth mention upfront. Though Matt from XWStats uses the word "global", and I adopt it as well, it is highly likely that the sample from which the GMST is pulled per puzzle skews faster than the true population distributions. The reasons for this assumption are twofold; only solvers who actually complete a given puzzle are included in its sample, and each sample contains only solvers motivated enough by the prospect of improvement to track their own progress to begin with.
 
-**<h4>Figure 2. Distributions of GMSTs by Puzzle Day**                   
+**<h4>Figure 2. Distributions of GMSTs by Puzzle Day for Full Sample Period**                   
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/03ad1087-1fe9-4f6d-8721-e513ed606e64)
-*<h5>All puzzles from Jan. 1, 2018- Jan. 26, 2024 were included in this analysis (N=2,217).* 
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/6878dcf4-3805-4342-9758-acba67ae9a84)
+*<h5>All puzzles from Jan. 1, 2018- Jan. 27, 2024 were included in this analysis (N=2,218).* 
 
 
 ## Results
 ### Global Median Solver (GMS) Performance Over Time
 
-The GMS solved N = 2,217 puzzles in the full sample period (365 per year, except 2020: 366 and partial year 2024: 26). The total solve time for the GMS was 31.9 days (2018: 6.8; 2019: 5.8; 2020: 5.2; 2021: 4.8; 2022: 4.7; 2023/24: 4.6). Note that GMS performance was tracked by puzzle *issue* date, as I did not have access to GMS puzzle completion dates. It's reasonably safe to assume, however, that the GMS (a different individual solver for most puzzles, presumably) solved in approximately the sequence of puzzle issue. Individual solver (IS1 and IS2) performance (see links in Introduction), in contrast, was tracked by puzzle *completion* date since I *was* able to obtain completion timestamps for those solvers' completed puzzles with Matt's assistance.
+The GMS solved N = 2,218 puzzles in the full sample period (365 per year, except 2020: 366 and partial year 2024: 27). The total solve time for the GMS was 31.9 days (2018: 6.8; 2019: 5.8; 2020: 5.2; 2021: 4.8; 2022: 4.7; 2023/24: 4.6). Note that GMS performance was tracked by puzzle *issue* date, as I did not have access to GMS puzzle completion dates. It's reasonably safe to assume, however, that the GMS (a different individual solver for most puzzles, presumably) solved in approximately the sequence of puzzle issue. Individual solver (IS1 and IS2) performance (see links in Introduction), in contrast, was tracked by puzzle *completion* date since I *was* able to obtain completion timestamps for those solvers' completed puzzles with Matt's assistance.
 
-GMSTs improved over the complete set of puzzles (N=2,217) issued between January 1, 2018 and January 26, 2024 (**Figure 3**), with fairly dramatic improvement seen early on for some puzzle days and graded improvement continuing for each puzzle day until the end of the sample period (top panel). These improvement dynamics can also been seen in the aggregate raw solve time per year data reported above. The 2-year interval density plots of raw solve time distributions (bottom panels) show that performance on individual puzzle days became more consistent over time (higher peaks with narrower distributions). Because I did not have access to the raw solver data from which the GMSTs were drawn, however, it was not possible to disentangle improvement for individual "early adopters" of Matt's tracking software versus stronger solvers joining the solver pool over time.  
+GMSTs improved over the full sample period (**Figure 3**), with fairly dramatic improvement seen early on for some puzzle days and graded improvement continuing for each puzzle day until the end of the sample period (top panel). These improvement dynamics can also been seen in the aggregate raw solve time per year data reported above. The 2-year interval density plots of raw solve time distributions (bottom panels) show that performance on individual puzzle days became more consistent over time (higher peaks with narrower distributions). Because I did not have access to the raw solver data from which the GMSTs were drawn, however, it was not possible to disentangle improvement for individual "early adopters" of Matt's tracking software versus stronger solvers joining the solver pool over time.  
 
 **Figure 3. Solve Time Overview by Puzzle Day: 10-Puzzle Moving Averages and Distributions of Raw Values**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/89d7c5c3-aeaa-4e1e-8ba1-c1d22783ff4d)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/98400f01-eade-4b93-8521-66200fcf1695)
 *<h5>GMS Final (as of Jan. 26, 2024) 10-puzzle moving average of solve time (m), per puzzle day:*<br>
 *Sun: 28.8, Mon: 5.7, Tue: 7.7, Wed: 11.4, Thu: 15.2, Fri: 17.3, Sat: 21.1*<br>
 
@@ -47,11 +47,11 @@ GMSTs improved over the complete set of puzzles (N=2,217) issued between January
 
 **Figure 4. Solve Time Overview by Puzzle Day: Violin Plots With Swarm Plot Overlay**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/32696188-c3e3-455b-bde0-5a2f52f869d4)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/6e866ea5-9778-4819-ba5b-3ad739440ef4)
 *<h5>Median[IQR] solve time (m), per puzzle day, per solve interval:*<*<br>
 *2018/2019: Sun: 50.0[42.3-60.0], Mon: 8.6[7.6-9.8], Tue: 12.1[9.5-14.3], Wed: 16.5[13.1-20.1], Thu: 24.6[20.2-29.0], Fri: 24.7[21.6-29.5], Sat: 31.6[25.1-36.2]*<br>
 *2020/2021: Sun: 37.1[32.2-41.5], Mon: 7.1[6.4-7.9], Tue: 9.5[8.2-10.9], Wed: 12.7[10.8-15.2], Thu: 20.3[17.6-24.1], Fri: 20.7[18.6-23.9], Sat: 26.9[22.8-31.2]*<br>
-*2022-2024: Sun: 33.2[28.6-37.7], Mon: 6.0[5.6-6.4], Tue: 8.3[7.5-9.6], Wed: 11.8[10.0-13.9], Thu: 18.4[16.1-21.1], Fri: 18.8[16.9-21.4], Sat: 24.1[20.4-29.0]*  
+*2022-2024: Sun: 33.2[28.6-37.7], Mon: 6.0[5.6-6.4], Tue: 8.3[7.5-9.6], Wed: 11.8[10.0-13.9], Thu: 18.4[16.1-21.1], Fri: 18.8[16.9-21.4], Sat: 24.0[20.4-28.9]*  
 
 
 ### GMS Performance By Puzzle Constructor(s)
@@ -82,7 +82,7 @@ As can also be seen in the **Fig. 7** correlation matrices, a number of grid, cl
 **Figure 7. Correlation Heatmapping of GMS Raw Solve Times vs Grid, Clue, Answer and Past Performance Features**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/43ba3f0b-7972-4e02-ba90-c6af29aca9f3)
-*<h5>Correlation heatmaps derived from N=1,588 15x15 (left panel) and N=264 21x21 (right panel) puzzles solved by GMS from 2019-2024 (see note below).*
+*<h5>Correlation heatmaps derived from N=1,589 15x15 (left panel) and N=264 21x21 (right panel) puzzles solved by GMS from 2019-2024 (see note below).*
 
 *Note on Inclusion Time Range: As is clear in **Fig. 7**, RPB had the strongest correlation to individual solve times of any feature evaluated by a considerable degree. As such, there was a concern that shifts in baseline solve speed could overwhelm or mask correlations with puzzle-specific features. But normalizing raw solve times (e.g., with RPB) cancels out cross-puzzle day trends that I was interested in identifying prior to the modeling stage. As such, I arrived at a compromise in which I removed all solves from the first year in the sample (n=365), which reduced baseline volatility in the solve pool to a considerable degree and allowed me to keep raw solve times as the y-axis variable across these analyses.*
 
@@ -97,28 +97,28 @@ Though most features had at least a moderate strength correlation with GMS solve
 
 **Figure 8. Number of Answers**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/7aa9c0dc-c40f-4aec-aaec-9ffa333f52d8)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/a3ecb582-81dc-49cb-8985-62a7488660b6)
 *<h5>Global Median Solver solve times (GMSTs) and '# Answers' had a moderately strong negative correlation for 15x15 puzzles (r= -.57).<br>*
 
 *Most of the strength of the all 15x15 puzzles correlation (black) is related to the large leftward shift in the FDP for the two most difficult puzzle days (Fri and Sat). '# Answers' is strongly negatively correlated with 'Average Answer Length' (see Fig. 7) and measures of answer rarity (e.g., 'Freshness Factor'; see Fig. 17). Thus, when puzzles were difficult (Fri and Sat), this fewer answers/more long answers combination meant more answers that were rarely encountered/unique. Within Saturday a correlation of the same directionality as the overall 15x15 puzzles correlation was seen, emphasizing this relationship. Moreover correlations of the reverse sign (positive) were seen for the early week puzzle days, prominently for the easiest puzzle day (Monday). This finding suggests that, below a particular per-clue/answer difficulty threshold mostly only attained in later week (Thu-Sat) puzzles, the time penalty incurred by having to read relatively more clues is greater than the time savings from encountering relatively fewer longer answers.*       
 
 **<h4>Figure 9. Number of Open Squares**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/ee27daf2-7618-48d6-9ea7-2fdb61e13143)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/f500fb40-0789-4870-af1c-43dbd65b6d5c)
 *<h5>GMSTs and '# Open Squares' had a borderline strong positive correlation for 15x15 puzzles (r= .58).<br>*
 
 *'# Open Squares' is a proprietary measure from XWord Info that counts all white squares that are *not* bordered by black squares. Most of the strength of the all 15x15 puzzles correlation (black) is related to the large rightward shift in the FDP for the two most difficult puzzle days (Fri and Sat), with nearly all 15x15 puzzles with >~80 open squares falling on those days. '# Open Squares' was strongly negatively correlated with '# Answers' and strongly positively correlated with '#Average Answer Length' (see Fig. 7). For difficult puzzle days (Fri and Sat), these relationships translated to longer answers that were also more difficult. Unlike for '# Answers', however, some degree of positive correlation was seen for all puzzles days. This indicates that there may not be a difficulty threshold for this feature; the more '# Open Squares', the more time a puzzle tended to take to solve regardless of overall difficulty.*   
  
 **<h4>Figure 10. Number of Black Squares**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/d095cac7-e3b4-4b2d-a6d4-bad2215036c5)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/99b67b59-e3bb-4c0e-96fa-0f7299af38d2)
 *<h5>GMSTs and '# Black Squares' had a borderline moderate negative correlation for 15x15 puzzles (r= -.39).<br>*
 
 *Most of the strength of the all 15x15 puzzles correlation (black) is related to the large leftward shift in the FDP for the two most difficult puzzle days (Fri and Sat), with nearly all 15x15 puzzles with <~32 black squares falling on those days. '# Black Squares' was strongly negatively correlated with both '# Open Squares' and 'Average Answer Length'. So an increase in '# Black Squares' meant shorter, easier answers and a faster solve on average. Within Saturday a relatively strong correlation of the same directionality as the overall 15x15 puzzles correlation was seen, emphasizing this relationship. Correlations for puzzle days prior to Thursday, however, were weak-to-nonexistant. This indicates that an increase in '# Black Squares' likely only had an impact on solve times above a particular average answer difficulty.*
 
 **<h4>Figure 11. Average Answer Length**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/58e3ca3b-d580-43d9-af9a-9ae4e98d5b49)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/026d5d2b-1f1c-4525-b948-b599609cce32)
 *<h5>GMSTs and 'Average Answer Length' had a strong positive correlation for 15x15 puzzles (r= .69).<br>*
 
 *The strong all 15x15 puzzles correlation for GMS is related to the large rightward shift in the FDP for the two most difficult puzzle days (Fri and Sat). Saturday also showed a strong positive correlation across a wide range of feature values, with higher 'Average Answer Length' being associated with slower solves. As discussed in the context of Figs. 8 and 9, 'Average Answer Length' was strongly negatively correlated with '# Answers' and strongly positvely correlated with measures of answer rarity (e.g. 'Freshness Factor; see Fig. 17). So it makes intuitive sense that as 'Average Answer Length' increased, particularly on difficult puzzle days, the answers themelves became more difficult and slowed down solve times even as they decreased in absolute number. 
@@ -128,7 +128,7 @@ Another interesting observation regarding this feature is that, unlike for the o
 
 **<h4>Figure 12. Number of Cheater Squares**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/b99ed9ba-2d33-436e-985f-90b0789d007b)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/fc03f9fc-d3a5-4acc-9262-524278a53643)
 *<h5>GMSTs and '# Cheater Squares' had a weak positive correlation for 15x15 puzzles (r= .20).<br>*
 
 *Cheater Squares are black squares than can be removed without affecting the overall word count of the grid. These squares make construction easier (hence their name). It can be seen in the FDP that large numbers of them (>~10) almost always appeared on the difficult puzzle days (Fri and Sat), which likely accounted for the (modest) positive correlation across all 15x15 puzzles. Curiously, most of the individual puzzle days showed modest reverse sign (negative correlations) between this feature and GMS solve time. The likely explanation for this is that, at any particular level of puzzle difficulty, simply adding more black squares will reduce solve time on average. Incidentally, the reason cheater squares were only rarely seen in odd numbers is the NYT general requirement for grid symmetry.*
@@ -138,21 +138,21 @@ Another interesting observation regarding this feature is that, unlike for the o
 
 **<h4>Figure 13. Number of Fill-in-the-Blank Answers**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/244f72f8-08d2-48ae-9325-3df8ac26c358)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/f323b2f7-832a-497d-b154-31f7d86dc053)
 *<h5>GMSTs and '# Fill-in-the-Blank Answers' had a weak-to-moderate negative correlation for 15x15 puzzles (r= -.31).<br>*
 
 *Most of the strength of this weak-to-moderate correlation for all 15x15 puzzles is related to the moderate leftward shift in the FDP for Monday. Along with the easiest puzzle day employing the largest dose of '#Fill-in-the-Blank', the hardest puzzle day (Saturday) was also slightly left-shifted relative to the other 15x15 puzzle days. There was a moderate negative correlation within Saturday as well, with the rare puzzles employing >~5 fill-in-the blank clues associating with distinctly faster solve times. This indicates that above a certain level of difficulty, fill-in-the blanks likely provide a speed-up mechanism. The lack of correlations within the other puzzles days, however, indicates that the difficulty threshold for this feature to matter was quite high.* 
 
 **<h4>Figure 14. Scrabble Average**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/f9773b86-e55c-4d5f-bd0a-f37696075a74)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/88cd507d-4c8f-4ea1-acf6-95289e8233c8)
 *<h5>GMSTs and 'Scrabble Average' had a weak-to-non-existant negative correlation for 15x15 puzzles (r= -.03).<br>*
 
 *'Scrabble Average' is another proprietary XWord Info measure, in which each letter in the answer grid is assigned its equivalent value in Scrabble. Since tile values in Scrabble increase with rarity of letter frequency in English texts, it would make sense that a higher value for this feature would be associated with *answers* of greater rarity. The later week 15x15 puzzle days (Fri and Sat) did show this tendency with positive correlations, suggesting that maybe there's a difficulty threshold for that relationship to manifest, though the magnitudes were not strong. Furthermore, 'Scrabble Average' had only moderate positive correlations with other more direct measures of answer rarity both across 15x15 puzzles (Fig. 7) and specifically within the later-week puzzle days (Supp. Fig. 1). Given that these more direct measures of answer rarity DID have strong positive correlations to solve times (see Figs. 15-17), this feature is a candidate to either be left out of predictive modeling entirely or to be combined with other answer rarity/difficulty measures to generate a novel predictive feature of slightly different flavor.*
 
 **<h4>Figure 15. Number of Scrabble Illegal Answers**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/450490f6-bd46-427f-b95a-683bdeae9762)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/1d0852a5-103b-4aca-b3ce-d45f75b9e870)
 *<h5>GMSTs and '# Scrabble Illegal' had a weak positive correlation for 15x15 puzzles (r= .19).<br>*
 
 *'# Scrabble Illegal' answers is a proprietary measure of XWord Info that gets at answer rarity more directly than does 'Scrabble Average'. Interestingly, the distributions for 15x15 puzzle days in the FDP were highly overlapping, other than a small leftward shift for Monday and Tuesday that likely accounted for the (modest) overall 15x15 puzzles positive correlation. '# Scrabble Illegal" had only moderate positive correlations with the most direct measures of answer rarity ('# Unique Answers' and 'Freshness Factor'; see Figs. 16 and 17), which was somewhat surprising to me. There are hints, particularly in the Monday and Saturday correlation plots, that this feature might be impacting solve times at the extreme low and high ends of its value range. However, taken together with the weak correlation to solve times shown by this feature, the findings here suggest that more non-standard vocabulary *alone* may not strongly signify or predict puzzle difficulty.*  
@@ -160,7 +160,7 @@ Another interesting observation regarding this feature is that, unlike for the o
 
 **<h4>Figure 16. Number of Unique Answers**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/afbdd789-54ee-40a9-80ec-bb0ddb85c583)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/a5603a43-c506-49b9-9ca1-ad8d9a6c2e61)
 *<h5>GMSTs and '# Unique Answers' had a moderate positive correlation for 15x15 puzzles (r= .40).<br>*
 
 *<h5>A unique answer is defined here as one that does not appear in any other NYT crossword puzzle in either the Shortz or pre-Shortz eras (either before or after the puzzle release date). This is perhaps an overly stringent criterion to define answer rarity (see **Fig. 17** for a graded approach to defining answer rarity). Nonetheless the positive correlation was clearly apparent when considering all 15x15 puzzles together. This is consistent with the most difficult puzzle days (Fri and Sat) pulling most of the weight given their prominent rightward shifts in the FDP, and also within most of the individual puzzle days. As with several other features previously evaluated, this correlation was strongest (albeit still modestly) within individual puzzle days for Saturday. Given that Saturday also had the widest feature value range of the 15x15 puzzle days, this provides some optimism for the predictive value of '# Unique Answers'.*
@@ -168,7 +168,7 @@ Another interesting observation regarding this feature is that, unlike for the o
 
 **<h4>Figure 17. Freshness Factor**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/c416b62a-d527-4cb0-aa6e-f01ceaca45f4)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/f98ef594-6e5c-49dd-840a-e5cb935c49ee)
 *<h5>GMSTs and 'Freshness Factor' had a strong positive correlation for 15x15 puzzles (r= .70).<br>*
 
 *<h5>'Freshness Factor' is yet another proprietary XWord Info measure that assesses the aggregate relative novelty of all answers in a given crossword puzzle as compared to those in all other crossword puzzles in the NYT archive. The much stronger correlation to GMSTs as compared to that for '# Unique Answers' suggests that there's much to be gained by taking a graded, as opposed to all-or-none, approach in assessing answer rarity. Overall, this feature had the strongest correlation with GMS solve times of any grid, clue or answer feature evaluated (but see Fig. 19 for a past performance feature with a stronger correlation to solve time).* 
@@ -178,7 +178,7 @@ Another interesting observation regarding this feature is that, unlike for the o
 
 **<h4>Figure 18. Number of Wordplay Clues**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/f01ca89d-a541-41cc-9878-f8bdfa5cde74)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/0816c344-9a94-454f-9c5b-8ef6f1cdd51a)
 *<h5>GMS solve times and '# Wordplay Clues' had a moderate positive correlation on 15x15 puzzles (r= .44).<br>*
 
 *<h5>'# Wordplay' clues is an (admittedly) somewhat subjective measure that I have manually evaluated and calculated clue-by-clue across (nearly) the entire puzzle sample completed by the GMS. The FDP for this feature has some interesting properties, including the clear result that later week (Thu-Sat) puzzles indeed had a larger allocation of 'trickier' clues than early week puzzles. There's also a prominent strong leftward shift for Monday puzzles, though with a strong second peak aligned with the Tuesday peak. Taken together, these early and late week distribution offsets are related to the moderate overall positive correlation across all 15x15 puzzles. The rare early week puzzles with a relatively large '# Wordplay' clues clearly had slower GMSTs, which makes intuitive sense in the context of how straightforward those puzzles generally were. Past Tuesday, however, there were only very weak within-puzzle day correlations for this feature. This suggests that there may be an overall difficulty threshold that largely dictates the impact that '# Wordplay Clues' might have on solve speed.* 
@@ -188,13 +188,13 @@ Another interesting observation regarding this feature is that, unlike for the o
 
 **<h4>Figure 19. Decay-Time Weighted Recent Performance (RPB)**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/8833f371-16d1-4737-be4d-205e2736010e)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/824b50e1-40bd-4ebd-8993-cb3f5e6406ad)
 *<h5>GMSTs and 'GMS Recent Performance Baseline' had a very strong positive correlation for 15x15 puzzles (r= .86).<br>*
 
-*<h5>The all 15x15 puzzles correlation for this feature was considerably stronger than that for any puzzle feature. The implication is that time decay-time weighted GMS recent past performance (RPB over the 20 day-specific puzzles previous to a given solve) will likely have more predictive value than any single puzzle, clue or answer feature. Not all puzzle days were created equally, however, with regard to correlational strength (and, potentially, predictive power) of RPB and solve time. Monday (r=.58) having an extremely high correlation relative to the other 15x15 puzzle days was unsurprising, given how few "degrees of freedom" there are in the easiest puzzles. The lowest correlation with RPB was for Saturday (.21), and the second lowest was for Thursday (.35). These two puzzle days had the highest degrees of heteogeneity, though for different reasons. Saturday because of the wide ranges of feature values, and Thursday because nearly all puzzles on that day involve a gimmick or trick of some variety (including rebuses of various flavors; see Supp. Fig. 2). With it's outsized difficulty, Saturday also presented a disproportionately high liklihood of a solver getting "stuck" on a particularly difficult clue or area of a puzzle. The violin plots (Fig. 3) provide intuitive visual evidence for the fact that Thursday and Saturday solve times were inherently more dispersed than those for other puzzle days (relatively narrow violin geometries).*
+*<h5>The all 15x15 puzzles correlation for this feature was considerably stronger than that for any puzzle feature. The implication is that time decay-time weighted GMS recent past performance (RPB over the 20 day-specific puzzles previous to a given solve) will likely have more predictive value than any single puzzle, clue or answer feature. Not all puzzle days were created equally, however, with regard to correlational strength (and, potentially, predictive power) of RPB and solve time. Monday (r=.59) having an extremely high correlation relative to the other 15x15 puzzle days was unsurprising, given how few "degrees of freedom" there are in the easiest puzzles. The lowest correlation with RPB was for Saturday (.22), and the second lowest was for Thursday (.35). These two puzzle days had the highest degrees of heteogeneity, though for different reasons. Saturday because of the wide ranges of feature values, and Thursday because nearly all puzzles on that day involve a gimmick or trick of some variety (including rebuses of various flavors; see Supp. Fig. 2). With it's outsized difficulty, Saturday also presented a disproportionately high liklihood of a solver getting "stuck" on a particularly difficult clue or area of a puzzle. The violin plots (Fig. 3) provide intuitive visual evidence for the fact that Thursday and Saturday solve times were inherently more dispersed than those for other puzzle days (relatively narrow violin geometries).*
 
 *<h5>Correlation Strength by Puzzle Day:*<br>
-*Sun: .27, Mon: .50, Tue: .28, Wed: .25, Thu: .18, Fri: .19, Sat: .25*<br>
+*Sun: .55, Mon: .59, Tue: .49, Wed: .39, Thu: .35, Fri: .40, Sat: .22*<br>
 
 ## Supplementary Figures
 
