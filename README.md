@@ -178,7 +178,7 @@ Though most features had at least moderate strength correlations with GMS solve 
 **<h4>Figure 18. Number of Wordplay Clues**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/0816c344-9a94-454f-9c5b-8ef6f1cdd51a)
-*<h5>GMS solve times and '# Wordplay Clues' had a moderate positive correlation on 15x15 puzzles (r= .44).<br>*
+*<h5>GMS solve times and '# Wordplay Clues' had a moderate positive correlation for 15x15 puzzles (r= .44).<br>*
 
 *<h5>'# Wordplay' clues is an (admittedly) somewhat subjective measure that I have manually evaluated and calculated clue-by-clue across (nearly) the entire puzzle sample completed by the GMS. The FDP for this feature has some interesting properties, including the clear result that later week (Thu-Sat) puzzles indeed had a larger allocation of 'trickier' clues than early week puzzles. There's also a prominent strong leftward shift for Monday puzzles, though with a strong second peak aligned with the Tuesday peak. Taken together, these early and late week distribution offsets are related to the moderate overall positive correlation across all 15x15 puzzles. The rare early week puzzles with a relatively large '# Wordplay' clues clearly had slower GMSTs, which makes intuitive sense in the context of how straightforward those puzzles generally were. Past Tuesday, however, there were only very weak within-puzzle day correlations for this feature. This suggests that there may be an overall difficulty threshold that largely dictates the impact that '# Wordplay Clues' might have on solve speed.* 
   
@@ -188,12 +188,22 @@ Though most features had at least moderate strength correlations with GMS solve 
 **<h4>Figure 19. Decay-Time Weighted Recent Performance (RPB)**
 
 ![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/824b50e1-40bd-4ebd-8993-cb3f5e6406ad)
-*<h5>GMSTs and 'GMS Recent Performance Baseline' had a very strong positive correlation for 15x15 puzzles (r= .86).<br>*
+*<h5>'Next' GMST and GMS 'Recent Performance Baseline (RPB)' had a very strong positive correlation for 15x15 puzzles (r= .86).<br>*
 
-*<h5>The all 15x15 puzzles correlation for this feature was considerably stronger than that for any puzzle feature. The implication is that time decay-time weighted GMS recent past performance (RPB over the 20 day-specific puzzles previous to a given solve) will likely have more predictive value than any single puzzle, clue or answer feature. Not all puzzle days were created equally, however, with regard to correlational strength (and, potentially, predictive power) of RPB and solve time. Monday (r=.59) having an extremely high correlation relative to the other 15x15 puzzle days was unsurprising, given how few "degrees of freedom" there are in the easiest puzzles. The lowest correlation with RPB was for Saturday (.22), and the second lowest was for Thursday (.35). These two puzzle days had the highest degrees of heterogeneity, though for different reasons. Saturday because of the wide ranges of feature values, and Thursday because nearly all puzzles on that day involve a gimmick or trick of some variety (including rebuses of various flavors; see Supp. Fig. 2). With it's outsized difficulty, Saturday also presented a disproportionately high likelihood of a solver getting "stuck" on a particularly difficult clue or area of a puzzle. The violin plots (Fig. 3) provide intuitive visual evidence for the fact that Thursday and Saturday solve times were inherently more dispersed than those for other puzzle days (relatively narrow violin geometries).*
+*<h5>The all 15x15 puzzles correlation for this feature was considerably stronger than that for any puzzle feature. The implication is that time decay-time weighted GMS recent past performance (RPB over the 20 day-specific puzzles previous to a given solve) will likely have more predictive value for the 'next' GMS raw solve time than any single puzzle, clue or answer feature. Not all puzzle days were created equally, however, with regard to correlational strength (and, potentially, predictive power) of RPB and 'next' raw solve time. Monday (r=.59) having an extremely strong correlation relative to the other 15x15 puzzle days was unsurprising, given how few "degrees of freedom" there are in the easiest puzzles. It is notworthy, however, that the lowest correlation for the GMS was for Saturday (.22). My suspicion (without proof, as I don't have the underlying raw data) is that this largely relates to the volatility of the Saturday solver pool that the GMS is drawn from. Because Saturday is consistently considerably more difficult than the other puzzle days, that puzzle day may have both a lower N to draw from for a given puzzle as well as a much more variable roster of puzzle completers. Of course, there may also be a substantial contribution to the relatively low Saturday correlation for the GMS both from the heterogeneity of Saturday puzzles (e.g., typically wide feature value ranges) and the high likelihood of middle-of-the-pack solvers getting "stuck" for extended stretches on one or several tough clues or answers.
 
-*<h5>Correlation Strength by Puzzle Day:*<br>
+It is noteworthy in comparison to the GMS that the lowest correlation between 'next' raw solve times and RPB for both individual solvers (IS1 and IS2; see links to their analyses in the Introduction to this summary) was for Thursday (.15 for IS1). This is perhaps unsurprising, since Thursday has a large degree of heterogeneity, with nearly all puzzles on that day involving a gimmick or trick of some variety (including rebuses of various flavors; see Supp. Fig. 2). Thursday came in as the day with the second lowest correlation for the GMS as well (.35), so variability in performance on that puzzle day may generalize across the solver pool.*
+
+*<h5>'Next' GMST and GMS RPB Correlation Strength by Puzzle Day:*<br>
 *Sun: .55, Mon: .59, Tue: .49, Wed: .39, Thu: .35, Fri: .40, Sat: .22*<br>
+
+
+
+
+
+
+
+
 
 ## Supplementary Figures
 
