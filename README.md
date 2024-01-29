@@ -119,12 +119,12 @@ Though most features had at least moderate strength correlations with GMS solve 
 
 **<h4>Figure 11. Average Answer Length**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/026d5d2b-1f1c-4525-b948-b599609cce32)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/aef4c833-e584-4891-98a6-3e00c6d1b362)
 *<h5>Raw GMSTs and 'Average Answer Length' had a strong positive correlation for all 15x15 puzzles (r= .69).<br>*
 
 *The strong all 15x15 puzzles correlation for GMS was related to the large rightward shift in the FDP for the two most difficult puzzle days (Fri and Sat). Saturday also showed a strong positive correlation across a wide range of feature values, with higher 'Average Answer Length' being associated with slower solves. As discussed in the context of Figs. 8 and 9, 'Average Answer Length' was strongly negatively correlated with '# Answers' and strongly positively correlated with measures of answer rarity (e.g. 'Freshness Factor; see Fig. 17). So it makes intuitive sense that as 'Average Answer Length' increased, particularly on difficult puzzle days, the answers themselves became more difficult and slowed down solve times even as they decreased in absolute number.* 
 
-*Another interesting observation regarding this feature is that, unlike for the other grid features discussed thus far, the Thursday peak was well-differentiated to the right of those for the earlier week puzzle days in the FDP. Given the relatively strong positive correlations overall and for several late week puzzle days with wide feature value ranges (including Thursday) and the need to explain why solve times for Thursday were well right-shifted from the earlier week puzzle days (see Fig. 3), this feature becomes an attractive candidate for having some predictive value across multiple puzzle days in the modeling phase.* 
+*Another interesting observation regarding this feature is that, unlike for the other grid features discussed thus far, the Thursday peak was well-differentiated to the right of those for the earlier week puzzle days in the FDP. The peak of the Thursday solve time distribution for the GMS was also strongly right-shifted relative to Wednesday. Given that this feature showed a strong positive correlation to solve time, and that this correlation was also was seen in indidivual late-week puzzle days, 'Average Answer Length' certainly holds some promise for having predictive value.* 
 
 
 **<h4>Figure 12. Number of Cheater Squares**
