@@ -168,7 +168,7 @@ Though most features had at least moderate strength correlations with GMS solve 
 
 **<h4>Figure 17. Freshness Factor**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/f98ef594-6e5c-49dd-840a-e5cb935c49ee)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/4552e863-0c99-4d75-9562-bb9e3eda42bd)
 *<h5>Raw GMSTs and 'Freshness Factor' had a strong positive correlation for all 15x15 puzzles (r= .70).<br>*
 
 *<h5>'Freshness Factor' is yet another proprietary XWord Info measure that assesses the aggregate relative novelty of all answers in a given crossword puzzle as compared to those in all other crossword puzzles in the NYT archive. The much stronger correlation to GMSTs as compared to that for '# Unique Answers' suggests that there's much to be gained by taking a graded, as opposed to all-or-none, approach in assessing answer rarity. Overall, this feature had the strongest correlation with GMS solve times of any grid, clue or answer feature evaluated (but see Fig. 19 for a past performance feature with a stronger correlation to solve time).* 
@@ -178,10 +178,10 @@ Though most features had at least moderate strength correlations with GMS solve 
 
 **<h4>Figure 18. Number of Wordplay Clues**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/0816c344-9a94-454f-9c5b-8ef6f1cdd51a)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/19d3a6dd-36e6-42ce-baf4-713332d3855e)
 *<h5>Raw GMS solve times and '# Wordplay Clues' had a moderate positive correlation for all 15x15 puzzles (r= .44).<br>*
 
-*<h5>'# Wordplay' clues is an (admittedly) somewhat subjective measure that I have manually evaluated and calculated clue-by-clue across (nearly) the entire puzzle sample completed by the GMS. The FDP for this feature had some interesting properties, including the clear result that later week (Thu-Sat) puzzles indeed had a larger allocation of 'trickier' clues than early week puzzles. There was also a prominent leftward shift for Monday puzzles, though with a strong second peak aligned with the Tuesday peak. Taken together, these early and late week distribution offsets were related to the moderate overall positive correlation across all 15x15 puzzles. The rare early week puzzles with a relatively large '# Wordplay' clues clearly had slower GMSTs, which makes intuitive sense in the context of how straightforward those puzzles generally were. Past Tuesday, however, there were only very weak within-puzzle day correlations for this feature. This suggests that there may be an overall difficulty threshold that largely dictates the impact that '# Wordplay Clues' might have on solve speed.* 
+*<h5>'# Wordplay' clues is an (admittedly) somewhat subjective measure that I have manually evaluated and calculated clue-by-clue across (nearly) the entire puzzle sample completed by the GMS. The FDP for this feature had some interesting properties, including the clear result that later week (Thu-Sat) puzzles indeed had a larger allocation of 'trickier' clues than early week puzzles. There was also a prominent leftward shift for Monday puzzles, though with a strong second peak aligned with the Tuesday peak. Taken together, these early and late week distribution offsets were related to the moderate overall positive correlation across all 15x15 puzzles. The majority of individual puzzle days showed at least a weak positive correlation as well, with Tuesday standing out with a stronger correlation. This hints that, at least at the low and high ends of the feature value range at a given difficulty level, '# Wordplay' may have some value to predictive modeling of solve times.* 
   
 
 #### *Past Performance Features*
@@ -209,19 +209,19 @@ Though most features had at least moderate strength correlations with GMS solve 
 
 **Figure S2. Number of Rebus Squares vs GMS Solve Time by Puzzle Day**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/953008aa-62d2-4575-90eb-6ce3d6f9f0c5)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/72a72fcd-fe79-4b3c-8dc2-30335b5ebde3)
 *<h5>Only Sunday and Thursday had an appreciable '# Rebus Squares' for the set of GMS solves. Rebus squares are those that must be filled with more than one letter, number or symbol for a given puzzle to be solved. There were weak-to-moderate positive correlations for both Sunday (r=.12) and Thursday (r=.15). The directionality of the correlations does make intuitive sense, as both their existence and the "rules" for any given rebus can often take a little while to figure out. Additionally, they increase solve time by some degree simply by requiring additional fill and menu toggling relative to a non-rebus puzzle. One caveat here is that the very large number of 0 rebus puzzles, even on Sunday and Thursday, make the strength of these correlations hard to interpret (ie, these are not exactly continuous distributions).*<br>
  
 
 **<h4>Figure S3. Number of Circled Squares vs GMS Solve Time by Puzzle Day**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/3fdfde5a-0417-4d35-bf5a-9ccc91bdd2cf)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/f9beafb8-5144-4cb9-af73-0245d5b51a6a)
 *<h5>Circled squares were virtually non-existent on the tougher (Fri and Sat) puzzle days. The modest negative correlation seen across all 15x15 puzzle days (-.11) is attributable to the fact that most 15x15 puzzles with circles appeared early in the week. The smattering of puzzles with circles on Sunday almost all fell in the middle of the solve time range regardless of '# Circles', indicating that this feature likely likely have a major impact on solve times.*
 
 
 **<h4>Figure S4. Number of Shaded Squares vs GMS Solve Time by Puzzle Day**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/76df6209-f483-44a5-af55-ae42e8d0f409)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/2fbf71f3-79fa-43db-8332-c3198619ca61)
 *<h5>Shaded squares, like circled squares, were virtually non-existent in the tougher (Fri and Sat) puzzles. Also like with circled squares, their function is to reveal a puzzle theme and their presence may provide assistance to solvers on clues in which they are embedded. Most puzzles with shaded squares were within the bottom third of GMS 15x15 puzzle solve times, most likely due to shaded squares almost exclusively showing up only in early week puzzles. Also as with '# Circles', the smattering of Sunday puzzles mostly fell in the middle of the solve time range regardless of "# Shaded Squares", indicating that this feature also likely didn't have a major impact on solve times.* 
  
 
