@@ -139,7 +139,7 @@ Though most features had at least moderate strength correlations with GMS solve 
 
 **<h4>Figure 13. Number of Fill-in-the-Blank Answers**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/fd40265d-09c2-42c8-867a-8bc935b0d3a6)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/030bca71-63ad-4113-8284-9d611fb2c51b)
 *<h5>Raw GMSTs and '# Fill-in-the-Blank Answers' had a weak-to-moderate negative correlation for all 15x15 puzzles (r= -.31).<br>*
 
 *Most of the strength of this weak-to-moderate correlation for all 15x15 puzzles was related to the rightward shift in the FDP for Monday. Along with the easiest puzzle day employing the largest dose of '#Fill-in-the-Blank', the hardest puzzle day (Saturday) was also slightly left-shifted relative to the other 15x15 puzzle days. The lack of any substantial within-day correlation for either Saturday or Monday, which both have fairly broad feature value ranges, makes it less likely that this feature is influencing GMS solve times in a meaningful way at any difficulty level.* 
