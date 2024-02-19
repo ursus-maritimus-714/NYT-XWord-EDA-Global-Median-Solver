@@ -130,7 +130,7 @@ Though most features had at least moderate strength correlations with GMS solve 
 
 **<h4>Figure 12. Number of Cheater Squares**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/ce98da4e-2143-4967-8bc9-0800a3c8a4db)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/15fbab91-f7c8-4d3d-b885-aa0c9efd4da9)
 *<h5>Raw GMSTs and '# Cheater Squares' had a weak positive correlation for all 15x15 puzzles (r= .20).<br>*
 
 *Cheater Squares are black squares than can be removed without affecting the overall word count of the grid. These squares make construction easier (hence their name). It can be seen in the FDP that large numbers of them (>~10) almost exclusively appeared on the most difficult puzzle days (Fri and Sat), which likely accounted for the (modest) positive correlation across all 15x15 puzzles. Saturday, with by far the widest feature value range of any of the 15x15 puzzle days, showed a modest reverse sign (-) correlation. Most of the other puzzle days also showed very modest reverse sign (-) correlations. This is not really at odds with the overall 15x15 positive correlation, since these squares are ultimately just black squares even if they facilitate tricky constructions for difficult puzzles. Add enough of them at a given difficulty level and they will reduce solve time simply by lowering the amount of fill. Incidentally, the reason cheater squares were only rarely seen in odd numbers is the NYT general requirement for grid symmetry.*
@@ -140,7 +140,7 @@ Though most features had at least moderate strength correlations with GMS solve 
 
 **<h4>Figure 13. Number of Fill-in-the-Blank Answers**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/030bca71-63ad-4113-8284-9d611fb2c51b)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/c1a48edc-1501-47c2-95cd-98eb9f68dc63)
 *<h5>Raw GMSTs and '# Fill-in-the-Blank Answers' had a weak-to-moderate negative correlation for all 15x15 puzzles (r= -.31).<br>*
 
 *Most of the strength of this weak-to-moderate correlation for all 15x15 puzzles was related to the rightward shift in the FDP for Monday. Along with the easiest puzzle day employing the largest dose of '#Fill-in-the-Blank', the hardest puzzle day (Saturday) was also slightly left-shifted relative to the other 15x15 puzzle days. The lack of any substantial within-day correlation for either Saturday or Monday, which both have fairly broad feature value ranges, makes it less likely that this feature is influencing GMS solve times in a meaningful way at any difficulty level.* 
