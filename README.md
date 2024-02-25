@@ -48,28 +48,28 @@ GMSTs improved on each puzzle day over the full sample period (**Figure 3**). Th
 
 **Figure 4. Solve Time Overview by Puzzle Day: Violin Plots with Swarm Plot Overlay**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/5c12409d-bf6b-41df-a794-38ca11ab1cb6)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/615e579d-0fdb-42ad-9247-a2647b732815)
 *<h5>Median[IQR] solve time (m), per puzzle day, per solve interval:*<br>
 *2018/2019: Sun: 50.0[42.3-60.0], Mon: 8.6[7.6-9.8], Tue: 12.1[9.5-14.3], Wed: 16.5[13.1-20.1], Thu: 24.6[20.2-29.0], Fri: 24.7[21.6-29.5], Sat: 31.6[25.1-36.2]*<br>
 *2020/2021: Sun: 37.1[32.2-41.5], Mon: 7.1[6.4-7.9], Tue: 9.5[8.2-10.9], Wed: 12.7[10.8-15.2], Thu: 20.3[17.6-24.1], Fri: 20.7[18.6-23.9], Sat: 26.9[22.8-31.2]*<br>
-*2022-2024: Sun: 33.0[28.6-37.6], Mon: 6.0[5.6-6.4], Tue: 8.3[7.5-9.6], Wed: 11.8[10.0-13.9], Thu: 18.5[16.0-21.1], Fri: 18.9[16.9-21.2], Sat: 23.9[20.4-28.8]*  
+*2022-2024: Sun: 33.0[28.6-37.6], Mon: 6.0[5.6-6.4], Tue: 8.3[7.5-9.6], Wed: 11.8[10.0-13.9], Thu: 18.5[16.1-21.1], Fri: 18.8[16.9-21.2], Sat: 23.9[20.4-28.8]*  
 
 
 ### GMS Performance By Puzzle Constructor(s)
 
-A high proportion of puzzles solved by the GMS (81.6%) were authored by either repeat individual constructors or repeat specific constructor teams (both referred to as "constructor" from here forward). This afforded the opportunity to evaluate which constructors the GMS tended, in a relative sense, to struggle against or do well against. Per constructor, the mean of % difference from 'recent performance baseline' (RPB) across all puzzles in the sample that they authored was computed. To compute RPB itself, each raw solve time was taken as a % difference from a decay-time weighted average of the *previous* 40 puzzles solved on the same puzzle day. The size of the temporal integration window and time-decay function were both optimized for forward-predictive value in early predictive modeling iterations (see link to Modeling in Introduction). Taking the mean of this metric per constructor isolated "constructor difficulty" for the GMS via adjustment for both GMS "recent form" and variability in the mix of puzzle days for puzzles authored by each constructor.  
+A high proportion of puzzles solved by the GMS (81.7%) were authored by either repeat individual constructors or repeat specific constructor teams (both referred to as "constructor" from here forward). This afforded the opportunity to evaluate which constructors the GMS tended, in a relative sense, to struggle against or do well against. Per constructor, the mean of % difference from 'recent performance baseline' (RPB) across all puzzles in the sample that they authored was computed. To compute RPB itself, each raw solve time was taken as a % difference from a decay-time weighted average of the *previous* 40 puzzles solved on the same puzzle day. The size of the temporal integration window and time-decay function were both optimized for forward-predictive value in early predictive modeling iterations (see link to Modeling in Introduction). Taking the mean of this metric per constructor isolated "constructor difficulty" for the GMS via adjustment for both GMS "recent form" and variability in the mix of puzzle days for puzzles authored by each constructor.  
 
 **Figure 5** shows heatmapping of GMS performance, using this normalized measure (RPB), against the n=117 constructors contributing >=5 puzzles over the sample period. While only 15.6% of constructors contributed this many puzzles, this group contributed 55% of all puzzles solved by the GMS. Warmer colors (-%) indicate that the GMS solved relatively fast against a given constructor; cooler colors (+%) indicate the opposite. At this puzzle number threshold, the mean difference from RPB for GMS solve time against different constructors ranged from -33.5% ("easiest constructor" Erik Agard and Andy Kravis) to 24.7% ("hardest constructor" Jules Markey).   
       
 **Figure 5. Heatmapping of GMS Performance Against Individual Constructors**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/eeabaec3-2cfe-4340-9c04-e775b7022434)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/b815eaf5-2fa0-4cd2-97d8-bb7722359714)
 
-The next correlational analysis was aimed at assessing the potential predictive value of the GMS' baseline-adjusted past performance against specific constructors on GMS future performance against the same constructor. **Figure 6** shows this correlation between GMS baseline-adjusted performance (as mean % difference from RPB) against a given constructor (x-axis) and performance on the next solved individual puzzle by that constructor (y-axis). The scatterplot in the left panel includes all n=1,485 puzzles in the overall sample that were issued (and solved) *after* >=1 previous puzzles by the same constructor. The scatterplot on the right has a higher threshold for inclusion; the n=760 puzzles in the overall sample that were issued (and solved) *after* >=4 previous puzzles by the same constructor. Thus, at this higher threshold only puzzles by constructors included in **Fig. 5** are included, and only their "later" puzzles in the overall sample. There was a moderate positive correlation for past and next performance at the lower threshold, and a slightly stronger one at the higher threshold. The moderate correlation strengths and improvement with a larger past sample do provide some optimism that including constructor identity and past performance against constructor in a predictive model of GMS solve performance will be beneficial.    
+The next correlational analysis was aimed at assessing the potential predictive value of the GMS' baseline-adjusted past performance against specific constructors on GMS future performance against the same constructor. **Figure 6** shows this correlation between GMS baseline-adjusted performance (as mean % difference from RPB) against a given constructor (x-axis) and performance on the next solved individual puzzle by that constructor (y-axis). The scatterplot in the left panel includes all n=1,488 puzzles in the overall sample that were issued (and solved) *after* >=1 previous puzzles by the same constructor. The scatterplot on the right has a higher threshold for inclusion; the n=761 puzzles in the overall sample that were issued (and solved) *after* >=4 previous puzzles by the same constructor. Thus, at this higher threshold only puzzles by constructors included in **Fig. 5** are included, and only their "later" puzzles in the overall sample. There was a moderate positive correlation for past and next performance at the lower threshold, and a slightly stronger one at the higher threshold. The moderate correlation strengths and improvement with a larger past sample do provide some optimism that including constructor identity and past performance against constructor in a predictive model of GMS solve performance will be beneficial.    
 
 **Figure 6. Scatterplots of GMS Past Performance Against Individual Constructor(s) Versus GMS 'Next' Individual Puzzle Performance Against the Same Constructor(s)**  
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/e785924b-cda8-4f95-ac82-9e4f710a9c25)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/04cb6df5-5fd5-4086-9418-b8c0551d02ab)
 <h5>Pearson correlation coefficient (r): >=1 previous puzzle: .27, >=4 previous puzzles: .31
 
 
@@ -83,8 +83,8 @@ One additional note on data inclusion time range: 2018 solves have been removed 
 
 **Figure 7. Correlation Heatmapping of GMS Raw Solve Times vs Grid, Clue, Answer and Past Performance Features**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/9a2057cd-d64f-4a59-9424-b1ac6c7c8285)
-*<h5>Correlation heatmaps derived from N=1,608 15x15 (left panel) and N=268 21x21 (right panel) puzzles solved by GMS from 2019-2024 (see note below).*
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/c89eb66a-af17-482d-951c-e766cc9c6185)
+*<h5>Correlation heatmaps derived from N=1,613 15x15 (left panel) and N=268 21x21 (right panel) puzzles solved by GMS from 2019-2024 (see note below).*
 
 ###
 **Figure 8** through **Figure 19** are companion figures to the correlation heatmapping shown in **Fig. 7**. These figures show, across all 15x15 puzzle days (black) and by puzzle day (colors), scatterplots of select features of interest vs GMS solve times at the level of individual puzzles. A feature distribution density plot (FDP) shows puzzle day-specific trends in the distribution of each plotted feature. 
