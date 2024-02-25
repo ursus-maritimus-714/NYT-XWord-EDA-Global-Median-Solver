@@ -16,8 +16,8 @@ The NYT crossword has been published since 1942, and many consider the "modern e
 
 **Figure 1. PCA of Select Puzzle Grid, Clue and Answer Features**                                                                  
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/0988166c-52c0-4f73-bb31-492c010b2c2d)
-*<h5>The first 3 principal components accounted for 47.6% of total variance. All puzzles from Jan. 1, 2018- Feb. 19, 2024 were included in this analysis (N=2,241).*
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/4f2c2e8a-fd10-45ac-967b-e539d4d3a900)
+*<h5>The first 3 principal components accounted for 47.5% of total variance. All puzzles from Jan. 1, 2018- Feb. 24, 2024 were included in this analysis (N=2,246).*
 ###
 The overlapping distributions in GMSTs in the solve time density plot in **Figure 2** show a parallel performance phenomenon to the continuum of puzzle properties seen in **Fig. 1**; namely that while solve difficulty increased as the week progressed, puzzle days of adjacent difficulty had substantially overlapping GMST distributions. Other than for the "easy" days (Monday and Tuesday), distributions of GMSTs were quite broad. Wednesday and Saturday also had somewhat multimodal solve time distributions, supporting the notion that there were "easy" and "hard" puzzle pools/constructors at the level of specific puzzle days. The broadness of each puzzle day-specific GMST distribution over the entire sample timeframe depicted here (2018-2024) was also increased by the fairly dramatic improvement in GMS performance over those 6+ years. The temporal dynamics of this improvement will be highly evident in the next section's figures.     
 
@@ -25,22 +25,22 @@ One additional contextual note about the GMS is worth mention upfront. Though Ma
 
 **<h4>Figure 2. Distributions of GMSTs by Puzzle Day for Full Sample Period**                   
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/686bcf38-1a26-41b0-b249-44851622fc3a)
-*<h5>All puzzles from Jan. 1, 2018- Feb. 19, 2024 were included in this analysis (N=2,241).* 
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/40d2decc-3944-435b-be16-0a1f427eeee7)
+*<h5>All puzzles from Jan. 1, 2018- Feb. 24, 2024 were included in this analysis (N=2,241).* 
 
 
 ## Results
 ### Global Median Solver (GMS) Performance Over Time
 
-The GMS solved N = 2,241 puzzles in the full sample period (365 per year, except 2020: 366 and 2024 through February 19: 50). The total solve time for the GMS was 32.2 days (2018: 6.8; 2019: 5.8; 2020: 5.2; 2021: 4.8; 2022: 4.7; 2023: 4.3; 2024: .5). Note that GMS performance was tracked by puzzle *issue* date, as I did not have access to GMS puzzle completion dates. It's reasonably safe to assume, however, that the GMS (a different individual solver for most puzzles, presumably) solved in approximately the sequence of puzzle issue. Individual solver (IS1 and IS2) performance (see links in Introduction), in contrast, was tracked by puzzle *completion* date since I *was* able to obtain completion timestamps for those solvers' completed puzzles with Matt's assistance.
+The GMS solved N = 2,241 puzzles in the full sample period (365 per year, except 2020: 366 and 2024 [through February 24]: 55). The total solve time for the GMS was 32.3 days (2018: 6.8; 2019: 5.8; 2020: 5.2; 2021: 4.8; 2022: 4.7; 2023: 4.3; 2024: .6). Note that GMS performance was tracked by puzzle *issue* date, as I did not have access to GMS puzzle completion dates. It's reasonably safe to assume, however, that the GMS (a different individual solver for most puzzles, presumably) solved in approximately the sequence of puzzle issue. Individual solver (IS1 and IS2) performance (see links in Introduction), in contrast, was tracked by puzzle *completion* date since I *was* able to obtain completion timestamps for those solvers' completed puzzles with Matt's assistance.
 
 GMSTs improved on each puzzle day over the full sample period (**Figure 3**). This improvement was fairly dramatic in the first few years for some puzzle days (most prominently for Sun), and graded improvement continued for each puzzle day until the end of the sample period (top panel). These improvement dynamics can also be seen in the aggregate raw solve time per year data reported above. The 2-year interval density plots of raw solve time distributions (bottom panels) show that performance on individual puzzle days became more consistent over time (higher peaks with narrower distributions). Because I did not have access to the raw solver data from which the GMSTs were drawn, however, it was not possible to delineate how much of the improvement was due to individual "early adopters" of Matt's tracking software getting faster and more consistent over time versus due to stronger solvers joining the solver pool over time.   
 
 **Figure 3. Solve Time Overview by Puzzle Day: 10-Puzzle Moving Averages and Distributions of Raw Values**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/146157c3-a3e5-4b84-a0ea-2e51d129efb4)
-*<h5>GMS Final (as of Feb. 19, 2024) 10-puzzle moving average of solve time (m), per puzzle day:*<br>
-*Sun: 28.9, Mon: 5.7, Tue: 8.1, Wed: 11.9, Thu: 16.9, Fri: 17.5, Sat: 19.9*<br>
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/58fb4623-09c2-4c17-a085-200bf88dc1b8)
+*<h5>GMS Final (as of Feb. 24, 2024) 10-puzzle moving average of solve time (m), per puzzle day:*<br>
+*Sun: 29.0, Mon: 5.7, Tue: 8.1, Wed: 11.9, Thu: 17.6, Fri: 17.7, Sat: 19.1*<br>
 
 ###
 **Figure 4** shows the GMS solve time performance trajectory in violin plots with swarm plot overlays, broken out by 2-year (2+ for 2023/24) solve date intervals. Violin plots show both the range (vertical extent) and distribution characteristics (width as it varies across the y-axis range) for each puzzle day, per solve interval. Black lines on the violin plots demarcate solve time quartiles per puzzle day. Swarm plot overlays per puzzle day show individual puzzle raw solve times. The narrow geometries of the later week violin plots relative to the earlier week ones correspond to greater relative performance variability on those solve days. This phenomenon will be discussed in the final section of the summary in the context of correlation between past and future performance and prospects for predictive modeling. 
