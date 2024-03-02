@@ -229,7 +229,8 @@ Though most features had at least moderate strength correlations with GMS solve 
 
 **<h4>Table S1. Features Included in Puzzle Features Principal Component Analysis**
 
-![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/0ef75602-216c-4a0d-b84e-e32723f7f847)
+![image](https://github.com/ursus-maritimus-714/NYT-XWord-EDA-Global-Median-Solver/assets/90933302/46cbd36f-977e-4e38-a8ca-38c6c8693aa5)
+
 
 
 
